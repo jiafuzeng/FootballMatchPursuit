@@ -1,0 +1,3208 @@
+[
+  {
+    "frame": 294,
+    "player_code": "unknown",
+    "player_id": "7",
+    "player_64id": "7",
+    "name_cn": "门将开球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      433.8891245524089,
+      485.2258605957031
+    ],
+    "action_screen_time_period": "00:09.80",
+    "action_result": "yes"
+  },
+  {
+    "frame": 520,
+    "player_code": "55",
+    "player_id": "6",
+    "player_64id": "6",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "70",
+    "receiver_64id": "16",
+    "player_screen_xy": [
+      969.1185811360677,
+      334.53490193684894
+    ],
+    "action_screen_time_period": "00:17.33"
+  },
+  {
+    "frame": 565,
+    "player_code": "unknown",
+    "player_id": "70",
+    "player_64id": "16",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "6",
+    "receiver_64id": "6",
+    "player_screen_xy": [
+      1324.664326985677,
+      329.5360056559245
+    ],
+    "action_screen_time_period": "00:18.83"
+  },
+  {
+    "frame": 567,
+    "player_code": "unknown",
+    "player_id": "70",
+    "player_64id": "16",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "8",
+    "receiver_64id": "8",
+    "player_screen_xy": [
+      1249.9864908854167,
+      321.0313415527344
+    ],
+    "action_screen_time_period": "00:18.90"
+  },
+  {
+    "frame": 611,
+    "player_code": "3",
+    "player_id": "8",
+    "player_64id": "8",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "70",
+    "receiver_64id": "16",
+    "player_screen_xy": [
+      569.591562906901,
+      426.38904825846356
+    ],
+    "action_screen_time_period": "00:20.36"
+  },
+  {
+    "frame": 688,
+    "player_code": "3",
+    "player_id": "8",
+    "player_64id": "8",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "10",
+    "receiver_64id": "A",
+    "player_screen_xy": [
+      506.2272033691406,
+      423.4079284667969
+    ],
+    "action_screen_time_period": "00:22.93"
+  },
+  {
+    "frame": 721,
+    "player_code": "6",
+    "player_id": "10",
+    "player_64id": "A",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "8",
+    "receiver_64id": "8",
+    "player_screen_xy": [
+      788.2191874186198,
+      461.80054728190106
+    ],
+    "action_screen_time_period": "00:24.03"
+  },
+  {
+    "frame": 820,
+    "player_code": "6",
+    "player_id": "10",
+    "player_64id": "A",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "242",
+    "receiver_64id": "3o",
+    "player_screen_xy": [
+      574.4384256998698,
+      495.65057373046875
+    ],
+    "action_screen_time_period": "00:27.33"
+  },
+  {
+    "frame": 865,
+    "player_code": "5",
+    "player_id": "242",
+    "player_64id": "3o",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "10",
+    "receiver_64id": "A",
+    "player_screen_xy": [
+      168.70877583821616,
+      620.985107421875
+    ],
+    "action_screen_time_period": "00:28.83"
+  },
+  {
+    "frame": 966,
+    "player_code": "5",
+    "player_id": "242",
+    "player_64id": "3o",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "8",
+    "receiver_64id": "8",
+    "player_screen_xy": [
+      324.8731435139974,
+      578.1470845540365
+    ],
+    "action_screen_time_period": "00:32.20"
+  },
+  {
+    "frame": 996,
+    "player_code": "3",
+    "player_id": "8",
+    "player_64id": "8",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "242",
+    "receiver_64id": "3o",
+    "player_screen_xy": [
+      897.6868387858073,
+      495.21942138671875
+    ],
+    "action_screen_time_period": "00:33.20"
+  },
+  {
+    "frame": 1160,
+    "player_code": "3",
+    "player_id": "8",
+    "player_64id": "8",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "10",
+    "receiver_64id": "A",
+    "player_screen_xy": [
+      724.4097900390625,
+      569.8771057128906
+    ],
+    "action_screen_time_period": "00:38.66"
+  },
+  {
+    "frame": 1179,
+    "player_code": "6",
+    "player_id": "10",
+    "player_64id": "A",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "8",
+    "receiver_64id": "8",
+    "player_screen_xy": [
+      1161.2906290690105,
+      510.29468790690106
+    ],
+    "action_screen_time_period": "00:39.30"
+  },
+  {
+    "frame": 1214,
+    "player_code": "6",
+    "player_id": "10",
+    "player_64id": "A",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "8",
+    "receiver_64id": "8",
+    "player_screen_xy": [
+      801.0271199544271,
+      531.1260274251302
+    ],
+    "action_screen_time_period": "00:40.46"
+  },
+  {
+    "frame": 1238,
+    "player_code": "3",
+    "player_id": "8",
+    "player_64id": "8",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "10",
+    "receiver_64id": "A",
+    "player_screen_xy": [
+      391.04990641276044,
+      590.1161905924479
+    ],
+    "action_screen_time_period": "00:41.26"
+  },
+  {
+    "frame": 1276,
+    "player_code": "3",
+    "player_id": "8",
+    "player_64id": "8",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "5",
+    "receiver_64id": "5",
+    "player_screen_xy": [
+      598.8893534342448,
+      590.3615112304688
+    ],
+    "action_screen_time_period": "00:42.53"
+  },
+  {
+    "frame": 1299,
+    "player_code": "11",
+    "player_id": "5",
+    "player_64id": "5",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "8",
+    "receiver_64id": "8",
+    "player_screen_xy": [
+      258.28461201985675,
+      773.88720703125
+    ],
+    "action_screen_time_period": "00:43.30"
+  },
+  {
+    "frame": 1361,
+    "player_code": "11",
+    "player_id": "5",
+    "player_64id": "5",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "8",
+    "receiver_64id": "8",
+    "player_screen_xy": [
+      360.5980987548828,
+      797.3324584960938
+    ],
+    "action_screen_time_period": "00:45.36"
+  },
+  {
+    "frame": 1382,
+    "player_code": "3",
+    "player_id": "8",
+    "player_64id": "8",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "5",
+    "receiver_64id": "5",
+    "player_screen_xy": [
+      512.8306681315104,
+      635.9512634277344
+    ],
+    "action_screen_time_period": "00:46.06"
+  },
+  {
+    "frame": 1471,
+    "player_code": "40",
+    "player_id": "252",
+    "player_64id": "8",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "8",
+    "receiver_64id": "3t",
+    "player_screen_xy": [
+      1404.9271850585938,
+      669.5199279785156
+    ],
+    "action_screen_time_period": "00:49.03",
+    "action_result": "yes"
+  },
+  {
+    "frame": 1502,
+    "player_code": "4",
+    "player_id": "252",
+    "player_64id": "3y",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "2",
+    "receiver_64id": "2",
+    "player_screen_xy": [
+      1436.8495483398438,
+      689.0929667154948
+    ],
+    "action_screen_time_period": "00:50.06"
+  },
+  {
+    "frame": 1525,
+    "player_code": "unknown",
+    "player_id": "2",
+    "player_64id": "2",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "252",
+    "receiver_64id": "3y",
+    "player_screen_xy": [
+      871.944590250651,
+      538.4823404947916
+    ],
+    "action_screen_time_period": "00:50.83"
+  },
+  {
+    "frame": 1569,
+    "player_code": "unknown",
+    "player_id": "2",
+    "player_64id": "2",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "140",
+    "receiver_64id": "2C",
+    "player_screen_xy": [
+      1280.2211100260417,
+      605.8380533854166
+    ],
+    "action_screen_time_period": "00:52.30"
+  },
+  {
+    "frame": 1587,
+    "player_code": "12",
+    "player_id": "140",
+    "player_64id": "2C",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "5",
+    "receiver_64id": "5",
+    "player_screen_xy": [
+      706.4642740885416,
+      720.9412841796875
+    ],
+    "action_screen_time_period": "00:52.90"
+  },
+  {
+    "frame": 1587,
+    "player_code": "11",
+    "player_id": "5",
+    "player_64id": "2",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "140",
+    "receiver_64id": "2C",
+    "player_screen_xy": [
+      797.074951171875,
+      701.1836344401041
+    ],
+    "action_screen_time_period": "00:52.90",
+    "action_result": "yes"
+  },
+  {
+    "frame": 1611,
+    "player_code": "12",
+    "player_id": "140",
+    "player_64id": "2C",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "2",
+    "receiver_64id": "2",
+    "player_screen_xy": [
+      714.5314331054688,
+      719.739756266276
+    ],
+    "action_screen_time_period": "00:53.70"
+  },
+  {
+    "frame": 1611,
+    "player_code": "12",
+    "player_id": "140",
+    "player_64id": "2C",
+    "name_cn": "抢断",
+    "receiver_code": "unknown",
+    "receiver_id": "5",
+    "receiver_64id": "5",
+    "player_screen_xy": [
+      709.200917561849,
+      719.233652750651
+    ],
+    "action_screen_time_period": "00:53.70",
+    "action_result": "yes"
+  },
+  {
+    "frame": 1642,
+    "player_code": "11",
+    "player_id": "5",
+    "player_64id": "2C",
+    "name_cn": "抢断",
+    "receiver_code": "unknown",
+    "receiver_id": "140",
+    "receiver_64id": "5",
+    "player_screen_xy": [
+      734.8064473470052,
+      694.3897705078125
+    ],
+    "action_screen_time_period": "00:54.73",
+    "action_result": "yes"
+  },
+  {
+    "frame": 1648,
+    "player_code": "12",
+    "player_id": "140",
+    "player_64id": "2C",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "receiver_64id": "unknown",
+    "player_screen_xy": [
+      713.2384134928385,
+      712.8333841959635
+    ],
+    "action_screen_time_period": "00:54.93"
+  },
+  {
+    "frame": 1648,
+    "player_code": "12",
+    "player_id": "140",
+    "player_64id": "2C",
+    "name_cn": "突破",
+    "receiver_code": "unknown",
+    "receiver_id": "5",
+    "receiver_64id": "5",
+    "player_screen_xy": [
+      713.2384134928385,
+      712.8333841959635
+    ],
+    "action_screen_time_period": "00:54.93",
+    "action_result": "yes"
+  },
+  {
+    "frame": 1649,
+    "player_code": "11",
+    "player_id": "5",
+    "player_64id": "2C",
+    "name_cn": "突破",
+    "receiver_code": "unknown",
+    "receiver_id": "140",
+    "receiver_64id": "5",
+    "player_screen_xy": [
+      752.1464131673177,
+      704.1292215983073
+    ],
+    "action_screen_time_period": "00:54.96",
+    "action_result": "yes"
+  },
+  {
+    "frame": 1650,
+    "player_code": "11",
+    "player_id": "5",
+    "player_64id": "5",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "140",
+    "receiver_64id": "2C",
+    "player_screen_xy": [
+      752.1464131673177,
+      704.1292215983073
+    ],
+    "action_screen_time_period": "00:55.00"
+  },
+  {
+    "frame": 1650,
+    "player_code": "12",
+    "player_id": "140",
+    "player_64id": "2C",
+    "name_cn": "突破",
+    "receiver_code": "unknown",
+    "receiver_id": "5",
+    "receiver_64id": "5",
+    "player_screen_xy": [
+      712.5,
+      728.0
+    ],
+    "action_screen_time_period": "00:55.00",
+    "action_result": "yes"
+  },
+  {
+    "frame": 1695,
+    "player_code": "12",
+    "player_id": "140",
+    "player_64id": "2C",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "383",
+    "receiver_64id": "5_",
+    "player_screen_xy": [
+      508.6351318359375,
+      783.0249328613281
+    ],
+    "action_screen_time_period": "00:56.50"
+  },
+  {
+    "frame": 1751,
+    "player_code": "2",
+    "player_id": "383",
+    "player_64id": "5_",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "140",
+    "receiver_64id": "2C",
+    "player_screen_xy": [
+      1338.9052734375,
+      900.5970764160156
+    ],
+    "action_screen_time_period": "00:58.36"
+  },
+  {
+    "frame": 1774,
+    "player_code": "2",
+    "player_id": "383",
+    "player_64id": "5_",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "382",
+    "receiver_64id": "5-",
+    "player_screen_xy": [
+      1207.6380004882812,
+      898.4576314290365
+    ],
+    "action_screen_time_period": "00:59.13"
+  },
+  {
+    "frame": 1797,
+    "player_code": "unknown",
+    "player_id": "382",
+    "player_64id": "5-",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "383",
+    "receiver_64id": "5_",
+    "player_screen_xy": [
+      1526.0932210286458,
+      746.2353515625
+    ],
+    "action_screen_time_period": "00:59.90"
+  },
+  {
+    "frame": 1855,
+    "player_code": "40",
+    "player_id": "382",
+    "player_64id": "5-",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "395",
+    "receiver_64id": "6B",
+    "player_screen_xy": [
+      1325.1637166341145,
+      654.1084696451823
+    ],
+    "action_screen_time_period": "01:01.83"
+  },
+  {
+    "frame": 1908,
+    "player_code": "unknown",
+    "player_id": "395",
+    "player_64id": "6B",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "382",
+    "receiver_64id": "5-",
+    "player_screen_xy": [
+      1672.0232747395833,
+      487.39256795247394
+    ],
+    "action_screen_time_period": "01:03.60"
+  },
+  {
+    "frame": 1926,
+    "player_code": "4",
+    "player_id": "395",
+    "player_64id": "6B",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "385",
+    "receiver_64id": "61",
+    "player_screen_xy": [
+      1668.54541015625,
+      483.39011637369794
+    ],
+    "action_screen_time_period": "01:04.20"
+  },
+  {
+    "frame": 1955,
+    "player_code": "unknown",
+    "player_id": "385",
+    "player_64id": "61",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "395",
+    "receiver_64id": "6B",
+    "player_screen_xy": [
+      1563.8154907226562,
+      430.5680440266927
+    ],
+    "action_screen_time_period": "01:05.16"
+  },
+  {
+    "frame": 2006,
+    "player_code": "13",
+    "player_id": "385",
+    "player_64id": "61",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "379",
+    "receiver_64id": "5x",
+    "player_screen_xy": [
+      1607.6921997070312,
+      443.92351786295575
+    ],
+    "action_screen_time_period": "01:06.86"
+  },
+  {
+    "frame": 2048,
+    "player_code": "unknown",
+    "player_id": "379",
+    "player_64id": "5x",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "385",
+    "receiver_64id": "61",
+    "player_screen_xy": [
+      1276.7305908203125,
+      366.1632843017578
+    ],
+    "action_screen_time_period": "01:08.26"
+  },
+  {
+    "frame": 2147,
+    "player_code": "unknown",
+    "player_id": "379",
+    "player_64id": "5x",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "385",
+    "receiver_64id": "61",
+    "player_screen_xy": [
+      1182.410400390625,
+      351.4834340413411
+    ],
+    "action_screen_time_period": "01:11.56"
+  },
+  {
+    "frame": 2175,
+    "player_code": "13",
+    "player_id": "385",
+    "player_64id": "61",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "379",
+    "receiver_64id": "5x",
+    "player_screen_xy": [
+      1602.1842854817708,
+      385.3797353108724
+    ],
+    "action_screen_time_period": "01:12.50"
+  },
+  {
+    "frame": 2207,
+    "player_code": "13",
+    "player_id": "385",
+    "player_64id": "61",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "382",
+    "receiver_64id": "5-",
+    "player_screen_xy": [
+      1419.0123291015625,
+      402.0487314860026
+    ],
+    "action_screen_time_period": "01:13.56"
+  },
+  {
+    "frame": 2239,
+    "player_code": "4",
+    "player_id": "382",
+    "player_64id": "5-",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "385",
+    "receiver_64id": "61",
+    "player_screen_xy": [
+      1104.3928629557292,
+      437.03477986653644
+    ],
+    "action_screen_time_period": "01:14.63"
+  },
+  {
+    "frame": 2289,
+    "player_code": "4",
+    "player_id": "382",
+    "player_64id": "5-",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "379",
+    "receiver_64id": "5x",
+    "player_screen_xy": [
+      1208.82177734375,
+      411.5133310953776
+    ],
+    "action_screen_time_period": "01:16.29"
+  },
+  {
+    "frame": 2313,
+    "player_code": "unknown",
+    "player_id": "379",
+    "player_64id": "5x",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "382",
+    "receiver_64id": "5-",
+    "player_screen_xy": [
+      940.7198486328125,
+      345.28745524088544
+    ],
+    "action_screen_time_period": "01:17.10"
+  },
+  {
+    "frame": 2440,
+    "player_code": "13",
+    "player_id": "385",
+    "player_64id": "61",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "379",
+    "receiver_64id": "5x",
+    "player_screen_xy": [
+      1200.6862386067708,
+      357.34788004557294
+    ],
+    "action_screen_time_period": "01:21.33"
+  },
+  {
+    "frame": 2441,
+    "player_code": "unknown",
+    "player_id": "508",
+    "player_64id": "7y",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "379",
+    "receiver_64id": "5x",
+    "player_screen_xy": [
+      1347.5484822591145,
+      376.0186360677083
+    ],
+    "action_screen_time_period": "01:21.36"
+  },
+  {
+    "frame": 2441,
+    "player_code": "unknown",
+    "player_id": "379",
+    "player_64id": "5x",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "385",
+    "receiver_64id": "61",
+    "player_screen_xy": [
+      1364.4070841471355,
+      365.0856424967448
+    ],
+    "action_screen_time_period": "01:21.36"
+  },
+  {
+    "frame": 2467,
+    "player_code": "unknown",
+    "player_id": "379",
+    "player_64id": null,
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "508",
+    "receiver_64id": "8S",
+    "player_screen_xy": [
+      1428.254862467448,
+      364.453374226888
+    ],
+    "action_screen_time_period": "01:22.23",
+    "action_result": "yes"
+  },
+  {
+    "frame": 2472,
+    "player_code": "unknown",
+    "player_id": "508",
+    "player_64id": null,
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "379",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      1347.5484822591145,
+      376.0186360677083
+    ],
+    "action_screen_time_period": "01:22.40",
+    "action_result": "yes"
+  },
+  {
+    "frame": 2518,
+    "player_code": "unknown",
+    "player_id": "379",
+    "player_64id": null,
+    "name_cn": "抢断",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      1200.0,
+      402.0
+    ],
+    "action_screen_time_period": "01:23.93",
+    "action_result": "yes"
+  },
+  {
+    "frame": 3101,
+    "player_code": "19",
+    "player_id": "619",
+    "player_64id": "9h",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "604",
+    "receiver_64id": "9S",
+    "player_screen_xy": [
+      1031.1683553059895,
+      494.48900349934894
+    ],
+    "action_screen_time_period": "01:43.36"
+  },
+  {
+    "frame": 3127,
+    "player_code": "4",
+    "player_id": "604",
+    "player_64id": "9S",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "619",
+    "receiver_64id": "9h",
+    "player_screen_xy": [
+      1464.899149576823,
+      530.9308675130209
+    ],
+    "action_screen_time_period": "01:44.23"
+  },
+  {
+    "frame": 3165,
+    "player_code": "4",
+    "player_id": "604",
+    "player_64id": "9S",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "603",
+    "receiver_64id": "9P",
+    "player_screen_xy": [
+      1449.011962890625,
+      506.5167236328125
+    ],
+    "action_screen_time_period": "01:45.50",
+    "action_result": "yes"
+  },
+  {
+    "frame": 3219,
+    "player_code": "7",
+    "player_id": "603",
+    "player_64id": "9P",
+    "name_cn": "抢断",
+    "receiver_code": "unknown",
+    "receiver_id": "604",
+    "receiver_64id": "9R",
+    "player_screen_xy": [
+      783.2539571126302,
+      620.4424235026041
+    ],
+    "action_screen_time_period": "01:47.30",
+    "action_result": "no"
+  },
+  {
+    "frame": 3357,
+    "player_code": "40",
+    "player_id": "604",
+    "player_64id": "9R",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "603",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      763.2629903157552,
+      453.87514241536456
+    ],
+    "action_screen_time_period": "01:51.90",
+    "action_result": "yes"
+  },
+  {
+    "frame": 3374,
+    "player_code": "7",
+    "player_id": "603",
+    "player_64id": "9R",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "604",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      612.3229166666666,
+      416.8140513102214
+    ],
+    "action_screen_time_period": "01:52.46",
+    "action_result": "yes"
+  },
+  {
+    "frame": 3440,
+    "player_code": "7",
+    "player_id": "603",
+    "player_64id": "9R",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "664",
+    "receiver_64id": "AO",
+    "player_screen_xy": [
+      624.0,
+      470.5
+    ],
+    "action_screen_time_period": "01:54.66"
+  },
+  {
+    "frame": 3463,
+    "player_code": "unknown",
+    "player_id": "664",
+    "player_64id": "AO",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "603",
+    "receiver_64id": "9R",
+    "player_screen_xy": [
+      557.8684794108073,
+      450.15443929036456
+    ],
+    "action_screen_time_period": "01:55.43"
+  },
+  {
+    "frame": 3500,
+    "player_code": "unknown",
+    "player_id": "664",
+    "player_64id": "AO",
+    "name_cn": "突破",
+    "receiver_code": "unknown",
+    "receiver_id": "607",
+    "receiver_64id": "AE",
+    "player_screen_xy": [
+      502.6454569498698,
+      464.5978088378906
+    ],
+    "action_screen_time_period": "01:56.66",
+    "action_result": "yes"
+  },
+  {
+    "frame": 3629,
+    "player_code": "9",
+    "player_id": "607",
+    "player_64id": "9V",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "601",
+    "receiver_64id": "9P",
+    "player_screen_xy": [
+      967.1222127278646,
+      683.1814982096354
+    ],
+    "action_screen_time_period": "02:00.96"
+  },
+  {
+    "frame": 3629,
+    "player_code": "9",
+    "player_id": "607",
+    "player_64id": "9V",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "664",
+    "receiver_64id": "AO",
+    "player_screen_xy": [
+      963.5372721354166,
+      684.9548746744791
+    ],
+    "action_screen_time_period": "02:00.96"
+  },
+  {
+    "frame": 3629,
+    "player_code": "2",
+    "player_id": "601",
+    "player_64id": "9P",
+    "name_cn": "抢断",
+    "receiver_code": "unknown",
+    "receiver_id": "607",
+    "receiver_64id": "9V",
+    "player_screen_xy": [
+      986.6359558105469,
+      686.2851257324219
+    ],
+    "action_screen_time_period": "02:00.96",
+    "action_result": "no"
+  },
+  {
+    "frame": 3741,
+    "player_code": "9",
+    "player_id": "607",
+    "player_64id": "9V",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "601",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      1464.9476318359375,
+      651.8602294921875
+    ],
+    "action_screen_time_period": "02:04.70",
+    "action_result": "yes"
+  },
+  {
+    "frame": 3765,
+    "player_code": "9",
+    "player_id": "607",
+    "player_64id": "2E",
+    "name_cn": "抢断",
+    "receiver_code": "unknown",
+    "receiver_id": "759",
+    "receiver_64id": "9V",
+    "player_screen_xy": [
+      1556.896708170573,
+      678.6707458496094
+    ],
+    "action_screen_time_period": "02:05.50",
+    "action_result": "yes"
+  },
+  {
+    "frame": 3910,
+    "player_code": "unknown",
+    "player_id": "759",
+    "player_64id": "Bt",
+    "name_cn": "突破",
+    "receiver_code": "unknown",
+    "receiver_id": "607",
+    "receiver_64id": "C2",
+    "player_screen_xy": [
+      851.8482157389323,
+      517.9296061197916
+    ],
+    "action_screen_time_period": "02:10.33",
+    "action_result": "yes"
+  },
+  {
+    "frame": 3954,
+    "player_code": "unknown",
+    "player_id": "759",
+    "player_64id": "Bt",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "601",
+    "receiver_64id": "9P",
+    "player_screen_xy": [
+      1156.015116373698,
+      523.116943359375
+    ],
+    "action_screen_time_period": "02:11.80"
+  },
+  {
+    "frame": 3986,
+    "player_code": "2",
+    "player_id": "601",
+    "player_64id": "9P",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "759",
+    "receiver_64id": "Bt",
+    "player_screen_xy": [
+      1612.2575073242188,
+      583.8673197428385
+    ],
+    "action_screen_time_period": "02:12.86"
+  },
+  {
+    "frame": 3997,
+    "player_code": "2",
+    "player_id": "601",
+    "player_64id": "9P",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "142",
+    "receiver_64id": "2E",
+    "player_screen_xy": [
+      1571.3085530598958,
+      584.1303202311198
+    ],
+    "action_screen_time_period": "02:13.23"
+  },
+  {
+    "frame": 4034,
+    "player_code": "12",
+    "player_id": "142",
+    "player_64id": "2E",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "601",
+    "receiver_64id": "9P",
+    "player_screen_xy": [
+      1005.1447143554688,
+      827.8741353352865
+    ],
+    "action_screen_time_period": "02:14.46"
+  },
+  {
+    "frame": 4133,
+    "player_code": "unknown",
+    "player_id": "806",
+    "player_64id": "Cc",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "142",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      818.3862813313802,
+      758.173350016276
+    ],
+    "action_screen_time_period": "02:17.76",
+    "action_result": "yes"
+  },
+  {
+    "frame": 4161,
+    "player_code": "unknown",
+    "player_id": "806",
+    "player_64id": "BY",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "738",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      960.0402628580729,
+      808.2599487304688
+    ],
+    "action_screen_time_period": "02:18.70",
+    "action_result": "yes"
+  },
+  {
+    "frame": 4192,
+    "player_code": "14",
+    "player_id": "738",
+    "player_64id": "BY",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "806",
+    "receiver_64id": "Cc",
+    "player_screen_xy": [
+      1464.561767578125,
+      901.6644083658854
+    ],
+    "action_screen_time_period": "02:19.73"
+  },
+  {
+    "frame": 4231,
+    "player_code": "14",
+    "player_id": "738",
+    "player_64id": "BY",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      949.6062316894531,
+      869.7386983235677
+    ],
+    "action_screen_time_period": "02:21.03",
+    "action_result": "yes"
+  },
+  {
+    "frame": 5028,
+    "player_code": "12",
+    "player_id": "847",
+    "player_64id": "DF",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "738",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      801.7303771972656,
+      717.7152099609375
+    ],
+    "action_screen_time_period": "02:47.59",
+    "action_result": "yes"
+  },
+  {
+    "frame": 5055,
+    "player_code": "unknown",
+    "player_id": "848",
+    "player_64id": "DG",
+    "name_cn": "抢断",
+    "receiver_code": "unknown",
+    "receiver_id": "847",
+    "receiver_64id": "DF",
+    "player_screen_xy": [
+      766.715098063151,
+      851.0890096028646
+    ],
+    "action_screen_time_period": "02:48.50",
+    "action_result": "no"
+  },
+  {
+    "frame": 5087,
+    "player_code": "12",
+    "player_id": "847",
+    "player_64id": "DF",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "848",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      696.708262125651,
+      888.038808186849
+    ],
+    "action_screen_time_period": "02:49.56",
+    "action_result": "yes"
+  },
+  {
+    "frame": 5089,
+    "player_code": "12",
+    "player_id": "847",
+    "player_64id": "DF",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "848",
+    "receiver_64id": "DG",
+    "player_screen_xy": [
+      696.708262125651,
+      888.038808186849
+    ],
+    "action_screen_time_period": "02:49.63"
+  },
+  {
+    "frame": 5097,
+    "player_code": "unknown",
+    "player_id": "848",
+    "player_64id": "DG",
+    "name_cn": "抢断",
+    "receiver_code": "unknown",
+    "receiver_id": "847",
+    "receiver_64id": "DF",
+    "player_screen_xy": [
+      763.1311950683594,
+      881.4169108072916
+    ],
+    "action_screen_time_period": "02:49.90",
+    "action_result": "no"
+  },
+  {
+    "frame": 5152,
+    "player_code": "6",
+    "player_id": "848",
+    "player_64id": "DG",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "889",
+    "receiver_64id": "Dv",
+    "player_screen_xy": [
+      659.948720296224,
+      846.4515482584635
+    ],
+    "action_screen_time_period": "02:51.73"
+  },
+  {
+    "frame": 5234,
+    "player_code": "unknown",
+    "player_id": "889",
+    "player_64id": "Dv",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "848",
+    "receiver_64id": "DG",
+    "player_screen_xy": [
+      216.45636749267578,
+      525.3173624674479
+    ],
+    "action_screen_time_period": "02:54.46"
+  },
+  {
+    "frame": 5396,
+    "player_code": "unknown",
+    "player_id": "889",
+    "player_64id": "Dv",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "920",
+    "receiver_64id": "DN",
+    "player_screen_xy": [
+      389.9527638753255,
+      520.0814921061198
+    ],
+    "action_screen_time_period": "02:59.86",
+    "action_result": "yes"
+  },
+  {
+    "frame": 5501,
+    "player_code": "unknown",
+    "player_id": "920",
+    "player_64id": "EO",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "889",
+    "receiver_64id": "EB",
+    "player_screen_xy": [
+      1065.5910034179688,
+      938.7545776367188
+    ],
+    "action_screen_time_period": "03:03.36",
+    "action_result": "yes"
+  },
+  {
+    "frame": 5549,
+    "player_code": "70",
+    "player_id": "907",
+    "player_64id": "EB",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "920",
+    "receiver_64id": "EO",
+    "player_screen_xy": [
+      929.193603515625,
+      835.6615600585938
+    ],
+    "action_screen_time_period": "03:04.96"
+  },
+  {
+    "frame": 5583,
+    "player_code": "11",
+    "player_id": "919",
+    "player_64id": "EN",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "907",
+    "receiver_64id": "EB",
+    "player_screen_xy": [
+      856.0226033528646,
+      882.4786885579427
+    ],
+    "action_screen_time_period": "03:06.10"
+  },
+  {
+    "frame": 5583,
+    "player_code": "70",
+    "player_id": "907",
+    "player_64id": "EN",
+    "name_cn": "抢断",
+    "receiver_code": "unknown",
+    "receiver_id": "919",
+    "receiver_64id": "EB",
+    "player_screen_xy": [
+      812.5564371744791,
+      888.9081115722656
+    ],
+    "action_screen_time_period": "03:06.10",
+    "action_result": "yes"
+  },
+  {
+    "frame": 5600,
+    "player_code": "11",
+    "player_id": "919",
+    "player_64id": "EN",
+    "name_cn": "抢断",
+    "receiver_code": "unknown",
+    "receiver_id": "907",
+    "receiver_64id": "EB",
+    "player_screen_xy": [
+      889.772216796875,
+      866.5556335449219
+    ],
+    "action_screen_time_period": "03:06.66",
+    "action_result": "yes"
+  },
+  {
+    "frame": 5696,
+    "player_code": "55",
+    "player_id": "846",
+    "player_64id": "DI",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "907",
+    "receiver_64id": "DF",
+    "player_screen_xy": [
+      814.7635803222656,
+      761.4307963053385
+    ],
+    "action_screen_time_period": "03:09.86",
+    "action_result": "yes"
+  },
+  {
+    "frame": 5698,
+    "player_code": "55",
+    "player_id": "846",
+    "player_64id": "DE",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "850",
+    "receiver_64id": "DI",
+    "player_screen_xy": [
+      851.1114908854166,
+      775.1124165852865
+    ],
+    "action_screen_time_period": "03:09.93"
+  },
+  {
+    "frame": 5700,
+    "player_code": "19",
+    "player_id": "850",
+    "player_64id": "DI",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "846",
+    "receiver_64id": "DF",
+    "player_screen_xy": [
+      794.0096944173177,
+      769.5913798014323
+    ],
+    "action_screen_time_period": "03:10.00",
+    "action_result": "yes"
+  },
+  {
+    "frame": 5735,
+    "player_code": "5",
+    "player_id": "855",
+    "player_64id": "EO",
+    "name_cn": "突破",
+    "receiver_code": "unknown",
+    "receiver_id": "850",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      550.3471069335938,
+      798.3756917317709
+    ],
+    "action_screen_time_period": "03:11.16",
+    "action_result": "yes"
+  },
+  {
+    "frame": 5892,
+    "player_code": "5",
+    "player_id": "855",
+    "player_64id": "DN",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1019",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      202.78766123453775,
+      790.0448099772135
+    ],
+    "action_screen_time_period": "03:16.40",
+    "action_result": "yes"
+  },
+  {
+    "frame": 5970,
+    "player_code": "unknown",
+    "player_id": "1019",
+    "player_64id": "Fx",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "855",
+    "receiver_64id": "DN",
+    "player_screen_xy": [
+      1038.6765238444011,
+      622.4638163248698
+    ],
+    "action_screen_time_period": "03:19.00"
+  },
+  {
+    "frame": 6029,
+    "player_code": "40",
+    "player_id": "930",
+    "player_64id": "Fy",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1019",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      972.6969909667969,
+      602.1713358561198
+    ],
+    "action_screen_time_period": "03:20.96",
+    "action_result": "yes"
+  },
+  {
+    "frame": 6076,
+    "player_code": "40",
+    "player_id": "930",
+    "player_64id": "EY",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "923",
+    "receiver_64id": "ER",
+    "player_screen_xy": [
+      1129.9197998046875,
+      546.8975321451823
+    ],
+    "action_screen_time_period": "03:22.53"
+  },
+  {
+    "frame": 6112,
+    "player_code": "unknown",
+    "player_id": "923",
+    "player_64id": "ER",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "930",
+    "receiver_64id": "EY",
+    "player_screen_xy": [
+      1273.7438354492188,
+      402.44664510091144
+    ],
+    "action_screen_time_period": "03:23.73"
+  },
+  {
+    "frame": 6206,
+    "player_code": "unknown",
+    "player_id": "923",
+    "player_64id": "ER",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1009",
+    "receiver_64id": "Fn",
+    "player_screen_xy": [
+      1414.5364990234375,
+      408.12729899088544
+    ],
+    "action_screen_time_period": "03:26.86"
+  },
+  {
+    "frame": 6230,
+    "player_code": "13",
+    "player_id": "1009",
+    "player_64id": "Fn",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "923",
+    "receiver_64id": "ER",
+    "player_screen_xy": [
+      1604.3076985677083,
+      446.6109670003255
+    ],
+    "action_screen_time_period": "03:27.66"
+  },
+  {
+    "frame": 6268,
+    "player_code": "13",
+    "player_id": "1009",
+    "player_64id": "Fn",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1075",
+    "receiver_64id": "Gp",
+    "player_screen_xy": [
+      1382.0100504557292,
+      451.31011454264325
+    ],
+    "action_screen_time_period": "03:28.93"
+  },
+  {
+    "frame": 6302,
+    "player_code": "unknown",
+    "player_id": "1075",
+    "player_64id": "Gp",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1009",
+    "receiver_64id": "Fn",
+    "player_screen_xy": [
+      1627.7627360026042,
+      495.2369893391927
+    ],
+    "action_screen_time_period": "03:30.06"
+  },
+  {
+    "frame": 6350,
+    "player_code": "4",
+    "player_id": "1075",
+    "player_64id": "Gp",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "923",
+    "receiver_64id": "ER",
+    "player_screen_xy": [
+      1483.1455891927083,
+      476.1659240722656
+    ],
+    "action_screen_time_period": "03:31.66",
+    "action_result": "yes"
+  },
+  {
+    "frame": 6419,
+    "player_code": "unknown",
+    "player_id": "923",
+    "player_64id": "ER",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1075",
+    "receiver_64id": "Gp",
+    "player_screen_xy": [
+      1108.676513671875,
+      318.054438273112
+    ],
+    "action_screen_time_period": "03:33.96"
+  },
+  {
+    "frame": 6499,
+    "player_code": "unknown",
+    "player_id": "923",
+    "player_64id": "ER",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "852",
+    "receiver_64id": "DK",
+    "player_screen_xy": [
+      1323.009521484375,
+      389.8623860677083
+    ],
+    "action_screen_time_period": "03:36.63"
+  },
+  {
+    "frame": 6601,
+    "player_code": "31",
+    "player_id": "852",
+    "player_64id": "DK",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "923",
+    "receiver_64id": "ER",
+    "player_screen_xy": [
+      1300.0470174153645,
+      458.2703806559245
+    ],
+    "action_screen_time_period": "03:40.03"
+  },
+  {
+    "frame": 6606,
+    "player_code": "31",
+    "player_id": "852",
+    "player_64id": "DK",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1144",
+    "receiver_64id": "Hu",
+    "player_screen_xy": [
+      1242.4124552408855,
+      428.6773376464844
+    ],
+    "action_screen_time_period": "03:40.20"
+  },
+  {
+    "frame": 6618,
+    "player_code": "19",
+    "player_id": "1144",
+    "player_64id": "Hu",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "852",
+    "receiver_64id": "DK",
+    "player_screen_xy": [
+      1220.886739095052,
+      469.44353739420575
+    ],
+    "action_screen_time_period": "03:40.60"
+  },
+  {
+    "frame": 6630,
+    "player_code": "19",
+    "player_id": "1144",
+    "player_64id": null,
+    "name_cn": "传中",
+    "receiver_code": "unknown",
+    "receiver_id": "1235",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      1195.4349568684895,
+      478.6620330810547
+    ],
+    "action_screen_time_period": "03:41.00",
+    "action_result": "yes"
+  },
+  {
+    "frame": 6772,
+    "player_code": "4",
+    "player_id": "1235",
+    "player_64id": "JJ",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1144",
+    "receiver_64id": "Hu",
+    "player_screen_xy": [
+      1153.90771484375,
+      467.9407908121745
+    ],
+    "action_screen_time_period": "03:45.73"
+  },
+  {
+    "frame": 6881,
+    "player_code": "4",
+    "player_id": "1235",
+    "player_64id": "JJ",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "994",
+    "receiver_64id": "FY",
+    "player_screen_xy": [
+      1161.0184122721355,
+      423.9288380940755
+    ],
+    "action_screen_time_period": "03:49.36"
+  },
+  {
+    "frame": 6949,
+    "player_code": "20",
+    "player_id": "994",
+    "player_64id": "FY",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1235",
+    "receiver_64id": "JJ",
+    "player_screen_xy": [
+      1218.3670043945312,
+      572.1095072428385
+    ],
+    "action_screen_time_period": "03:51.63"
+  },
+  {
+    "frame": 7203,
+    "player_code": "20",
+    "player_id": "994",
+    "player_64id": "FY",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1271",
+    "receiver_64id": "Jt",
+    "player_screen_xy": [
+      1010.7647094726562,
+      699.6412353515625
+    ],
+    "action_screen_time_period": "04:00.10"
+  },
+  {
+    "frame": 7219,
+    "player_code": "2",
+    "player_id": "1271",
+    "player_64id": "Jt",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "994",
+    "receiver_64id": "FY",
+    "player_screen_xy": [
+      1359.9730631510417,
+      851.6593831380209
+    ],
+    "action_screen_time_period": "04:00.63"
+  },
+  {
+    "frame": 7295,
+    "player_code": "2",
+    "player_id": "1271",
+    "player_64id": "Jt",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1274",
+    "receiver_64id": "Jw",
+    "player_screen_xy": [
+      1112.3273111979167,
+      809.9314982096354
+    ],
+    "action_screen_time_period": "04:03.16"
+  },
+  {
+    "frame": 7321,
+    "player_code": "unknown",
+    "player_id": "1274",
+    "player_64id": "Jw",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1271",
+    "receiver_64id": "Jt",
+    "player_screen_xy": [
+      950.1461995442709,
+      642.355946858724
+    ],
+    "action_screen_time_period": "04:04.03"
+  },
+  {
+    "frame": 7376,
+    "player_code": "4",
+    "player_id": "1274",
+    "player_64id": "Jw",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1395",
+    "receiver_64id": "Lp",
+    "player_screen_xy": [
+      757.1677042643229,
+      604.7039693196615
+    ],
+    "action_screen_time_period": "04:05.86"
+  },
+  {
+    "frame": 7405,
+    "player_code": "unknown",
+    "player_id": "1395",
+    "player_64id": "Lp",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1274",
+    "receiver_64id": "Jw",
+    "player_screen_xy": [
+      1444.445556640625,
+      498.6896464029948
+    ],
+    "action_screen_time_period": "04:06.83"
+  },
+  {
+    "frame": 7463,
+    "player_code": "4",
+    "player_id": "1395",
+    "player_64id": "Lp",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "852",
+    "receiver_64id": "DK",
+    "player_screen_xy": [
+      1450.2095540364583,
+      447.88829549153644
+    ],
+    "action_screen_time_period": "04:08.76"
+  },
+  {
+    "frame": 7491,
+    "player_code": "31",
+    "player_id": "852",
+    "player_64id": "DK",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1395",
+    "receiver_64id": "Lp",
+    "player_screen_xy": [
+      1228.34033203125,
+      356.9865214029948
+    ],
+    "action_screen_time_period": "04:09.70"
+  },
+  {
+    "frame": 7579,
+    "player_code": "31",
+    "player_id": "852",
+    "player_64id": "DK",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1370",
+    "receiver_64id": "LQ",
+    "player_screen_xy": [
+      1369.9615885416667,
+      364.79005432128906
+    ],
+    "action_screen_time_period": "04:12.63"
+  },
+  {
+    "frame": 7617,
+    "player_code": "unknown",
+    "player_id": "1370",
+    "player_64id": "LQ",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "852",
+    "receiver_64id": "DK",
+    "player_screen_xy": [
+      1106.9761352539062,
+      299.48021443684894
+    ],
+    "action_screen_time_period": "04:13.90"
+  },
+  {
+    "frame": 7703,
+    "player_code": "unknown",
+    "player_id": "1370",
+    "player_64id": "LQ",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "852",
+    "receiver_64id": "DK",
+    "player_screen_xy": [
+      1287.0145263671875,
+      358.85499572753906
+    ],
+    "action_screen_time_period": "04:16.76"
+  },
+  {
+    "frame": 7781,
+    "player_code": "31",
+    "player_id": "852",
+    "player_64id": "DK",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1370",
+    "receiver_64id": "LQ",
+    "player_screen_xy": [
+      1579.0506388346355,
+      392.6483205159505
+    ],
+    "action_screen_time_period": "04:19.36"
+  },
+  {
+    "frame": 7841,
+    "player_code": "31",
+    "player_id": "852",
+    "player_64id": "DK",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1475",
+    "receiver_64id": "N3",
+    "player_screen_xy": [
+      1364.219746907552,
+      416.8302714029948
+    ],
+    "action_screen_time_period": "04:21.36"
+  },
+  {
+    "frame": 7887,
+    "player_code": "unknown",
+    "player_id": "1475",
+    "player_64id": "N3",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "852",
+    "receiver_64id": "DK",
+    "player_screen_xy": [
+      1369.6613362630208,
+      464.9320017496745
+    ],
+    "action_screen_time_period": "04:22.90"
+  },
+  {
+    "frame": 7915,
+    "player_code": "unknown",
+    "player_id": "1475",
+    "player_64id": "N3",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1479",
+    "receiver_64id": "N7",
+    "player_screen_xy": [
+      1255.0804443359375,
+      429.00318400065106
+    ],
+    "action_screen_time_period": "04:23.83"
+  },
+  {
+    "frame": 7938,
+    "player_code": "20",
+    "player_id": "1479",
+    "player_64id": "N7",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1475",
+    "receiver_64id": "N3",
+    "player_screen_xy": [
+      1425.6686197916667,
+      561.47412109375
+    ],
+    "action_screen_time_period": "04:24.60"
+  },
+  {
+    "frame": 8111,
+    "player_code": "20",
+    "player_id": "1479",
+    "player_64id": "N7",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1532",
+    "receiver_64id": "Ny",
+    "player_screen_xy": [
+      1022.5493977864584,
+      700.0125122070312
+    ],
+    "action_screen_time_period": "04:30.36"
+  },
+  {
+    "frame": 8160,
+    "player_code": "unknown",
+    "player_id": "1532",
+    "player_64id": "Ny",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1479",
+    "receiver_64id": "N7",
+    "player_screen_xy": [
+      1645.743896484375,
+      539.1050720214844
+    ],
+    "action_screen_time_period": "04:32.00"
+  },
+  {
+    "frame": 8212,
+    "player_code": "4",
+    "player_id": "1532",
+    "player_64id": "Ny",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "852",
+    "receiver_64id": "DK",
+    "player_screen_xy": [
+      1674.022705078125,
+      481.8851318359375
+    ],
+    "action_screen_time_period": "04:33.73"
+  },
+  {
+    "frame": 8219,
+    "player_code": "31",
+    "player_id": "852",
+    "player_64id": "DK",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1532",
+    "receiver_64id": "Ny",
+    "player_screen_xy": [
+      1620.8950602213542,
+      376.04236857096356
+    ],
+    "action_screen_time_period": "04:33.96"
+  },
+  {
+    "frame": 8278,
+    "player_code": "31",
+    "player_id": "852",
+    "player_64id": "DK",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1532",
+    "receiver_64id": "Ny",
+    "player_screen_xy": [
+      1586.3914794921875,
+      395.6584218343099
+    ],
+    "action_screen_time_period": "04:35.93"
+  },
+  {
+    "frame": 8296,
+    "player_code": "4",
+    "player_id": "1532",
+    "player_64id": "Ny",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "852",
+    "receiver_64id": "DK",
+    "player_screen_xy": [
+      1634.4766031901042,
+      482.8808339436849
+    ],
+    "action_screen_time_period": "04:36.53"
+  },
+  {
+    "frame": 8389,
+    "player_code": "4",
+    "player_id": "1532",
+    "player_64id": "Ny",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "852",
+    "receiver_64id": "DK",
+    "player_screen_xy": [
+      1542.9060872395833,
+      521.6228434244791
+    ],
+    "action_screen_time_period": "04:39.63"
+  },
+  {
+    "frame": 8437,
+    "player_code": "31",
+    "player_id": "852",
+    "player_64id": "DK",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1532",
+    "receiver_64id": "Ny",
+    "player_screen_xy": [
+      1486.7997436523438,
+      367.7896423339844
+    ],
+    "action_screen_time_period": "04:41.23"
+  },
+  {
+    "frame": 8438,
+    "player_code": "31",
+    "player_id": "852",
+    "player_64id": "DK",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1501",
+    "receiver_64id": "NT",
+    "player_screen_xy": [
+      1452.3999430338542,
+      361.6875508626302
+    ],
+    "action_screen_time_period": "04:41.26"
+  },
+  {
+    "frame": 8530,
+    "player_code": "unknown",
+    "player_id": "1501",
+    "player_64id": "NT",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "852",
+    "receiver_64id": "DK",
+    "player_screen_xy": [
+      1173.8529256184895,
+      301.1516977945964
+    ],
+    "action_screen_time_period": "04:44.33"
+  },
+  {
+    "frame": 8650,
+    "player_code": "unknown",
+    "player_id": "1501",
+    "player_64id": "NT",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1722",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      1545.015625,
+      361.6195373535156
+    ],
+    "action_screen_time_period": "04:48.33",
+    "action_result": "yes"
+  },
+  {
+    "frame": 8717,
+    "player_code": "26",
+    "player_id": "1722",
+    "player_64id": "Qw",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1710",
+    "receiver_64id": "Qk",
+    "player_screen_xy": [
+      835.5,
+      501.0
+    ],
+    "action_screen_time_period": "04:50.56"
+  },
+  {
+    "frame": 8717,
+    "player_code": "26",
+    "player_id": "1722",
+    "player_64id": "Qw",
+    "name_cn": "门将抱球",
+    "receiver_code": "unknown",
+    "receiver_id": "1501",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      779.3238423665365,
+      521.6429748535156
+    ],
+    "action_screen_time_period": "04:50.56",
+    "action_result": "yes"
+  },
+  {
+    "frame": 8749,
+    "player_code": "unknown",
+    "player_id": "1710",
+    "player_64id": "Qk",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1722",
+    "receiver_64id": "Qw",
+    "player_screen_xy": [
+      878.4076436360677,
+      511.23476155598956
+    ],
+    "action_screen_time_period": "04:51.63"
+  },
+  {
+    "frame": 8749,
+    "player_code": "26",
+    "player_id": "1722",
+    "player_64id": "Qw",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "receiver_64id": "unknown",
+    "player_screen_xy": [
+      812.4838053385416,
+      540.2367960611979
+    ],
+    "action_screen_time_period": "04:51.63"
+  },
+  {
+    "frame": 8749,
+    "player_code": "unknown",
+    "player_id": "1710",
+    "player_64id": "Qw",
+    "name_cn": "门将抱球",
+    "receiver_code": "unknown",
+    "receiver_id": "1722",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      878.4076436360677,
+      511.23476155598956
+    ],
+    "action_screen_time_period": "04:51.63",
+    "action_result": "yes"
+  },
+  {
+    "frame": 8749,
+    "player_code": "26",
+    "player_id": "1722",
+    "player_64id": "Qw",
+    "name_cn": "抢断",
+    "receiver_code": "unknown",
+    "receiver_id": "1710",
+    "receiver_64id": "Qk",
+    "player_screen_xy": [
+      812.4838053385416,
+      540.2367960611979
+    ],
+    "action_screen_time_period": "04:51.63"
+  },
+  {
+    "frame": 9263,
+    "player_code": "unknown",
+    "player_id": "1753",
+    "player_64id": null,
+    "name_cn": "犯规",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      1011.5,
+      498.5
+    ],
+    "action_screen_time_period": "05:08.76",
+    "action_result": "yes"
+  },
+  {
+    "frame": 9505,
+    "player_code": "7",
+    "player_id": "1777",
+    "player_64id": "Rn",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1746",
+    "receiver_64id": "RI",
+    "player_screen_xy": [
+      878.3726094563802,
+      834.4081522623698
+    ],
+    "action_screen_time_period": "05:16.83"
+  },
+  {
+    "frame": 9520,
+    "player_code": "unknown",
+    "player_id": "1746",
+    "player_64id": "RI",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1777",
+    "receiver_64id": "Rn",
+    "player_screen_xy": [
+      650.6143493652344,
+      724.9841105143229
+    ],
+    "action_screen_time_period": "05:17.33"
+  },
+  {
+    "frame": 9527,
+    "player_code": "unknown",
+    "player_id": "1746",
+    "player_64id": "Rn",
+    "name_cn": "突破",
+    "receiver_code": "unknown",
+    "receiver_id": "1781",
+    "receiver_64id": "Rh",
+    "player_screen_xy": [
+      648.5,
+      722.0
+    ],
+    "action_screen_time_period": "05:17.56",
+    "action_result": "yes"
+  },
+  {
+    "frame": 9552,
+    "player_code": "12",
+    "player_id": "1781",
+    "player_64id": "Rr",
+    "name_cn": "突破",
+    "receiver_code": "unknown",
+    "receiver_id": "1746",
+    "receiver_64id": "Rh",
+    "player_screen_xy": [
+      753.554677327474,
+      729.4122517903646
+    ],
+    "action_screen_time_period": "05:18.40",
+    "action_result": "yes"
+  },
+  {
+    "frame": 9553,
+    "player_code": "unknown",
+    "player_id": "1771",
+    "player_64id": "Rh",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1781",
+    "receiver_64id": "Rr",
+    "player_screen_xy": [
+      663.5386047363281,
+      710.3866678873698
+    ],
+    "action_screen_time_period": "05:18.43"
+  },
+  {
+    "frame": 9655,
+    "player_code": "11",
+    "player_id": "1777",
+    "player_64id": "Rn",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1824",
+    "receiver_64id": "SW",
+    "player_screen_xy": [
+      1098.765625,
+      679.71044921875
+    ],
+    "action_screen_time_period": "05:21.83"
+  },
+  {
+    "frame": 9655,
+    "player_code": "11",
+    "player_id": "1777",
+    "player_64id": "Rn",
+    "name_cn": "抢断",
+    "receiver_code": "unknown",
+    "receiver_id": "1781",
+    "receiver_64id": "SW",
+    "player_screen_xy": [
+      1098.765625,
+      679.71044921875
+    ],
+    "action_screen_time_period": "05:21.83",
+    "action_result": "no"
+  },
+  {
+    "frame": 9701,
+    "player_code": "unknown",
+    "player_id": "1824",
+    "player_64id": "SW",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1777",
+    "receiver_64id": "Rq",
+    "player_screen_xy": [
+      928.4268290201823,
+      705.2544352213541
+    ],
+    "action_screen_time_period": "05:23.36",
+    "action_result": "yes"
+  },
+  {
+    "frame": 9704,
+    "player_code": "11",
+    "player_id": "1777",
+    "player_64id": "Rn",
+    "name_cn": "抢断",
+    "receiver_code": "unknown",
+    "receiver_id": "1824",
+    "receiver_64id": "SW",
+    "player_screen_xy": [
+      963.2929077148438,
+      711.8697306315104
+    ],
+    "action_screen_time_period": "05:23.46",
+    "action_result": "no"
+  },
+  {
+    "frame": 9711,
+    "player_code": "11",
+    "player_id": "1777",
+    "player_64id": "Rn",
+    "name_cn": "抢断",
+    "receiver_code": "unknown",
+    "receiver_id": "1829",
+    "receiver_64id": "SW",
+    "player_screen_xy": [
+      975.8427937825521,
+      711.9149068196615
+    ],
+    "action_screen_time_period": "05:23.69",
+    "action_result": "yes"
+  },
+  {
+    "frame": 9734,
+    "player_code": "unknown",
+    "player_id": "1829",
+    "player_64id": "Sb",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1777",
+    "receiver_64id": "Rn",
+    "player_screen_xy": [
+      471.6221669514974,
+      633.6560872395834
+    ],
+    "action_screen_time_period": "05:24.46"
+  },
+  {
+    "frame": 9798,
+    "player_code": "unknown",
+    "player_id": "1829",
+    "player_64id": "Sb",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      549.0,
+      723.5
+    ],
+    "action_screen_time_period": "05:26.60",
+    "action_result": "yes"
+  },
+  {
+    "frame": 12330,
+    "player_code": "unknown",
+    "player_id": "1866",
+    "player_64id": "TL",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1861",
+    "receiver_64id": "T7",
+    "player_screen_xy": [
+      382.3021748860677,
+      772.6552225748698
+    ],
+    "action_screen_time_period": "06:51.00",
+    "action_result": "yes"
+  },
+  {
+    "frame": 12449,
+    "player_code": "unknown",
+    "player_id": "1861",
+    "player_64id": "T3",
+    "name_cn": "解围",
+    "receiver_code": "unknown",
+    "receiver_id": "1866",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      1300.8353271484375,
+      610.9495442708334
+    ],
+    "action_screen_time_period": "06:54.96",
+    "action_result": "yes"
+  },
+  {
+    "frame": 12468,
+    "player_code": "unknown",
+    "player_id": "1861",
+    "player_64id": "T5",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1859",
+    "receiver_64id": "T3",
+    "player_screen_xy": [
+      1530.4921061197917,
+      605.4781392415365
+    ],
+    "action_screen_time_period": "06:55.60"
+  },
+  {
+    "frame": 12487,
+    "player_code": "20",
+    "player_id": "1859",
+    "player_64id": "T3",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1861",
+    "receiver_64id": "T5",
+    "player_screen_xy": [
+      1433.6539713541667,
+      717.3839314778646
+    ],
+    "action_screen_time_period": "06:56.23"
+  },
+  {
+    "frame": 12497,
+    "player_code": "20",
+    "player_id": "1859",
+    "player_64id": "T3",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1861",
+    "receiver_64id": "T5",
+    "player_screen_xy": [
+      1425.4012451171875,
+      694.2838033040365
+    ],
+    "action_screen_time_period": "06:56.56"
+  },
+  {
+    "frame": 12529,
+    "player_code": "unknown",
+    "player_id": "1861",
+    "player_64id": "T5",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1859",
+    "receiver_64id": "T3",
+    "player_screen_xy": [
+      1581.8834431966145,
+      649.8858439127604
+    ],
+    "action_screen_time_period": "06:57.63"
+  },
+  {
+    "frame": 12621,
+    "player_code": "7",
+    "player_id": "1860",
+    "player_64id": "T5",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1861",
+    "receiver_64id": "T3",
+    "player_screen_xy": [
+      1010.6906127929688,
+      701.7058512369791
+    ],
+    "action_screen_time_period": "07:00.70",
+    "action_result": "yes"
+  },
+  {
+    "frame": 12622,
+    "player_code": "7",
+    "player_id": "1860",
+    "player_64id": "T5",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      1134.1397298177083,
+      697.7440287272135
+    ],
+    "action_screen_time_period": "07:00.73",
+    "action_result": "no"
+  },
+  {
+    "frame": 13237,
+    "player_code": "unknown",
+    "player_id": "1860",
+    "player_64id": "T4",
+    "name_cn": "干扰进球(其他)",
+    "receiver_code": "unknown",
+    "receiver_id": "1860",
+    "receiver_64id": "T4",
+    "player_screen_xy": [
+      1179.0,
+      451.5
+    ],
+    "action_screen_time_period": "07:21.23"
+  },
+  {
+    "frame": 13264,
+    "player_code": "unknown",
+    "player_id": "1937",
+    "player_64id": "Uc",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1948",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      972.1830240885416,
+      753.5553894042969
+    ],
+    "action_screen_time_period": "07:22.13",
+    "action_result": "yes"
+  },
+  {
+    "frame": 13274,
+    "player_code": "unknown",
+    "player_id": "1937",
+    "player_64id": "UH",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1936",
+    "receiver_64id": "UG",
+    "player_screen_xy": [
+      883.9643351236979,
+      743.2626037597656
+    ],
+    "action_screen_time_period": "07:22.46"
+  },
+  {
+    "frame": 13287,
+    "player_code": "12",
+    "player_id": "1936",
+    "player_64id": "UG",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1937",
+    "receiver_64id": "UH",
+    "player_screen_xy": [
+      1051.5997721354167,
+      850.19580078125
+    ],
+    "action_screen_time_period": "07:22.90"
+  },
+  {
+    "frame": 13288,
+    "player_code": "unknown",
+    "player_id": "1958",
+    "player_64id": "Uc",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1936",
+    "receiver_64id": "UG",
+    "player_screen_xy": [
+      1081.6190592447917,
+      846.1495768229166
+    ],
+    "action_screen_time_period": "07:22.93"
+  },
+  {
+    "frame": 13288,
+    "player_code": "12",
+    "player_id": "1936",
+    "player_64id": "UG",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1958",
+    "receiver_64id": "UP",
+    "player_screen_xy": [
+      1051.5997721354167,
+      850.19580078125
+    ],
+    "action_screen_time_period": "07:22.93",
+    "action_result": "yes"
+  },
+  {
+    "frame": 13519,
+    "player_code": "unknown",
+    "player_id": "1945",
+    "player_64id": "UP",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1936",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      1725.5338948567708,
+      871.9086201985677
+    ],
+    "action_screen_time_period": "07:30.63",
+    "action_result": "yes"
+  },
+  {
+    "frame": 13720,
+    "player_code": "2",
+    "player_id": "1945",
+    "player_64id": "UP",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1946",
+    "receiver_64id": "UQ",
+    "player_screen_xy": [
+      1238.413553873698,
+      833.3466593424479
+    ],
+    "action_screen_time_period": "07:37.33"
+  },
+  {
+    "frame": 13756,
+    "player_code": "20",
+    "player_id": "1946",
+    "player_64id": "UQ",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1945",
+    "receiver_64id": "UP",
+    "player_screen_xy": [
+      1596.4337565104167,
+      651.3322550455729
+    ],
+    "action_screen_time_period": "07:38.53"
+  },
+  {
+    "frame": 13800,
+    "player_code": "20",
+    "player_id": "1946",
+    "player_64id": "UQ",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1943",
+    "receiver_64id": "UN",
+    "player_screen_xy": [
+      1653.5999348958333,
+      587.419179280599
+    ],
+    "action_screen_time_period": "07:40.00"
+  },
+  {
+    "frame": 13821,
+    "player_code": "unknown",
+    "player_id": "1943",
+    "player_64id": "UN",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1946",
+    "receiver_64id": "UQ",
+    "player_screen_xy": [
+      1395.9766235351562,
+      455.2293446858724
+    ],
+    "action_screen_time_period": "07:40.70"
+  },
+  {
+    "frame": 13909,
+    "player_code": "unknown",
+    "player_id": "1943",
+    "player_64id": "UN",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1940",
+    "receiver_64id": "UK",
+    "player_screen_xy": [
+      1608.5939127604167,
+      425.41042073567706
+    ],
+    "action_screen_time_period": "07:43.63"
+  },
+  {
+    "frame": 13966,
+    "player_code": "13",
+    "player_id": "1940",
+    "player_64id": "UK",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1943",
+    "receiver_64id": "UN",
+    "player_screen_xy": [
+      1406.3779703776042,
+      411.90746053059894
+    ],
+    "action_screen_time_period": "07:45.53"
+  },
+  {
+    "frame": 14191,
+    "player_code": "13",
+    "player_id": "1940",
+    "player_64id": "UK",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "2186",
+    "receiver_64id": "YA",
+    "player_screen_xy": [
+      1254.451680501302,
+      422.1593271891276
+    ],
+    "action_screen_time_period": "07:53.03"
+  },
+  {
+    "frame": 14245,
+    "player_code": "unknown",
+    "player_id": "2186",
+    "player_64id": "YA",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "1940",
+    "receiver_64id": "UK",
+    "player_screen_xy": [
+      1621.097391764323,
+      476.2596689860026
+    ],
+    "action_screen_time_period": "07:54.83"
+  },
+  {
+    "frame": 14277,
+    "player_code": "unknown",
+    "player_id": "2186",
+    "player_64id": "YA",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "2197",
+    "receiver_64id": "YL",
+    "player_screen_xy": [
+      1565.4909261067708,
+      450.6682993570964
+    ],
+    "action_screen_time_period": "07:55.90"
+  },
+  {
+    "frame": 14309,
+    "player_code": "20",
+    "player_id": "2197",
+    "player_64id": "YL",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "2186",
+    "receiver_64id": "YA",
+    "player_screen_xy": [
+      1703.6422322591145,
+      593.4839986165365
+    ],
+    "action_screen_time_period": "07:56.96"
+  },
+  {
+    "frame": 14471,
+    "player_code": "20",
+    "player_id": "2197",
+    "player_64id": "YL",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1945",
+    "receiver_64id": "UP",
+    "player_screen_xy": [
+      1566.6957600911458,
+      597.3928629557291
+    ],
+    "action_screen_time_period": "08:02.36",
+    "action_result": "yes"
+  },
+  {
+    "frame": 14513,
+    "player_code": "2",
+    "player_id": "1945",
+    "player_64id": "UP",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "2197",
+    "receiver_64id": "YL",
+    "player_screen_xy": [
+      629.2439270019531,
+      929.9839477539062
+    ],
+    "action_screen_time_period": "08:03.76"
+  },
+  {
+    "frame": 14513,
+    "player_code": "2",
+    "player_id": "1945",
+    "player_64id": "YL",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "receiver_64id": "UP",
+    "player_screen_xy": [
+      638.4802449544271,
+      929.930409749349
+    ],
+    "action_screen_time_period": "08:03.76",
+    "action_result": "yes"
+  },
+  {
+    "frame": 15947,
+    "player_code": "unknown",
+    "player_id": "2259",
+    "player_64id": "ZJ",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "2272",
+    "receiver_64id": "ZW",
+    "player_screen_xy": [
+      807.6182047526041,
+      923.0020039876302
+    ],
+    "action_screen_time_period": "08:51.56"
+  },
+  {
+    "frame": 15960,
+    "player_code": "unknown",
+    "player_id": "2272",
+    "player_64id": "ZW",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "2259",
+    "receiver_64id": "ZJ",
+    "player_screen_xy": [
+      1183.9594319661458,
+      502.09681193033856
+    ],
+    "action_screen_time_period": "08:52.00"
+  },
+  {
+    "frame": 15961,
+    "player_code": "unknown",
+    "player_id": "2272",
+    "player_64id": "ZY",
+    "name_cn": "空中争顶",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      1168.863016764323,
+      511.841552734375
+    ],
+    "action_screen_time_period": "08:52.03",
+    "action_result": "yes"
+  },
+  {
+    "frame": 16243,
+    "player_code": "13",
+    "player_id": "2340",
+    "player_64id": "aa",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "2367",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      1612.730224609375,
+      388.9175313313802
+    ],
+    "action_screen_time_period": "09:01.43",
+    "action_result": "yes"
+  },
+  {
+    "frame": 16368,
+    "player_code": "unknown",
+    "player_id": "2367",
+    "player_64id": "bD",
+    "name_cn": "抢断",
+    "receiver_code": "unknown",
+    "receiver_id": "2340",
+    "receiver_64id": "bl",
+    "player_screen_xy": [
+      1039.1246134440105,
+      378.1660919189453
+    ],
+    "action_screen_time_period": "09:05.60",
+    "action_result": "yes"
+  },
+  {
+    "frame": 16448,
+    "player_code": "unknown",
+    "player_id": "2340",
+    "player_64id": "aa",
+    "name_cn": "干扰进球(其他)",
+    "receiver_code": "unknown",
+    "receiver_id": "2340",
+    "receiver_64id": "aa",
+    "player_screen_xy": [
+      494.5,
+      484.5
+    ],
+    "action_screen_time_period": "09:08.26"
+  },
+  {
+    "frame": 16858,
+    "player_code": "19",
+    "player_id": "2479",
+    "player_64id": null,
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "2367",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      898.9112650553385,
+      687.804921468099
+    ],
+    "action_screen_time_period": "09:21.93",
+    "action_result": "yes"
+  },
+  {
+    "frame": 16858,
+    "player_code": "19",
+    "player_id": "2479",
+    "player_64id": null,
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "2483",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      917.8432922363281,
+      686.6487325032552
+    ],
+    "action_screen_time_period": "09:21.93",
+    "action_result": "yes"
+  },
+  {
+    "frame": 16911,
+    "player_code": "unknown",
+    "player_id": "2483",
+    "player_64id": "ca",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "2479",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      745.0309753417969,
+      418.03636169433594
+    ],
+    "action_screen_time_period": "09:23.70",
+    "action_result": "yes"
+  },
+  {
+    "frame": 17345,
+    "player_code": "unknown",
+    "player_id": "2551",
+    "player_64id": "dt",
+    "name_cn": "角球",
+    "receiver_code": "unknown",
+    "receiver_id": "2483",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      223.933957417806,
+      714.7334594726562
+    ],
+    "action_screen_time_period": "09:38.16",
+    "action_result": "yes"
+  },
+  {
+    "frame": 17348,
+    "player_code": "unknown",
+    "player_id": "2551",
+    "player_64id": "dt",
+    "name_cn": "角球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      262.0,
+      752.5
+    ],
+    "action_screen_time_period": "09:38.26",
+    "action_result": "yes"
+  },
+  {
+    "frame": 17532,
+    "player_code": "unknown",
+    "player_id": "2560",
+    "player_64id": "e7",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "2551",
+    "receiver_64id": "fP",
+    "player_screen_xy": [
+      864.8143310546875,
+      412.8081309000651
+    ],
+    "action_screen_time_period": "09:44.39",
+    "action_result": "yes"
+  },
+  {
+    "frame": 17541,
+    "player_code": "unknown",
+    "player_id": "2560",
+    "player_64id": null,
+    "name_cn": "解围",
+    "receiver_code": "unknown",
+    "receiver_id": "2555",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      751.1927591959635,
+      393.18060811360675
+    ],
+    "action_screen_time_period": "09:44.70",
+    "action_result": "yes"
+  },
+  {
+    "frame": 17623,
+    "player_code": "17",
+    "player_id": "2555",
+    "player_64id": "dx",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "2560",
+    "receiver_64id": "e0",
+    "player_screen_xy": [
+      561.5904541015625,
+      387.5688069661458
+    ],
+    "action_screen_time_period": "09:47.43"
+  },
+  {
+    "frame": 17788,
+    "player_code": "2",
+    "player_id": "2556",
+    "player_64id": "d_",
+    "name_cn": "射门",
+    "receiver_code": "unknown",
+    "receiver_id": "2555",
+    "receiver_64id": "fk",
+    "player_screen_xy": [
+      762.1721801757812,
+      499.01226806640625
+    ],
+    "action_screen_time_period": "09:52.93",
+    "action_result": "no"
+  },
+  {
+    "frame": 17790,
+    "player_code": "2",
+    "player_id": "2556",
+    "player_64id": "dy",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "2559",
+    "receiver_64id": "d_",
+    "player_screen_xy": [
+      562.0565490722656,
+      491.2406412760417
+    ],
+    "action_screen_time_period": "09:53.00"
+  },
+  {
+    "frame": 17820,
+    "player_code": "14",
+    "player_id": "2559",
+    "player_64id": "fP",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "2556",
+    "receiver_64id": "dy",
+    "player_screen_xy": [
+      618.3570658365885,
+      479.50830078125
+    ],
+    "action_screen_time_period": "09:54.00",
+    "action_result": "yes"
+  },
+  {
+    "frame": 17873,
+    "player_code": "13",
+    "player_id": "2649",
+    "player_64id": "fP",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "2559",
+    "receiver_64id": "d_",
+    "player_screen_xy": [
+      517.6728108723959,
+      510.18593343098956
+    ],
+    "action_screen_time_period": "09:55.76"
+  },
+  {
+    "frame": 17876,
+    "player_code": "13",
+    "player_id": "2649",
+    "player_64id": "fP",
+    "name_cn": "传球",
+    "receiver_code": "unknown",
+    "receiver_id": "2556",
+    "receiver_64id": "dy",
+    "player_screen_xy": [
+      565.8798624674479,
+      505.17516072591144
+    ],
+    "action_screen_time_period": "09:55.86"
+  },
+  {
+    "frame": 17901,
+    "player_code": "2",
+    "player_id": "2556",
+    "player_64id": "dy",
+    "name_cn": "停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "2649",
+    "receiver_64id": "fP",
+    "player_screen_xy": [
+      546.4584045410156,
+      485.25823465983075
+    ],
+    "action_screen_time_period": "09:56.70"
+  },
+  {
+    "frame": 18425,
+    "player_code": "unknown",
+    "player_id": "2725",
+    "player_64id": "gb",
+    "name_cn": "突破",
+    "receiver_code": "unknown",
+    "receiver_id": "2556",
+    "receiver_64id": null,
+    "player_screen_xy": [
+      614.1670125325521,
+      387.55930582682294
+    ],
+    "action_screen_time_period": "10:14.16",
+    "action_result": "yes"
+  }
+]
