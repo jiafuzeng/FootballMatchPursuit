@@ -1,0 +1,2121 @@
+[
+  {
+    "frame": 294,
+    "player_code": "unknown",
+    "player_id": "9",
+    "name_cn": "Team A长传",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      433.8891245524089,
+      485.2258605957031
+    ],
+    "action_screen_time_period": "00:09.80"
+  },
+  {
+    "frame": 522,
+    "player_code": "26",
+    "player_id": "6",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "26",
+    "player_screen_xy": [
+      956.6309204101562,
+      340.65651448567706
+    ],
+    "action_screen_time_period": "00:17.40"
+  },
+  {
+    "frame": 565,
+    "player_code": "unknown",
+    "player_id": "26",
+    "name_cn": "Team A传球",
+    "receiver_code": "55",
+    "receiver_id": "7",
+    "player_screen_xy": [
+      1307.87353515625,
+      330.29075622558594
+    ],
+    "action_screen_time_period": "00:18.83"
+  },
+  {
+    "frame": 611,
+    "player_code": "55",
+    "player_id": "7",
+    "name_cn": "Team A停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      569.591562906901,
+      426.38904825846356
+    ],
+    "action_screen_time_period": "00:20.36"
+  },
+  {
+    "frame": 688,
+    "player_code": "55",
+    "player_id": "7",
+    "name_cn": "Team A传球",
+    "receiver_code": "6",
+    "receiver_id": "8",
+    "player_screen_xy": [
+      506.2272033691406,
+      423.4079284667969
+    ],
+    "action_screen_time_period": "00:22.93"
+  },
+  {
+    "frame": 721,
+    "player_code": "6",
+    "player_id": "8",
+    "name_cn": "Team A停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      788.2191874186198,
+      461.80054728190106
+    ],
+    "action_screen_time_period": "00:24.03"
+  },
+  {
+    "frame": 819,
+    "player_code": "6",
+    "player_id": "8",
+    "name_cn": "Team A传球",
+    "receiver_code": "5",
+    "receiver_id": "197",
+    "player_screen_xy": [
+      574.4384256998698,
+      495.65057373046875
+    ],
+    "action_screen_time_period": "00:27.30"
+  },
+  {
+    "frame": 864,
+    "player_code": "5",
+    "player_id": "197",
+    "name_cn": "Team A停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      168.70877583821616,
+      620.985107421875
+    ],
+    "action_screen_time_period": "00:28.80"
+  },
+  {
+    "frame": 964,
+    "player_code": "5",
+    "player_id": "197",
+    "name_cn": "Team A传球",
+    "receiver_code": "55",
+    "receiver_id": "7",
+    "player_screen_xy": [
+      324.8731435139974,
+      578.1470845540365
+    ],
+    "action_screen_time_period": "00:32.13"
+  },
+  {
+    "frame": 996,
+    "player_code": "55",
+    "player_id": "7",
+    "name_cn": "Team A停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      897.6868387858073,
+      495.21942138671875
+    ],
+    "action_screen_time_period": "00:33.20"
+  },
+  {
+    "frame": 1158,
+    "player_code": "55",
+    "player_id": "7",
+    "name_cn": "Team A传球",
+    "receiver_code": "6",
+    "receiver_id": "8",
+    "player_screen_xy": [
+      722.0099182128906,
+      572.4172058105469
+    ],
+    "action_screen_time_period": "00:38.60"
+  },
+  {
+    "frame": 1179,
+    "player_code": "6",
+    "player_id": "8",
+    "name_cn": "Team A停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1161.2906290690105,
+      510.29468790690106
+    ],
+    "action_screen_time_period": "00:39.30"
+  },
+  {
+    "frame": 1214,
+    "player_code": "6",
+    "player_id": "8",
+    "name_cn": "Team A传球",
+    "receiver_code": "55",
+    "receiver_id": "7",
+    "player_screen_xy": [
+      801.0271199544271,
+      531.1260274251302
+    ],
+    "action_screen_time_period": "00:40.46"
+  },
+  {
+    "frame": 1238,
+    "player_code": "55",
+    "player_id": "7",
+    "name_cn": "Team A停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      391.04990641276044,
+      590.1161905924479
+    ],
+    "action_screen_time_period": "00:41.26"
+  },
+  {
+    "frame": 1276,
+    "player_code": "55",
+    "player_id": "7",
+    "name_cn": "Team A传球",
+    "receiver_code": "11",
+    "receiver_id": "10",
+    "player_screen_xy": [
+      598.8893534342448,
+      590.3615112304688
+    ],
+    "action_screen_time_period": "00:42.53"
+  },
+  {
+    "frame": 1299,
+    "player_code": "11",
+    "player_id": "10",
+    "name_cn": "Team A停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      258.28461201985675,
+      773.88720703125
+    ],
+    "action_screen_time_period": "00:43.30"
+  },
+  {
+    "frame": 1361,
+    "player_code": "11",
+    "player_id": "10",
+    "name_cn": "Team A传球",
+    "receiver_code": "55",
+    "receiver_id": "7",
+    "player_screen_xy": [
+      360.5980987548828,
+      797.3324584960938
+    ],
+    "action_screen_time_period": "00:45.36"
+  },
+  {
+    "frame": 1382,
+    "player_code": "55",
+    "player_id": "7",
+    "name_cn": "Team A停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      512.8306681315104,
+      635.9512634277344
+    ],
+    "action_screen_time_period": "00:46.06"
+  },
+  {
+    "frame": 1471,
+    "player_code": "40",
+    "player_id": "200",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1400.0199788411458,
+      672.4367268880209
+    ],
+    "action_screen_time_period": "00:49.03"
+  },
+  {
+    "frame": 1502,
+    "player_code": "40",
+    "player_id": "200",
+    "name_cn": "Team B传球",
+    "receiver_code": "19",
+    "receiver_id": "1",
+    "player_screen_xy": [
+      1436.8495483398438,
+      689.0929667154948
+    ],
+    "action_screen_time_period": "00:50.06"
+  },
+  {
+    "frame": 1525,
+    "player_code": "19",
+    "player_id": "1",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      871.944590250651,
+      538.4823404947916
+    ],
+    "action_screen_time_period": "00:50.83"
+  },
+  {
+    "frame": 1569,
+    "player_code": "19",
+    "player_id": "1",
+    "name_cn": "Team B传球",
+    "receiver_code": "12",
+    "receiver_id": "2",
+    "player_screen_xy": [
+      1280.2211100260417,
+      605.8380533854166
+    ],
+    "action_screen_time_period": "00:52.30"
+  },
+  {
+    "frame": 1611,
+    "player_code": "12",
+    "player_id": "2",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      714.5314331054688,
+      719.739756266276
+    ],
+    "action_screen_time_period": "00:53.70"
+  },
+  {
+    "frame": 1695,
+    "player_code": "12",
+    "player_id": "2",
+    "name_cn": "Team B传球",
+    "receiver_code": "2",
+    "receiver_id": "321",
+    "player_screen_xy": [
+      508.6351318359375,
+      783.0249328613281
+    ],
+    "action_screen_time_period": "00:56.50"
+  },
+  {
+    "frame": 1752,
+    "player_code": "2",
+    "player_id": "321",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1338.9052734375,
+      900.5970764160156
+    ],
+    "action_screen_time_period": "00:58.40"
+  },
+  {
+    "frame": 1781,
+    "player_code": "2",
+    "player_id": "321",
+    "name_cn": "Team B传球",
+    "receiver_code": "40",
+    "receiver_id": "319",
+    "player_screen_xy": [
+      1207.6380004882812,
+      898.4576314290365
+    ],
+    "action_screen_time_period": "00:59.36"
+  },
+  {
+    "frame": 1800,
+    "player_code": "40",
+    "player_id": "319",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1522.9694213867188,
+      746.1755065917969
+    ],
+    "action_screen_time_period": "01:00.00"
+  },
+  {
+    "frame": 1855,
+    "player_code": "40",
+    "player_id": "319",
+    "name_cn": "Team B传球",
+    "receiver_code": "4",
+    "receiver_id": "338",
+    "player_screen_xy": [
+      1325.1637166341145,
+      654.1084696451823
+    ],
+    "action_screen_time_period": "01:01.83"
+  },
+  {
+    "frame": 1908,
+    "player_code": "4",
+    "player_id": "338",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1676.3713785807292,
+      488.35736592610675
+    ],
+    "action_screen_time_period": "01:03.60"
+  },
+  {
+    "frame": 1926,
+    "player_code": "4",
+    "player_id": "338",
+    "name_cn": "Team B传球",
+    "receiver_code": "13",
+    "receiver_id": "326",
+    "player_screen_xy": [
+      1663.9448852539062,
+      484.188720703125
+    ],
+    "action_screen_time_period": "01:04.20"
+  },
+  {
+    "frame": 1955,
+    "player_code": "13",
+    "player_id": "326",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1563.8154907226562,
+      430.5680440266927
+    ],
+    "action_screen_time_period": "01:05.16"
+  },
+  {
+    "frame": 2006,
+    "player_code": "13",
+    "player_id": "326",
+    "name_cn": "Team B传球",
+    "receiver_code": "unknown",
+    "receiver_id": "317",
+    "player_screen_xy": [
+      1602.2586059570312,
+      444.5830790201823
+    ],
+    "action_screen_time_period": "01:06.86"
+  },
+  {
+    "frame": 2048,
+    "player_code": "unknown",
+    "player_id": "317",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1277.4667154947917,
+      366.1355336507161
+    ],
+    "action_screen_time_period": "01:08.26"
+  },
+  {
+    "frame": 2147,
+    "player_code": "unknown",
+    "player_id": "317",
+    "name_cn": "Team B传球",
+    "receiver_code": "13",
+    "receiver_id": "326",
+    "player_screen_xy": [
+      1181.3270060221355,
+      351.5422668457031
+    ],
+    "action_screen_time_period": "01:11.56"
+  },
+  {
+    "frame": 2175,
+    "player_code": "13",
+    "player_id": "326",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1602.1842854817708,
+      385.3797353108724
+    ],
+    "action_screen_time_period": "01:12.50"
+  },
+  {
+    "frame": 2207,
+    "player_code": "13",
+    "player_id": "326",
+    "name_cn": "Team B传球",
+    "receiver_code": "40",
+    "receiver_id": "319",
+    "player_screen_xy": [
+      1419.0123291015625,
+      402.0487314860026
+    ],
+    "action_screen_time_period": "01:13.56"
+  },
+  {
+    "frame": 2231,
+    "player_code": "40",
+    "player_id": "319",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1102.3848063151042,
+      436.72816467285156
+    ],
+    "action_screen_time_period": "01:14.36"
+  },
+  {
+    "frame": 2288,
+    "player_code": "40",
+    "player_id": "319",
+    "name_cn": "Team B传球",
+    "receiver_code": "unknown",
+    "receiver_id": "317",
+    "player_screen_xy": [
+      1208.82177734375,
+      411.5133310953776
+    ],
+    "action_screen_time_period": "01:16.26"
+  },
+  {
+    "frame": 2313,
+    "player_code": "unknown",
+    "player_id": "317",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      940.7198486328125,
+      345.28745524088544
+    ],
+    "action_screen_time_period": "01:17.10"
+  },
+  {
+    "frame": 2515,
+    "player_code": "unknown",
+    "player_id": "317",
+    "name_cn": "Team B长传",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1196.5,
+      401.0
+    ],
+    "action_screen_time_period": "01:23.83"
+  },
+  {
+    "frame": 3102,
+    "player_code": "31",
+    "player_id": "541",
+    "name_cn": "Team B传球",
+    "receiver_code": "40",
+    "receiver_id": "527",
+    "player_screen_xy": [
+      1029.197509765625,
+      491.3982442220052
+    ],
+    "action_screen_time_period": "01:43.40"
+  },
+  {
+    "frame": 3127,
+    "player_code": "40",
+    "player_id": "527",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1464.899149576823,
+      530.9308675130209
+    ],
+    "action_screen_time_period": "01:44.23"
+  },
+  {
+    "frame": 3218,
+    "player_code": "7",
+    "player_id": "526",
+    "name_cn": "Team A停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      775.1420694986979,
+      615.1196085611979
+    ],
+    "action_screen_time_period": "01:47.26"
+  },
+  {
+    "frame": 3438,
+    "player_code": "7",
+    "player_id": "526",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "642",
+    "player_screen_xy": [
+      678.0,
+      399.5
+    ],
+    "action_screen_time_period": "01:54.60"
+  },
+  {
+    "frame": 3463,
+    "player_code": "unknown",
+    "player_id": "642",
+    "name_cn": "Team A停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      557.8684794108073,
+      450.15443929036456
+    ],
+    "action_screen_time_period": "01:55.43"
+  },
+  {
+    "frame": 3511,
+    "player_code": "unknown",
+    "player_id": "642",
+    "name_cn": "Team A长传",
+    "receiver_code": "9",
+    "receiver_id": "531",
+    "player_screen_xy": [
+      375.7641906738281,
+      464.11622111002606
+    ],
+    "action_screen_time_period": "01:57.03"
+  },
+  {
+    "frame": 3615,
+    "player_code": "9",
+    "player_id": "531",
+    "name_cn": "Team A停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      933.11669921875,
+      707.917236328125
+    ],
+    "action_screen_time_period": "02:00.50"
+  },
+  {
+    "frame": 3765,
+    "player_code": "9",
+    "player_id": "531",
+    "name_cn": "Team A长传",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1556.896708170573,
+      678.6707458496094
+    ],
+    "action_screen_time_period": "02:05.50"
+  },
+  {
+    "frame": 3954,
+    "player_code": "11",
+    "player_id": "689",
+    "name_cn": "Team B传球",
+    "receiver_code": "2",
+    "receiver_id": "525",
+    "player_screen_xy": [
+      1156.015116373698,
+      523.116943359375
+    ],
+    "action_screen_time_period": "02:11.80"
+  },
+  {
+    "frame": 3982,
+    "player_code": "2",
+    "player_id": "525",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1651.7078450520833,
+      583.1322326660156
+    ],
+    "action_screen_time_period": "02:12.73"
+  },
+  {
+    "frame": 3997,
+    "player_code": "2",
+    "player_id": "525",
+    "name_cn": "Team B传球",
+    "receiver_code": "12",
+    "receiver_id": "246",
+    "player_screen_xy": [
+      1571.3085530598958,
+      584.1303202311198
+    ],
+    "action_screen_time_period": "02:13.23"
+  },
+  {
+    "frame": 4052,
+    "player_code": "12",
+    "player_id": "246",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1005.1447143554688,
+      827.8741353352865
+    ],
+    "action_screen_time_period": "02:15.06"
+  },
+  {
+    "frame": 4133,
+    "player_code": "unknown",
+    "player_id": "723",
+    "name_cn": "Team A停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      835.4991658528646,
+      757.2283732096354
+    ],
+    "action_screen_time_period": "02:17.76"
+  },
+  {
+    "frame": 4161,
+    "player_code": "unknown",
+    "player_id": "723",
+    "name_cn": "Team A传球",
+    "receiver_code": "14",
+    "receiver_id": "669",
+    "player_screen_xy": [
+      960.0402628580729,
+      808.2599487304688
+    ],
+    "action_screen_time_period": "02:18.70"
+  },
+  {
+    "frame": 4191,
+    "player_code": "14",
+    "player_id": "669",
+    "name_cn": "Team A停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1480.3594360351562,
+      896.1549784342448
+    ],
+    "action_screen_time_period": "02:19.70"
+  },
+  {
+    "frame": 4231,
+    "player_code": "14",
+    "player_id": "669",
+    "name_cn": "Team A长传",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      949.6062316894531,
+      869.7386983235677
+    ],
+    "action_screen_time_period": "02:21.03"
+  },
+  {
+    "frame": 4897,
+    "player_code": "unknown",
+    "player_id": "765",
+    "name_cn": "Team B界外手抛球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1225.4623209635417,
+      933.2592569986979
+    ],
+    "action_screen_time_period": "02:43.23"
+  },
+  {
+    "frame": 5081,
+    "player_code": "6",
+    "player_id": "777",
+    "name_cn": "Team A停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.6736246744791,
+      862.7218526204427
+    ],
+    "action_screen_time_period": "02:49.36"
+  },
+  {
+    "frame": 5152,
+    "player_code": "6",
+    "player_id": "777",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "813",
+    "player_screen_xy": [
+      659.948720296224,
+      846.4515482584635
+    ],
+    "action_screen_time_period": "02:51.73"
+  },
+  {
+    "frame": 5229,
+    "player_code": "unknown",
+    "player_id": "813",
+    "name_cn": "Team A停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      214.31643422444662,
+      525.5799865722656
+    ],
+    "action_screen_time_period": "02:54.30"
+  },
+  {
+    "frame": 5396,
+    "player_code": "unknown",
+    "player_id": "813",
+    "name_cn": "Team A传球",
+    "receiver_code": "5",
+    "receiver_id": "779",
+    "player_screen_xy": [
+      389.9527638753255,
+      520.0814921061198
+    ],
+    "action_screen_time_period": "02:59.86"
+  },
+  {
+    "frame": 5455,
+    "player_code": "5",
+    "player_id": "779",
+    "name_cn": "Team A长传",
+    "receiver_code": "70",
+    "receiver_id": "839",
+    "player_screen_xy": [
+      333.58092244466144,
+      847.2420756022135
+    ],
+    "action_screen_time_period": "03:01.83"
+  },
+  {
+    "frame": 5578,
+    "player_code": "70",
+    "player_id": "839",
+    "name_cn": "Team B抢断",
+    "receiver_code": "5",
+    "receiver_id": "779",
+    "player_screen_xy": [
+      936.5349324544271,
+      843.0116475423177
+    ],
+    "action_screen_time_period": "03:05.93"
+  },
+  {
+    "frame": 5696,
+    "player_code": "19",
+    "player_id": "778",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      765.8190511067709,
+      757.9253336588541
+    ],
+    "action_screen_time_period": "03:09.86"
+  },
+  {
+    "frame": 5841,
+    "player_code": "5",
+    "player_id": "779",
+    "name_cn": "Team A停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      214.75495147705078,
+      701.6796671549479
+    ],
+    "action_screen_time_period": "03:14.70"
+  },
+  {
+    "frame": 5892,
+    "player_code": "5",
+    "player_id": "779",
+    "name_cn": "Team A长传",
+    "receiver_code": "9",
+    "receiver_id": "945",
+    "player_screen_xy": [
+      202.78766123453775,
+      790.0448099772135
+    ],
+    "action_screen_time_period": "03:16.40"
+  },
+  {
+    "frame": 5980,
+    "player_code": "9",
+    "player_id": "945",
+    "name_cn": "Team A传球",
+    "receiver_code": "40",
+    "receiver_id": "863",
+    "player_screen_xy": [
+      919.5382385253906,
+      661.2074279785156
+    ],
+    "action_screen_time_period": "03:19.33"
+  },
+  {
+    "frame": 6031,
+    "player_code": "40",
+    "player_id": "863",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      985.4945983886719,
+      603.0621846516927
+    ],
+    "action_screen_time_period": "03:21.03"
+  },
+  {
+    "frame": 6076,
+    "player_code": "40",
+    "player_id": "863",
+    "name_cn": "Team B传球",
+    "receiver_code": "unknown",
+    "receiver_id": "840",
+    "player_screen_xy": [
+      1129.9197998046875,
+      546.8975321451823
+    ],
+    "action_screen_time_period": "03:22.53"
+  },
+  {
+    "frame": 6113,
+    "player_code": "unknown",
+    "player_id": "840",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1281.2286376953125,
+      400.7173817952474
+    ],
+    "action_screen_time_period": "03:23.76"
+  },
+  {
+    "frame": 6199,
+    "player_code": "unknown",
+    "player_id": "840",
+    "name_cn": "Team B传球",
+    "receiver_code": "13",
+    "receiver_id": "942",
+    "player_screen_xy": [
+      1414.5364990234375,
+      408.12729899088544
+    ],
+    "action_screen_time_period": "03:26.63"
+  },
+  {
+    "frame": 6230,
+    "player_code": "13",
+    "player_id": "942",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1604.3076985677083,
+      446.6109670003255
+    ],
+    "action_screen_time_period": "03:27.66"
+  },
+  {
+    "frame": 6268,
+    "player_code": "13",
+    "player_id": "942",
+    "name_cn": "Team B传球",
+    "receiver_code": "4",
+    "receiver_id": "1014",
+    "player_screen_xy": [
+      1382.0100504557292,
+      451.31011454264325
+    ],
+    "action_screen_time_period": "03:28.93"
+  },
+  {
+    "frame": 6302,
+    "player_code": "4",
+    "player_id": "1014",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1627.7627360026042,
+      495.2369893391927
+    ],
+    "action_screen_time_period": "03:30.06"
+  },
+  {
+    "frame": 6350,
+    "player_code": "4",
+    "player_id": "1014",
+    "name_cn": "Team B长传",
+    "receiver_code": "unknown",
+    "receiver_id": "840",
+    "player_screen_xy": [
+      1483.1455891927083,
+      476.1659240722656
+    ],
+    "action_screen_time_period": "03:31.66"
+  },
+  {
+    "frame": 6419,
+    "player_code": "unknown",
+    "player_id": "840",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1105.1186116536458,
+      319.4220835367839
+    ],
+    "action_screen_time_period": "03:33.96"
+  },
+  {
+    "frame": 6630,
+    "player_code": "unknown",
+    "player_id": "840",
+    "name_cn": "Team B长传",
+    "receiver_code": "unknown",
+    "receiver_id": "1231",
+    "player_screen_xy": [
+      1195.4349568684895,
+      478.6620330810547
+    ],
+    "action_screen_time_period": "03:41.00"
+  },
+  {
+    "frame": 6772,
+    "player_code": "4",
+    "player_id": "1231",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1153.90771484375,
+      467.9407908121745
+    ],
+    "action_screen_time_period": "03:45.73"
+  },
+  {
+    "frame": 6881,
+    "player_code": "4",
+    "player_id": "1231",
+    "name_cn": "Team B传球",
+    "receiver_code": "20",
+    "receiver_id": "1236",
+    "player_screen_xy": [
+      1159.2282307942708,
+      425.55430603027344
+    ],
+    "action_screen_time_period": "03:49.36"
+  },
+  {
+    "frame": 6949,
+    "player_code": "20",
+    "player_id": "1236",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1218.3670043945312,
+      572.1095072428385
+    ],
+    "action_screen_time_period": "03:51.63"
+  },
+  {
+    "frame": 7203,
+    "player_code": "20",
+    "player_id": "1236",
+    "name_cn": "Team B传球",
+    "receiver_code": "2",
+    "receiver_id": "1189",
+    "player_screen_xy": [
+      1010.7647094726562,
+      699.6412353515625
+    ],
+    "action_screen_time_period": "04:00.10"
+  },
+  {
+    "frame": 7219,
+    "player_code": "2",
+    "player_id": "1189",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1359.9730631510417,
+      851.6593831380209
+    ],
+    "action_screen_time_period": "04:00.63"
+  },
+  {
+    "frame": 7314,
+    "player_code": "2",
+    "player_id": "1189",
+    "name_cn": "Team B传球",
+    "receiver_code": "40",
+    "receiver_id": "863",
+    "player_screen_xy": [
+      1156.1163330078125,
+      782.7672627766927
+    ],
+    "action_screen_time_period": "04:03.80"
+  },
+  {
+    "frame": 7321,
+    "player_code": "40",
+    "player_id": "863",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      950.1461995442709,
+      642.355946858724
+    ],
+    "action_screen_time_period": "04:04.03"
+  },
+  {
+    "frame": 7376,
+    "player_code": "40",
+    "player_id": "863",
+    "name_cn": "Team B传球",
+    "receiver_code": "4",
+    "receiver_id": "1152",
+    "player_screen_xy": [
+      757.1677042643229,
+      604.7039693196615
+    ],
+    "action_screen_time_period": "04:05.86"
+  },
+  {
+    "frame": 7406,
+    "player_code": "4",
+    "player_id": "1152",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1444.445556640625,
+      498.6896464029948
+    ],
+    "action_screen_time_period": "04:06.86"
+  },
+  {
+    "frame": 7463,
+    "player_code": "4",
+    "player_id": "1152",
+    "name_cn": "Team B传球",
+    "receiver_code": "13",
+    "receiver_id": "1281",
+    "player_screen_xy": [
+      1455.872538248698,
+      444.307856241862
+    ],
+    "action_screen_time_period": "04:08.76"
+  },
+  {
+    "frame": 7491,
+    "player_code": "13",
+    "player_id": "1281",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1228.34033203125,
+      356.9865214029948
+    ],
+    "action_screen_time_period": "04:09.70"
+  },
+  {
+    "frame": 7579,
+    "player_code": "13",
+    "player_id": "1281",
+    "name_cn": "Team B传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1264",
+    "player_screen_xy": [
+      1369.9615885416667,
+      364.79005432128906
+    ],
+    "action_screen_time_period": "04:12.63"
+  },
+  {
+    "frame": 7615,
+    "player_code": "unknown",
+    "player_id": "1264",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1100.013671875,
+      302.157958984375
+    ],
+    "action_screen_time_period": "04:13.83"
+  },
+  {
+    "frame": 7700,
+    "player_code": "unknown",
+    "player_id": "1264",
+    "name_cn": "Team B传球",
+    "receiver_code": "31",
+    "receiver_id": "1261",
+    "player_screen_xy": [
+      1287.0145263671875,
+      358.85499572753906
+    ],
+    "action_screen_time_period": "04:16.66"
+  },
+  {
+    "frame": 7724,
+    "player_code": "31",
+    "player_id": "1261",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1040.4776000976562,
+      404.0791829427083
+    ],
+    "action_screen_time_period": "04:17.46"
+  },
+  {
+    "frame": 7731,
+    "player_code": "31",
+    "player_id": "1261",
+    "name_cn": "Team B传球",
+    "receiver_code": "13",
+    "receiver_id": "1281",
+    "player_screen_xy": [
+      1041.5037638346355,
+      405.287592569987
+    ],
+    "action_screen_time_period": "04:17.69"
+  },
+  {
+    "frame": 7781,
+    "player_code": "13",
+    "player_id": "1281",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1579.0506388346355,
+      392.6483205159505
+    ],
+    "action_screen_time_period": "04:19.36"
+  },
+  {
+    "frame": 7841,
+    "player_code": "13",
+    "player_id": "1281",
+    "name_cn": "Team B传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1357",
+    "player_screen_xy": [
+      1347.8632405598958,
+      417.31285603841144
+    ],
+    "action_screen_time_period": "04:21.36"
+  },
+  {
+    "frame": 7887,
+    "player_code": "unknown",
+    "player_id": "1357",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1369.6613362630208,
+      464.9320017496745
+    ],
+    "action_screen_time_period": "04:22.90"
+  },
+  {
+    "frame": 7906,
+    "player_code": "unknown",
+    "player_id": "1357",
+    "name_cn": "Team B传球",
+    "receiver_code": "20",
+    "receiver_id": "1361",
+    "player_screen_xy": [
+      1255.0804443359375,
+      429.00318400065106
+    ],
+    "action_screen_time_period": "04:23.53"
+  },
+  {
+    "frame": 7938,
+    "player_code": "20",
+    "player_id": "1361",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1425.6686197916667,
+      561.47412109375
+    ],
+    "action_screen_time_period": "04:24.60"
+  },
+  {
+    "frame": 8111,
+    "player_code": "20",
+    "player_id": "1361",
+    "name_cn": "Team B传球",
+    "receiver_code": "4",
+    "receiver_id": "1410",
+    "player_screen_xy": [
+      1022.5493977864584,
+      700.0125122070312
+    ],
+    "action_screen_time_period": "04:30.36"
+  },
+  {
+    "frame": 8160,
+    "player_code": "4",
+    "player_id": "1410",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1645.743896484375,
+      539.1050720214844
+    ],
+    "action_screen_time_period": "04:32.00"
+  },
+  {
+    "frame": 8185,
+    "player_code": "4",
+    "player_id": "1410",
+    "name_cn": "Team B传球",
+    "receiver_code": "13",
+    "receiver_id": "1281",
+    "player_screen_xy": [
+      1614.5530598958333,
+      499.8165791829427
+    ],
+    "action_screen_time_period": "04:32.83"
+  },
+  {
+    "frame": 8219,
+    "player_code": "13",
+    "player_id": "1281",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1620.8950602213542,
+      376.04236857096356
+    ],
+    "action_screen_time_period": "04:33.96"
+  },
+  {
+    "frame": 8270,
+    "player_code": "13",
+    "player_id": "1281",
+    "name_cn": "Team B传球",
+    "receiver_code": "4",
+    "receiver_id": "1410",
+    "player_screen_xy": [
+      1586.3914794921875,
+      395.6584218343099
+    ],
+    "action_screen_time_period": "04:35.66"
+  },
+  {
+    "frame": 8296,
+    "player_code": "4",
+    "player_id": "1410",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1634.4766031901042,
+      482.8808339436849
+    ],
+    "action_screen_time_period": "04:36.53"
+  },
+  {
+    "frame": 8389,
+    "player_code": "4",
+    "player_id": "1410",
+    "name_cn": "Team B传球",
+    "receiver_code": "13",
+    "receiver_id": "1281",
+    "player_screen_xy": [
+      1542.9060872395833,
+      521.6228434244791
+    ],
+    "action_screen_time_period": "04:39.63"
+  },
+  {
+    "frame": 8438,
+    "player_code": "13",
+    "player_id": "1281",
+    "name_cn": "Team B传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1378",
+    "player_screen_xy": [
+      1486.1150716145833,
+      370.4092712402344
+    ],
+    "action_screen_time_period": "04:41.26"
+  },
+  {
+    "frame": 8530,
+    "player_code": "unknown",
+    "player_id": "1378",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1173.8529256184895,
+      301.1516977945964
+    ],
+    "action_screen_time_period": "04:44.33"
+  },
+  {
+    "frame": 8652,
+    "player_code": "unknown",
+    "player_id": "1378",
+    "name_cn": "Team B射门",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1569.087890625,
+      366.2456766764323
+    ],
+    "action_screen_time_period": "04:48.40"
+  },
+  {
+    "frame": 8714,
+    "player_code": "unknown",
+    "player_id": "1615",
+    "name_cn": "Team A_GKSave",
+    "receiver_code": "unknown",
+    "receiver_id": "1378",
+    "player_screen_xy": [
+      774.9832865397135,
+      522.6254577636719
+    ],
+    "action_screen_time_period": "04:50.46"
+  },
+  {
+    "frame": 9157,
+    "player_code": "unknown",
+    "player_id": "1615",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1644",
+    "player_screen_xy": [
+      1037.0,
+      501.0
+    ],
+    "action_screen_time_period": "05:05.23"
+  },
+  {
+    "frame": 9255,
+    "player_code": "unknown",
+    "player_id": "1644",
+    "name_cn": "Team A停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1072.6178181966145,
+      504.3810628255208
+    ],
+    "action_screen_time_period": "05:08.50"
+  },
+  {
+    "frame": 9261,
+    "player_code": "unknown",
+    "player_id": "1644",
+    "name_cn": "Team A长传",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1010.5,
+      498.0
+    ],
+    "action_screen_time_period": "05:08.69"
+  },
+  {
+    "frame": 9505,
+    "player_code": "11",
+    "player_id": "1673",
+    "name_cn": "Team A传球",
+    "receiver_code": "7",
+    "receiver_id": "1660",
+    "player_screen_xy": [
+      878.3726094563802,
+      834.4081522623698
+    ],
+    "action_screen_time_period": "05:16.83"
+  },
+  {
+    "frame": 9522,
+    "player_code": "7",
+    "player_id": "1660",
+    "name_cn": "Team A停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      650.6143493652344,
+      724.9841105143229
+    ],
+    "action_screen_time_period": "05:17.40"
+  },
+  {
+    "frame": 9527,
+    "player_code": "7",
+    "player_id": "1660",
+    "name_cn": "Team A长传",
+    "receiver_code": "20",
+    "receiver_id": "1670",
+    "player_screen_xy": [
+      653.5,
+      722.0
+    ],
+    "action_screen_time_period": "05:17.56"
+  },
+  {
+    "frame": 9665,
+    "player_code": "20",
+    "player_id": "1670",
+    "name_cn": "Team B传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1671",
+    "player_screen_xy": [
+      1151.5,
+      648.0
+    ],
+    "action_screen_time_period": "05:22.16"
+  },
+  {
+    "frame": 9701,
+    "player_code": "unknown",
+    "player_id": "1671",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      928.4268290201823,
+      705.2544352213541
+    ],
+    "action_screen_time_period": "05:23.36"
+  },
+  {
+    "frame": 9737,
+    "player_code": "6",
+    "player_id": "1721",
+    "name_cn": "Team A停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      485.4097137451172,
+      632.995615641276
+    ],
+    "action_screen_time_period": "05:24.56"
+  },
+  {
+    "frame": 9798,
+    "player_code": "6",
+    "player_id": "1721",
+    "name_cn": "Team A长传",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      549.0,
+      723.0
+    ],
+    "action_screen_time_period": "05:26.60"
+  },
+  {
+    "frame": 12330,
+    "player_code": "unknown",
+    "player_id": "1753",
+    "name_cn": "Team A长传",
+    "receiver_code": "unknown",
+    "receiver_id": "1746",
+    "player_screen_xy": [
+      382.3021748860677,
+      772.6552225748698
+    ],
+    "action_screen_time_period": "06:51.00"
+  },
+  {
+    "frame": 12451,
+    "player_code": "unknown",
+    "player_id": "1746",
+    "name_cn": "Team B抢断",
+    "receiver_code": "unknown",
+    "receiver_id": "1753",
+    "player_screen_xy": [
+      1326.3668416341145,
+      608.647226969401
+    ],
+    "action_screen_time_period": "06:55.03"
+  },
+  {
+    "frame": 12468,
+    "player_code": "unknown",
+    "player_id": "1746",
+    "name_cn": "Team B传球",
+    "receiver_code": "2",
+    "receiver_id": "1747",
+    "player_screen_xy": [
+      1530.4921061197917,
+      605.4781392415365
+    ],
+    "action_screen_time_period": "06:55.60"
+  },
+  {
+    "frame": 12492,
+    "player_code": "2",
+    "player_id": "1747",
+    "name_cn": "Team B传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1746",
+    "player_screen_xy": [
+      1425.4012451171875,
+      694.2838033040365
+    ],
+    "action_screen_time_period": "06:56.40"
+  },
+  {
+    "frame": 12513,
+    "player_code": "unknown",
+    "player_id": "1746",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1701.9986572265625,
+      645.4064534505209
+    ],
+    "action_screen_time_period": "06:57.10"
+  },
+  {
+    "frame": 12596,
+    "player_code": "unknown",
+    "player_id": "1746",
+    "name_cn": "Team B传球",
+    "receiver_code": "2",
+    "receiver_id": "1747",
+    "player_screen_xy": [
+      1593.3434651692708,
+      678.4487915039062
+    ],
+    "action_screen_time_period": "06:59.86"
+  },
+  {
+    "frame": 12615,
+    "player_code": "2",
+    "player_id": "1747",
+    "name_cn": "Team B射门",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1121.7820434570312,
+      666.2357991536459
+    ],
+    "action_screen_time_period": "07:00.50"
+  },
+  {
+    "frame": 13237,
+    "player_code": "unknown",
+    "player_id": "1747",
+    "name_cn": "Team BGoal",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1178.0,
+      451.5
+    ],
+    "action_screen_time_period": "07:21.23"
+  },
+  {
+    "frame": 13237,
+    "player_code": "unknown",
+    "player_id": "1746",
+    "name_cn": "Team B助攻",
+    "receiver_code": "unknown",
+    "receiver_id": "1747",
+    "player_screen_xy": [
+      1178.0,
+      451.5
+    ],
+    "action_screen_time_period": "07:21.23"
+  },
+  {
+    "frame": 13249,
+    "player_code": "unknown",
+    "player_id": "1822",
+    "name_cn": "Team B传球",
+    "receiver_code": "70",
+    "receiver_id": "1825",
+    "player_screen_xy": [
+      1422.3884887695312,
+      464.9115295410156
+    ],
+    "action_screen_time_period": "07:21.63"
+  },
+  {
+    "frame": 13264,
+    "player_code": "70",
+    "player_id": "1825",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      972.1830240885416,
+      753.5553894042969
+    ],
+    "action_screen_time_period": "07:22.13"
+  },
+  {
+    "frame": 13276,
+    "player_code": "70",
+    "player_id": "1825",
+    "name_cn": "Team B传球",
+    "receiver_code": "12",
+    "receiver_id": "1823",
+    "player_screen_xy": [
+      883.9643351236979,
+      743.2626037597656
+    ],
+    "action_screen_time_period": "07:22.53"
+  },
+  {
+    "frame": 13289,
+    "player_code": "12",
+    "player_id": "1823",
+    "name_cn": "Team B传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1093.9032185872395,
+      848.2991638183594
+    ],
+    "action_screen_time_period": "07:22.96"
+  },
+  {
+    "frame": 13720,
+    "player_code": "2",
+    "player_id": "1833",
+    "name_cn": "Team B传球",
+    "receiver_code": "20",
+    "receiver_id": "1834",
+    "player_screen_xy": [
+      1236.709248860677,
+      834.8136291503906
+    ],
+    "action_screen_time_period": "07:37.33"
+  },
+  {
+    "frame": 13756,
+    "player_code": "20",
+    "player_id": "1834",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1596.4337565104167,
+      651.3322550455729
+    ],
+    "action_screen_time_period": "07:38.53"
+  },
+  {
+    "frame": 13800,
+    "player_code": "20",
+    "player_id": "1834",
+    "name_cn": "Team B传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1829",
+    "player_screen_xy": [
+      1653.5999348958333,
+      587.419179280599
+    ],
+    "action_screen_time_period": "07:40.00"
+  },
+  {
+    "frame": 13824,
+    "player_code": "unknown",
+    "player_id": "1829",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1395.9766235351562,
+      455.2293446858724
+    ],
+    "action_screen_time_period": "07:40.80"
+  },
+  {
+    "frame": 13898,
+    "player_code": "4",
+    "player_id": "1829",
+    "name_cn": "Team B长传",
+    "receiver_code": "13",
+    "receiver_id": "1831",
+    "player_screen_xy": [
+      1608.5939127604167,
+      425.41042073567706
+    ],
+    "action_screen_time_period": "07:43.26"
+  },
+  {
+    "frame": 13965,
+    "player_code": "13",
+    "player_id": "1831",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1403.689188639323,
+      412.33124287923175
+    ],
+    "action_screen_time_period": "07:45.50"
+  },
+  {
+    "frame": 14021,
+    "player_code": "13",
+    "player_id": "1831",
+    "name_cn": "Team B传球",
+    "receiver_code": "unknown",
+    "receiver_id": "1965",
+    "player_screen_xy": [
+      1529.2628784179688,
+      418.7073669433594
+    ],
+    "action_screen_time_period": "07:47.36"
+  },
+  {
+    "frame": 14061,
+    "player_code": "unknown",
+    "player_id": "1965",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1089.7273559570312,
+      355.8996327718099
+    ],
+    "action_screen_time_period": "07:48.70"
+  },
+  {
+    "frame": 14109,
+    "player_code": "unknown",
+    "player_id": "1965",
+    "name_cn": "Team B传球",
+    "receiver_code": "13",
+    "receiver_id": "1831",
+    "player_screen_xy": [
+      1330.4393310546875,
+      388.5010477701823
+    ],
+    "action_screen_time_period": "07:50.30"
+  },
+  {
+    "frame": 14147,
+    "player_code": "13",
+    "player_id": "1831",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1318.0349731445312,
+      426.75498453776044
+    ],
+    "action_screen_time_period": "07:51.56"
+  },
+  {
+    "frame": 14189,
+    "player_code": "13",
+    "player_id": "1831",
+    "name_cn": "Team B传球",
+    "receiver_code": "unknown",
+    "receiver_id": "2044",
+    "player_screen_xy": [
+      1254.451680501302,
+      422.1593271891276
+    ],
+    "action_screen_time_period": "07:52.96"
+  },
+  {
+    "frame": 14246,
+    "player_code": "unknown",
+    "player_id": "2044",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1621.097391764323,
+      476.2596689860026
+    ],
+    "action_screen_time_period": "07:54.86"
+  },
+  {
+    "frame": 14284,
+    "player_code": "unknown",
+    "player_id": "2044",
+    "name_cn": "Team B传球",
+    "receiver_code": "20",
+    "receiver_id": "2054",
+    "player_screen_xy": [
+      1565.4909261067708,
+      450.6682993570964
+    ],
+    "action_screen_time_period": "07:56.13"
+  },
+  {
+    "frame": 14310,
+    "player_code": "20",
+    "player_id": "2054",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1703.6422322591145,
+      593.4839986165365
+    ],
+    "action_screen_time_period": "07:57.00"
+  },
+  {
+    "frame": 14471,
+    "player_code": "20",
+    "player_id": "2054",
+    "name_cn": "Team B长传",
+    "receiver_code": "2",
+    "receiver_id": "1833",
+    "player_screen_xy": [
+      1566.6957600911458,
+      597.3928629557291
+    ],
+    "action_screen_time_period": "08:02.36"
+  },
+  {
+    "frame": 14513,
+    "player_code": "2",
+    "player_id": "1833",
+    "name_cn": "Team B长传",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      638.4802449544271,
+      929.930409749349
+    ],
+    "action_screen_time_period": "08:03.76"
+  },
+  {
+    "frame": 15215,
+    "player_code": "40",
+    "player_id": "2097",
+    "name_cn": "Team B长传",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1675.5,
+      899.5
+    ],
+    "action_screen_time_period": "08:27.16"
+  },
+  {
+    "frame": 15947,
+    "player_code": "40",
+    "player_id": "2122",
+    "name_cn": "Team B传球",
+    "receiver_code": "unknown",
+    "receiver_id": "2141",
+    "player_screen_xy": [
+      807.6182047526041,
+      923.0020039876302
+    ],
+    "action_screen_time_period": "08:51.56"
+  },
+  {
+    "frame": 15960,
+    "player_code": "unknown",
+    "player_id": "2141",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1183.9594319661458,
+      502.09681193033856
+    ],
+    "action_screen_time_period": "08:52.00"
+  },
+  {
+    "frame": 15961,
+    "player_code": "unknown",
+    "player_id": "2141",
+    "name_cn": "Team B长传",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1183.9594319661458,
+      502.09681193033856
+    ],
+    "action_screen_time_period": "08:52.03"
+  },
+  {
+    "frame": 16243,
+    "player_code": "13",
+    "player_id": "2195",
+    "name_cn": "Team B长传",
+    "receiver_code": "unknown",
+    "receiver_id": "2224",
+    "player_screen_xy": [
+      1612.730224609375,
+      388.9175313313802
+    ],
+    "action_screen_time_period": "09:01.43"
+  },
+  {
+    "frame": 16369,
+    "player_code": "unknown",
+    "player_id": "2224",
+    "name_cn": "Team A射门",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1027.8970642089844,
+      374.1151377360026
+    ],
+    "action_screen_time_period": "09:05.63"
+  },
+  {
+    "frame": 16448,
+    "player_code": "unknown",
+    "player_id": "2224",
+    "name_cn": "Team AGoal",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      1182.1106363932292,
+      456.1371815999349
+    ],
+    "action_screen_time_period": "09:08.26"
+  },
+  {
+    "frame": 16448,
+    "player_code": "unknown",
+    "player_id": "1753",
+    "name_cn": "Team A助攻",
+    "receiver_code": "unknown",
+    "receiver_id": "2224",
+    "player_screen_xy": [
+      494.0,
+      486.0
+    ],
+    "action_screen_time_period": "09:08.26"
+  },
+  {
+    "frame": 16911,
+    "player_code": "3",
+    "player_id": "2310",
+    "name_cn": "Team A长传",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      745.0309753417969,
+      418.03636169433594
+    ],
+    "action_screen_time_period": "09:23.70"
+  },
+  {
+    "frame": 17238,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "角球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      0.0,
+      0.0
+    ],
+    "action_screen_time_period": "09:34.60"
+  },
+  {
+    "frame": 17348,
+    "player_code": "unknown",
+    "player_id": "2418",
+    "name_cn": "Team B长传",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      261.5,
+      751.5
+    ],
+    "action_screen_time_period": "09:38.26"
+  },
+  {
+    "frame": 17789,
+    "player_code": "2",
+    "player_id": "2420",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      748.0199178059896,
+      498.45566813151044
+    ],
+    "action_screen_time_period": "09:52.96"
+  },
+  {
+    "frame": 17872,
+    "player_code": "2",
+    "player_id": "2420",
+    "name_cn": "Team B传球",
+    "receiver_code": "13",
+    "receiver_id": "2492",
+    "player_screen_xy": [
+      634.477040608724,
+      491.8059539794922
+    ],
+    "action_screen_time_period": "09:55.73"
+  },
+  {
+    "frame": 17873,
+    "player_code": "13",
+    "player_id": "2492",
+    "name_cn": "Team B停球（带球）",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      517.6728108723959,
+      510.18593343098956
+    ],
+    "action_screen_time_period": "09:55.76"
+  },
+  {
+    "frame": 17903,
+    "player_code": "14",
+    "player_id": "2421",
+    "name_cn": "Team A抢断",
+    "receiver_code": "13",
+    "receiver_id": "2492",
+    "player_screen_xy": [
+      543.1812845865885,
+      484.2970682779948
+    ],
+    "action_screen_time_period": "09:56.76"
+  }
+]
