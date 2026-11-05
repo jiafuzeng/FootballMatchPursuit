@@ -32,7 +32,8 @@ os.environ.setdefault("WANDB_DISABLED", "true")
 os.environ.setdefault("OSL_PRETRAINED_WEIGHTS", "0")
 
 # 只识别两类球动作的公开定位模型。
-MODEL_ID = "OpenSportsLab/OSL-loc-snbas-2023-e2e"
+#MODEL_ID = "OpenSportsLab/OSL-loc-snbas-2023-e2e"
+MODEL_ID = "OpenSportsLab/OSL-loc-snbas-2025-e2e"
 PROJECT_ROOT = Path(__file__).resolve().parent
 DEFAULT_VIDEO = PROJECT_ROOT / "test_data" / "test.mp4"
 
@@ -116,6 +117,16 @@ def _configure_model(output_dir: Path):
     return model
 
 
+def _save_predictions(output_path: Path, predictions: dict) -> Path:
+    """把预测写成带缩进的 JSON。库自带的保存函数会把整份结果挤成一行。"""
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(
+        json.dumps(predictions, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    return output_path
+
+
 def _event_rows(predictions: dict) -> list[dict]:
     """从预测 JSON 里取出全部事件，并按发生时间排序，供终端摘要使用。"""
     rows = []
@@ -160,7 +171,7 @@ def main() -> int:
         predictions = json.loads(nms_files[-1].read_text(encoding="utf-8"))
 
     output_path = args.output or (work_dir / f"{source_video.stem}.predictions.json")
-    saved = model.save_predictions(str(output_path), predictions)
+    saved = _save_predictions(output_path, predictions)
     events = _event_rows(predictions)
     counts: dict[str, int] = {}
     for event in events:

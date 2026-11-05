@@ -1,0 +1,1692 @@
+[
+  {
+    "frame": 210,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A长传",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      540.0
+    ],
+    "action_screen_time_period": "00:07.00"
+  },
+  {
+    "frame": 285,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      576.0,
+      486.0
+    ],
+    "action_screen_time_period": "00:09.50"
+  },
+  {
+    "frame": 300,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      576.0,
+      432.0
+    ],
+    "action_screen_time_period": "00:10.00"
+  },
+  {
+    "frame": 345,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A长传",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      672.0,
+      648.0
+    ],
+    "action_screen_time_period": "00:11.50"
+  },
+  {
+    "frame": 435,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      432.0
+    ],
+    "action_screen_time_period": "00:14.50"
+  },
+  {
+    "frame": 495,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      324.0
+    ],
+    "action_screen_time_period": "00:16.50"
+  },
+  {
+    "frame": 525,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      902.4,
+      648.0
+    ],
+    "action_screen_time_period": "00:17.50"
+  },
+  {
+    "frame": 600,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      902.4,
+      648.0
+    ],
+    "action_screen_time_period": "00:20.00"
+  },
+  {
+    "frame": 630,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      710.4,
+      648.0
+    ],
+    "action_screen_time_period": "00:21.00"
+  },
+  {
+    "frame": 735,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      432.0
+    ],
+    "action_screen_time_period": "00:24.50"
+  },
+  {
+    "frame": 1080,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      756.0
+    ],
+    "action_screen_time_period": "00:36.00"
+  },
+  {
+    "frame": 1155,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      902.4,
+      648.0
+    ],
+    "action_screen_time_period": "00:38.50"
+  },
+  {
+    "frame": 1185,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      710.4,
+      529.2
+    ],
+    "action_screen_time_period": "00:39.50"
+  },
+  {
+    "frame": 1215,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      902.4,
+      410.4
+    ],
+    "action_screen_time_period": "00:40.50"
+  },
+  {
+    "frame": 1260,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team B传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      672.0,
+      432.0
+    ],
+    "action_screen_time_period": "00:42.00"
+  },
+  {
+    "frame": 1275,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      672.0,
+      648.0
+    ],
+    "action_screen_time_period": "00:42.50"
+  },
+  {
+    "frame": 1290,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      672.0,
+      648.0
+    ],
+    "action_screen_time_period": "00:43.00"
+  },
+  {
+    "frame": 1305,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      576.0,
+      486.0
+    ],
+    "action_screen_time_period": "00:43.50"
+  },
+  {
+    "frame": 1350,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      756.0
+    ],
+    "action_screen_time_period": "00:45.00"
+  },
+  {
+    "frame": 1425,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      756.0
+    ],
+    "action_screen_time_period": "00:47.50"
+  },
+  {
+    "frame": 1470,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      324.0
+    ],
+    "action_screen_time_period": "00:49.00"
+  },
+  {
+    "frame": 1485,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      324.0
+    ],
+    "action_screen_time_period": "00:49.50"
+  },
+  {
+    "frame": 1515,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      902.4,
+      410.4
+    ],
+    "action_screen_time_period": "00:50.50"
+  },
+  {
+    "frame": 1560,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      672.0,
+      432.0
+    ],
+    "action_screen_time_period": "00:52.00"
+  },
+  {
+    "frame": 1590,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      324.0
+    ],
+    "action_screen_time_period": "00:53.00"
+  },
+  {
+    "frame": 1635,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      540.0
+    ],
+    "action_screen_time_period": "00:54.50"
+  },
+  {
+    "frame": 1680,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team B传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      756.0
+    ],
+    "action_screen_time_period": "00:56.00"
+  },
+  {
+    "frame": 1755,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      902.4,
+      648.0
+    ],
+    "action_screen_time_period": "00:58.50"
+  },
+  {
+    "frame": 1785,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      902.4,
+      410.4
+    ],
+    "action_screen_time_period": "00:59.50"
+  },
+  {
+    "frame": 1800,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      672.0,
+      432.0
+    ],
+    "action_screen_time_period": "01:00.00"
+  },
+  {
+    "frame": 1860,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      902.4,
+      648.0
+    ],
+    "action_screen_time_period": "01:02.00"
+  },
+  {
+    "frame": 1905,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      540.0
+    ],
+    "action_screen_time_period": "01:03.50"
+  },
+  {
+    "frame": 2055,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      540.0
+    ],
+    "action_screen_time_period": "01:08.50"
+  },
+  {
+    "frame": 2130,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      756.0
+    ],
+    "action_screen_time_period": "01:11.00"
+  },
+  {
+    "frame": 2175,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      902.4,
+      529.2
+    ],
+    "action_screen_time_period": "01:12.50"
+  },
+  {
+    "frame": 2280,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      432.0
+    ],
+    "action_screen_time_period": "01:16.00"
+  },
+  {
+    "frame": 3105,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      672.0,
+      648.0
+    ],
+    "action_screen_time_period": "01:43.50"
+  },
+  {
+    "frame": 3120,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      324.0
+    ],
+    "action_screen_time_period": "01:44.00"
+  },
+  {
+    "frame": 3195,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      540.0
+    ],
+    "action_screen_time_period": "01:46.50"
+  },
+  {
+    "frame": 3495,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A长传",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      540.0
+    ],
+    "action_screen_time_period": "01:56.50"
+  },
+  {
+    "frame": 3600,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      540.0
+    ],
+    "action_screen_time_period": "02:00.00"
+  },
+  {
+    "frame": 3615,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      324.0
+    ],
+    "action_screen_time_period": "02:00.50"
+  },
+  {
+    "frame": 3645,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      756.0
+    ],
+    "action_screen_time_period": "02:01.50"
+  },
+  {
+    "frame": 3765,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team B传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      540.0
+    ],
+    "action_screen_time_period": "02:05.50"
+  },
+  {
+    "frame": 3810,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      672.0,
+      432.0
+    ],
+    "action_screen_time_period": "02:07.00"
+  },
+  {
+    "frame": 3840,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      902.4,
+      648.0
+    ],
+    "action_screen_time_period": "02:08.00"
+  },
+  {
+    "frame": 3915,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      324.0
+    ],
+    "action_screen_time_period": "02:10.50"
+  },
+  {
+    "frame": 3930,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      576.0,
+      540.0
+    ],
+    "action_screen_time_period": "02:11.00"
+  },
+  {
+    "frame": 3945,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      540.0
+    ],
+    "action_screen_time_period": "02:11.50"
+  },
+  {
+    "frame": 3990,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      756.0
+    ],
+    "action_screen_time_period": "02:13.00"
+  },
+  {
+    "frame": 4065,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      540.0
+    ],
+    "action_screen_time_period": "02:15.50"
+  },
+  {
+    "frame": 4080,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team B传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      540.0
+    ],
+    "action_screen_time_period": "02:16.00"
+  },
+  {
+    "frame": 4125,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      672.0,
+      432.0
+    ],
+    "action_screen_time_period": "02:17.50"
+  },
+  {
+    "frame": 4155,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      710.4,
+      529.2
+    ],
+    "action_screen_time_period": "02:18.50"
+  },
+  {
+    "frame": 4185,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      540.0
+    ],
+    "action_screen_time_period": "02:19.50"
+  },
+  {
+    "frame": 4890,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A长传",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      960.0,
+      540.0
+    ],
+    "action_screen_time_period": "02:43.00"
+  },
+  {
+    "frame": 5025,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      672.0,
+      648.0
+    ],
+    "action_screen_time_period": "02:47.50"
+  },
+  {
+    "frame": 5040,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      672.0,
+      648.0
+    ],
+    "action_screen_time_period": "02:48.00"
+  },
+  {
+    "frame": 5055,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      902.4,
+      648.0
+    ],
+    "action_screen_time_period": "02:48.50"
+  },
+  {
+    "frame": 5145,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      648.0
+    ],
+    "action_screen_time_period": "02:51.50"
+  },
+  {
+    "frame": 5235,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      540.0
+    ],
+    "action_screen_time_period": "02:54.50"
+  },
+  {
+    "frame": 5385,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      540.0
+    ],
+    "action_screen_time_period": "02:59.50"
+  },
+  {
+    "frame": 5460,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      756.0
+    ],
+    "action_screen_time_period": "03:02.00"
+  },
+  {
+    "frame": 5505,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      648.0
+    ],
+    "action_screen_time_period": "03:03.50"
+  },
+  {
+    "frame": 5790,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team B传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      648.0
+    ],
+    "action_screen_time_period": "03:13.00"
+  },
+  {
+    "frame": 5835,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      576.0,
+      540.0
+    ],
+    "action_screen_time_period": "03:14.50"
+  },
+  {
+    "frame": 5880,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A长传",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      540.0
+    ],
+    "action_screen_time_period": "03:16.00"
+  },
+  {
+    "frame": 5955,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      902.4,
+      648.0
+    ],
+    "action_screen_time_period": "03:18.50"
+  },
+  {
+    "frame": 5985,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      902.4,
+      410.4
+    ],
+    "action_screen_time_period": "03:19.50"
+  },
+  {
+    "frame": 6045,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      648.0
+    ],
+    "action_screen_time_period": "03:21.50"
+  },
+  {
+    "frame": 6195,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      902.4,
+      518.4
+    ],
+    "action_screen_time_period": "03:26.50"
+  },
+  {
+    "frame": 6225,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      756.0
+    ],
+    "action_screen_time_period": "03:27.50"
+  },
+  {
+    "frame": 6345,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      672.0,
+      648.0
+    ],
+    "action_screen_time_period": "03:31.50"
+  },
+  {
+    "frame": 6360,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      672.0,
+      432.0
+    ],
+    "action_screen_time_period": "03:32.00"
+  },
+  {
+    "frame": 6405,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      324.0
+    ],
+    "action_screen_time_period": "03:33.50"
+  },
+  {
+    "frame": 6420,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      672.0,
+      648.0
+    ],
+    "action_screen_time_period": "03:34.00"
+  },
+  {
+    "frame": 6645,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A长传",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      960.0,
+      540.0
+    ],
+    "action_screen_time_period": "03:41.50"
+  },
+  {
+    "frame": 6945,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      960.0,
+      540.0
+    ],
+    "action_screen_time_period": "03:51.50"
+  },
+  {
+    "frame": 7185,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      710.4,
+      540.0
+    ],
+    "action_screen_time_period": "03:59.50"
+  },
+  {
+    "frame": 7200,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      672.0,
+      648.0
+    ],
+    "action_screen_time_period": "04:00.00"
+  },
+  {
+    "frame": 7215,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      672.0,
+      432.0
+    ],
+    "action_screen_time_period": "04:00.50"
+  },
+  {
+    "frame": 7245,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      710.4,
+      648.0
+    ],
+    "action_screen_time_period": "04:01.50"
+  },
+  {
+    "frame": 7350,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      672.0,
+      648.0
+    ],
+    "action_screen_time_period": "04:05.00"
+  },
+  {
+    "frame": 7380,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      902.4,
+      648.0
+    ],
+    "action_screen_time_period": "04:06.00"
+  },
+  {
+    "frame": 7455,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      756.0
+    ],
+    "action_screen_time_period": "04:08.50"
+  },
+  {
+    "frame": 7500,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      756.0
+    ],
+    "action_screen_time_period": "04:10.00"
+  },
+  {
+    "frame": 7575,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      756.0
+    ],
+    "action_screen_time_period": "04:12.50"
+  },
+  {
+    "frame": 7620,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      902.4,
+      529.2
+    ],
+    "action_screen_time_period": "04:14.00"
+  },
+  {
+    "frame": 7725,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      648.0
+    ],
+    "action_screen_time_period": "04:17.50"
+  },
+  {
+    "frame": 7785,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      902.4,
+      648.0
+    ],
+    "action_screen_time_period": "04:19.50"
+  },
+  {
+    "frame": 7830,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      902.4,
+      648.0
+    ],
+    "action_screen_time_period": "04:21.00"
+  },
+  {
+    "frame": 7890,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      902.4,
+      648.0
+    ],
+    "action_screen_time_period": "04:23.00"
+  },
+  {
+    "frame": 7935,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team B传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      672.0,
+      648.0
+    ],
+    "action_screen_time_period": "04:24.50"
+  },
+  {
+    "frame": 8025,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      921.6,
+      648.0
+    ],
+    "action_screen_time_period": "04:27.50"
+  },
+  {
+    "frame": 8055,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      902.4,
+      410.4
+    ],
+    "action_screen_time_period": "04:28.50"
+  },
+  {
+    "frame": 8100,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      902.4,
+      648.0
+    ],
+    "action_screen_time_period": "04:30.00"
+  },
+  {
+    "frame": 8160,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      540.0
+    ],
+    "action_screen_time_period": "04:32.00"
+  },
+  {
+    "frame": 8265,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      432.0
+    ],
+    "action_screen_time_period": "04:35.50"
+  },
+  {
+    "frame": 8385,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      960.0,
+      540.0
+    ],
+    "action_screen_time_period": "04:39.50"
+  },
+  {
+    "frame": 9420,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      902.4,
+      864.0
+    ],
+    "action_screen_time_period": "05:14.00"
+  },
+  {
+    "frame": 9450,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      324.0
+    ],
+    "action_screen_time_period": "05:15.00"
+  },
+  {
+    "frame": 9495,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team B传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      756.0
+    ],
+    "action_screen_time_period": "05:16.50"
+  },
+  {
+    "frame": 9600,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      432.0
+    ],
+    "action_screen_time_period": "05:20.00"
+  },
+  {
+    "frame": 9705,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      540.0
+    ],
+    "action_screen_time_period": "05:23.50"
+  },
+  {
+    "frame": 12330,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A界外手抛球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      960.0,
+      540.0
+    ],
+    "action_screen_time_period": "06:51.00"
+  },
+  {
+    "frame": 12450,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A射门",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      960.0,
+      432.0
+    ],
+    "action_screen_time_period": "06:55.00"
+  },
+  {
+    "frame": 12495,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      672.0,
+      432.0
+    ],
+    "action_screen_time_period": "06:56.50"
+  },
+  {
+    "frame": 12525,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      648.0
+    ],
+    "action_screen_time_period": "06:57.50"
+  },
+  {
+    "frame": 12600,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A射门",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      960.0,
+      432.0
+    ],
+    "action_screen_time_period": "07:00.00"
+  },
+  {
+    "frame": 13200,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A界外手抛球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      576.0,
+      540.0
+    ],
+    "action_screen_time_period": "07:20.00"
+  },
+  {
+    "frame": 13215,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A界外手抛球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      576.0,
+      540.0
+    ],
+    "action_screen_time_period": "07:20.50"
+  },
+  {
+    "frame": 13275,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      648.0
+    ],
+    "action_screen_time_period": "07:22.50"
+  },
+  {
+    "frame": 13725,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team B传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      648.0
+    ],
+    "action_screen_time_period": "07:37.50"
+  },
+  {
+    "frame": 13770,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      672.0,
+      432.0
+    ],
+    "action_screen_time_period": "07:39.00"
+  },
+  {
+    "frame": 13800,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      710.4,
+      496.8
+    ],
+    "action_screen_time_period": "07:40.00"
+  },
+  {
+    "frame": 13830,
+    "player_code": "7",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      921.6,
+      421.2
+    ],
+    "action_screen_time_period": "07:41.00"
+  },
+  {
+    "frame": 13890,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      324.0
+    ],
+    "action_screen_time_period": "07:43.00"
+  },
+  {
+    "frame": 13920,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      921.6,
+      648.0
+    ],
+    "action_screen_time_period": "07:44.00"
+  },
+  {
+    "frame": 14010,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      921.6,
+      648.0
+    ],
+    "action_screen_time_period": "07:47.00"
+  },
+  {
+    "frame": 14085,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      540.0
+    ],
+    "action_screen_time_period": "07:49.50"
+  },
+  {
+    "frame": 14175,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      902.4,
+      648.0
+    ],
+    "action_screen_time_period": "07:52.50"
+  },
+  {
+    "frame": 14190,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      672.0,
+      432.0
+    ],
+    "action_screen_time_period": "07:53.00"
+  },
+  {
+    "frame": 14235,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A界外手抛球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      324.0
+    ],
+    "action_screen_time_period": "07:54.50"
+  },
+  {
+    "frame": 14265,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      710.4,
+      518.4
+    ],
+    "action_screen_time_period": "07:55.50"
+  },
+  {
+    "frame": 14310,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      864.0,
+      648.0
+    ],
+    "action_screen_time_period": "07:57.00"
+  },
+  {
+    "frame": 14460,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      960.0,
+      540.0
+    ],
+    "action_screen_time_period": "08:02.00"
+  },
+  {
+    "frame": 15945,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A长传",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      960.0,
+      540.0
+    ],
+    "action_screen_time_period": "08:51.50"
+  },
+  {
+    "frame": 16170,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A传球",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      648.0
+    ],
+    "action_screen_time_period": "08:59.00"
+  },
+  {
+    "frame": 16230,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A长传",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      768.0,
+      648.0
+    ],
+    "action_screen_time_period": "09:01.00"
+  },
+  {
+    "frame": 16785,
+    "player_code": "unknown",
+    "player_id": "unknown",
+    "name_cn": "Team A长传",
+    "receiver_code": "unknown",
+    "receiver_id": "unknown",
+    "player_screen_xy": [
+      960.0,
+      324.0
+    ],
+    "action_screen_time_period": "09:19.50"
+  }
+]
