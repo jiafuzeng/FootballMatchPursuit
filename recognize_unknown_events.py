@@ -13,17 +13,10 @@ import json
 import sys
 from pathlib import Path
 
-from export_events import (
-    DEFAULT_PREDICTIONS,
-    _frame,
-    _name_cn,
-    _prediction_video,
-    _screen_time,
-    _video_fps,
-)
-
+PROJECT_ROOT = Path(__file__).resolve().parent
+DEFAULT_PREDICTIONS = PROJECT_ROOT / "outputs" / "opensportslib" / "test.predictions.json"
+DEFAULT_OUTPUT = PROJECT_ROOT / "outputs" / "opensportslib" / "test.events.json"
 MODEL_ID = "Qwen/Qwen3-VL-2B-Instruct"
-DEFAULT_OUTPUT = Path(__file__).resolve().parent / "outputs" / "opensportslib" / "test.events.json"
 WIDTH = 1920
 HEIGHT = 1080
 CLIP_PAD = 2.0
@@ -50,6 +43,48 @@ LABEL_HINT = {
     "FREE KICK": "定位球，只有明确发角球时才选角球",
     "BALL PLAYER BLOCK": "球员挡住球或抢断",
 }
+
+
+def _video_fps(path: Path) -> float:
+    import cv2
+
+    capture = cv2.VideoCapture(str(path))
+    fps = float(capture.get(cv2.CAP_PROP_FPS) or 0.0)
+    capture.release()
+    if fps <= 1.0:
+        raise RuntimeError(f"无法读取视频帧率: {path}")
+    return fps
+
+
+def _prediction_video(payload: dict) -> Path | None:
+    for sample in payload.get("data", []):
+        for item in sample.get("inputs", []):
+            if item.get("type") == "video" and item.get("path"):
+                return Path(item["path"])
+    return None
+
+
+def _screen_time(position_ms: int) -> str:
+    centiseconds = int(round(position_ms / 10.0))
+    minutes, remainder = divmod(centiseconds, 6000)
+    seconds, centi = divmod(remainder, 100)
+    return f"{minutes:02d}:{seconds:02d}.{centi:02d}"
+
+
+def _frame(position_ms: int, fps: float) -> int:
+    return int(round(position_ms / 1000.0 * fps))
+
+
+def _name_cn(action: str, team: str | None) -> str:
+    if action == "角球":
+        return "角球"
+    if team is None:
+        return action
+    if action == "进球":
+        return f"Team {team}Goal"
+    if action == "扑救":
+        return f"Team {team}_GKSave"
+    return f"Team {team}{action}"
 
 
 def _parse_args() -> argparse.Namespace:

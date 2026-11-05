@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "date": "2026-11-02",
+  "date": "2026-11-05",
   "task": "localization",
   "metadata": {
     "type": "predictions",
@@ -13,1049 +13,1081 @@
         {
           "type": "video",
           "path": "/home/gc/FootballMatchPursuit/test_data/test.mp4",
-          "fps": 2.0
+          "fps": 2.5
         }
       ],
       "events": [
         {
           "head": "action",
           "label": "HIGH PASS",
-          "gameTime": "00:07",
-          "frame": 14,
-          "position_ms": 7000,
-          "confidence": 0.9873046875
-        },
-        {
-          "head": "action",
-          "label": "HEADER",
-          "gameTime": "00:09",
-          "frame": 19,
-          "position_ms": 9500,
-          "confidence": 0.796875
-        },
-        {
-          "head": "action",
-          "label": "HEADER",
           "gameTime": "00:10",
-          "frame": 20,
+          "frame": 25,
           "position_ms": 10000,
-          "confidence": 0.9306640625
+          "confidence": 0.99169921875
         },
         {
           "head": "action",
-          "label": "HIGH PASS",
-          "gameTime": "00:11",
-          "frame": 23,
-          "position_ms": 11500,
-          "confidence": 0.6572265625
+          "label": "HEADER",
+          "gameTime": "00:12",
+          "frame": 31,
+          "position_ms": 12400,
+          "confidence": 0.67333984375
+        },
+        {
+          "head": "action",
+          "label": "HEADER",
+          "gameTime": "00:13",
+          "frame": 33,
+          "position_ms": 13200,
+          "confidence": 0.53076171875
         },
         {
           "head": "action",
           "label": "HEADER",
           "gameTime": "00:14",
-          "frame": 29,
-          "position_ms": 14500,
-          "confidence": 0.85400390625
+          "frame": 36,
+          "position_ms": 14400,
+          "confidence": 0.63232421875
         },
         {
           "head": "action",
           "label": "PASS",
-          "gameTime": "00:16",
-          "frame": 33,
-          "position_ms": 16500,
-          "confidence": 0.9189453125
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
           "gameTime": "00:17",
-          "frame": 35,
-          "position_ms": 17500,
-          "confidence": 0.93603515625
+          "frame": 44,
+          "position_ms": 17600,
+          "confidence": 0.88134765625
         },
         {
           "head": "action",
           "label": "PASS",
-          "gameTime": "00:20",
-          "frame": 40,
-          "position_ms": 20000,
-          "confidence": 0.99169921875
+          "gameTime": "00:19",
+          "frame": 48,
+          "position_ms": 19200,
+          "confidence": 0.978515625
         },
         {
           "head": "action",
           "label": "DRIVE",
-          "gameTime": "00:21",
-          "frame": 42,
-          "position_ms": 21000,
-          "confidence": 0.91552734375
+          "gameTime": "00:20",
+          "frame": 51,
+          "position_ms": 20400,
+          "confidence": 0.5408935546875
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "00:20",
+          "frame": 52,
+          "position_ms": 20800,
+          "confidence": 0.5810546875
         },
         {
           "head": "action",
           "label": "PASS",
+          "gameTime": "00:22",
+          "frame": 57,
+          "position_ms": 22800,
+          "confidence": 0.906494140625
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
           "gameTime": "00:24",
-          "frame": 49,
-          "position_ms": 24500,
-          "confidence": 0.4582972526550293
+          "frame": 60,
+          "position_ms": 24000,
+          "confidence": 0.49462890625
         },
         {
           "head": "action",
           "label": "PASS",
-          "gameTime": "00:36",
-          "frame": 72,
-          "position_ms": 36000,
-          "confidence": 0.49088478088378906
+          "gameTime": "00:27",
+          "frame": 69,
+          "position_ms": 27600,
+          "confidence": 0.62158203125
         },
         {
           "head": "action",
           "label": "PASS",
-          "gameTime": "00:38",
-          "frame": 77,
-          "position_ms": 38500,
-          "confidence": 0.51544189453125
+          "gameTime": "00:32",
+          "frame": 81,
+          "position_ms": 32400,
+          "confidence": 0.784912109375
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "00:33",
+          "frame": 84,
+          "position_ms": 33600,
+          "confidence": 0.87353515625
         },
         {
           "head": "action",
           "label": "PASS",
           "gameTime": "00:39",
-          "frame": 79,
-          "position_ms": 39500,
-          "confidence": 0.4985923767089844
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "00:40",
-          "frame": 81,
-          "position_ms": 40500,
-          "confidence": 0.49152374267578125
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "00:42",
-          "frame": 84,
-          "position_ms": 42000,
-          "confidence": 0.5127105712890625
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "00:42",
-          "frame": 85,
-          "position_ms": 42500,
-          "confidence": 0.5615234375
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "00:43",
-          "frame": 86,
-          "position_ms": 43000,
-          "confidence": 0.5533447265625
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "00:43",
-          "frame": 87,
-          "position_ms": 43500,
-          "confidence": 0.536376953125
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "00:45",
-          "frame": 90,
-          "position_ms": 45000,
-          "confidence": 0.9814453125
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "00:47",
-          "frame": 95,
-          "position_ms": 47500,
-          "confidence": 0.904541015625
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "00:49",
           "frame": 98,
-          "position_ms": 49000,
-          "confidence": 0.4998779296875
+          "position_ms": 39200,
+          "confidence": 0.6129150390625
         },
         {
           "head": "action",
           "label": "PASS",
+          "gameTime": "00:40",
+          "frame": 101,
+          "position_ms": 40400,
+          "confidence": 0.667236328125
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "00:40",
+          "frame": 102,
+          "position_ms": 40800,
+          "confidence": 0.906494140625
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "00:41",
+          "frame": 104,
+          "position_ms": 41600,
+          "confidence": 0.849365234375
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "00:42",
+          "frame": 106,
+          "position_ms": 42400,
+          "confidence": 0.935302734375
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "00:42",
+          "frame": 107,
+          "position_ms": 42800,
+          "confidence": 0.796875
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "00:43",
+          "frame": 109,
+          "position_ms": 43600,
+          "confidence": 0.9912109375
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "00:48",
+          "frame": 120,
+          "position_ms": 48000,
+          "confidence": 0.958740234375
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "00:48",
+          "frame": 121,
+          "position_ms": 48400,
+          "confidence": 0.708740234375
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
           "gameTime": "00:49",
-          "frame": 99,
-          "position_ms": 49500,
-          "confidence": 0.9609375
+          "frame": 124,
+          "position_ms": 49600,
+          "confidence": 0.630126953125
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "00:50",
+          "frame": 125,
+          "position_ms": 50000,
+          "confidence": 0.896484375
         },
         {
           "head": "action",
           "label": "DRIVE",
           "gameTime": "00:50",
-          "frame": 101,
-          "position_ms": 50500,
-          "confidence": 0.5556640625
+          "frame": 127,
+          "position_ms": 50800,
+          "confidence": 0.589599609375
         },
         {
           "head": "action",
           "label": "PASS",
           "gameTime": "00:52",
-          "frame": 104,
-          "position_ms": 52000,
-          "confidence": 0.557373046875
+          "frame": 131,
+          "position_ms": 52400,
+          "confidence": 0.87255859375
         },
         {
           "head": "action",
           "label": "DRIVE",
           "gameTime": "00:53",
-          "frame": 106,
-          "position_ms": 53000,
-          "confidence": 0.6630859375
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "00:54",
-          "frame": 109,
-          "position_ms": 54500,
-          "confidence": 0.5233154296875
+          "frame": 133,
+          "position_ms": 53200,
+          "confidence": 0.890380859375
         },
         {
           "head": "action",
           "label": "PASS",
           "gameTime": "00:56",
-          "frame": 112,
-          "position_ms": 56000,
-          "confidence": 0.491455078125
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "00:58",
-          "frame": 117,
-          "position_ms": 58500,
-          "confidence": 0.830322265625
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "00:59",
-          "frame": 119,
-          "position_ms": 59500,
-          "confidence": 0.755859375
+          "frame": 142,
+          "position_ms": 56800,
+          "confidence": 0.867431640625
         },
         {
           "head": "action",
           "label": "DRIVE",
           "gameTime": "01:00",
-          "frame": 120,
-          "position_ms": 60000,
-          "confidence": 0.6005859375
+          "frame": 152,
+          "position_ms": 60800,
+          "confidence": 0.52099609375
         },
         {
           "head": "action",
           "label": "PASS",
           "gameTime": "01:02",
-          "frame": 124,
+          "frame": 155,
           "position_ms": 62000,
-          "confidence": 0.70556640625
+          "confidence": 0.80810546875
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "01:02",
+          "frame": 156,
+          "position_ms": 62400,
+          "confidence": 0.581787109375
         },
         {
           "head": "action",
           "label": "DRIVE",
-          "gameTime": "01:03",
-          "frame": 127,
-          "position_ms": 63500,
-          "confidence": 0.825927734375
+          "gameTime": "01:04",
+          "frame": 160,
+          "position_ms": 64000,
+          "confidence": 0.9072265625
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "01:07",
+          "frame": 168,
+          "position_ms": 67200,
+          "confidence": 0.4927978515625
         },
         {
           "head": "action",
           "label": "DRIVE",
           "gameTime": "01:08",
-          "frame": 137,
-          "position_ms": 68500,
-          "confidence": 0.6875
+          "frame": 170,
+          "position_ms": 68000,
+          "confidence": 0.578857421875
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "01:08",
+          "frame": 171,
+          "position_ms": 68400,
+          "confidence": 0.49462890625
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "01:08",
+          "frame": 172,
+          "position_ms": 68800,
+          "confidence": 0.540771484375
         },
         {
           "head": "action",
           "label": "PASS",
           "gameTime": "01:11",
-          "frame": 142,
-          "position_ms": 71000,
-          "confidence": 0.787109375
+          "frame": 179,
+          "position_ms": 71600,
+          "confidence": 0.81298828125
         },
         {
           "head": "action",
           "label": "DRIVE",
-          "gameTime": "01:12",
-          "frame": 145,
-          "position_ms": 72500,
-          "confidence": 0.4837646484375
+          "gameTime": "01:13",
+          "frame": 183,
+          "position_ms": 73200,
+          "confidence": 0.82275390625
         },
         {
           "head": "action",
           "label": "PASS",
-          "gameTime": "01:16",
-          "frame": 152,
-          "position_ms": 76000,
-          "confidence": 0.56640625
+          "gameTime": "01:14",
+          "frame": 185,
+          "position_ms": 74000,
+          "confidence": 0.491455078125
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "01:15",
+          "frame": 188,
+          "position_ms": 75200,
+          "confidence": 0.623291015625
+        },
+        {
+          "head": "action",
+          "label": "THROW IN",
+          "gameTime": "01:42",
+          "frame": 255,
+          "position_ms": 102000,
+          "confidence": 0.480224609375
         },
         {
           "head": "action",
           "label": "PASS",
           "gameTime": "01:43",
-          "frame": 207,
-          "position_ms": 103500,
-          "confidence": 0.940673828125
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "01:44",
-          "frame": 208,
-          "position_ms": 104000,
-          "confidence": 0.6796875
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "01:46",
-          "frame": 213,
-          "position_ms": 106500,
-          "confidence": 0.639404296875
-        },
-        {
-          "head": "action",
-          "label": "HIGH PASS",
-          "gameTime": "01:56",
-          "frame": 233,
-          "position_ms": 116500,
-          "confidence": 0.428466796875
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "02:00",
-          "frame": 240,
-          "position_ms": 120000,
-          "confidence": 0.822265625
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "02:00",
-          "frame": 241,
-          "position_ms": 120500,
-          "confidence": 0.74853515625
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "02:01",
-          "frame": 243,
-          "position_ms": 121500,
-          "confidence": 0.59521484375
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "02:05",
-          "frame": 251,
-          "position_ms": 125500,
-          "confidence": 0.49267578125
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "02:07",
-          "frame": 254,
-          "position_ms": 127000,
-          "confidence": 0.672607421875
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "02:08",
-          "frame": 256,
-          "position_ms": 128000,
-          "confidence": 0.55078125
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "02:10",
-          "frame": 261,
-          "position_ms": 130500,
-          "confidence": 0.470703125
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "02:11",
-          "frame": 262,
-          "position_ms": 131000,
-          "confidence": 0.4732666015625
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "02:11",
-          "frame": 263,
-          "position_ms": 131500,
-          "confidence": 0.550048828125
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "02:13",
-          "frame": 266,
-          "position_ms": 133000,
-          "confidence": 0.59912109375
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "02:15",
-          "frame": 271,
-          "position_ms": 135500,
-          "confidence": 0.5137939453125
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "02:16",
-          "frame": 272,
-          "position_ms": 136000,
-          "confidence": 0.870849609375
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "02:17",
-          "frame": 275,
-          "position_ms": 137500,
-          "confidence": 0.586181640625
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "02:18",
-          "frame": 277,
-          "position_ms": 138500,
-          "confidence": 0.802734375
-        },
-        {
-          "head": "action",
-          "label": "OUT",
-          "gameTime": "02:19",
-          "frame": 279,
-          "position_ms": 139500,
-          "confidence": 0.6748046875
-        },
-        {
-          "head": "action",
-          "label": "HIGH PASS",
-          "gameTime": "02:43",
-          "frame": 326,
-          "position_ms": 163000,
-          "confidence": 0.75927734375
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "02:47",
-          "frame": 335,
-          "position_ms": 167500,
-          "confidence": 0.865234375
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "02:48",
-          "frame": 336,
-          "position_ms": 168000,
-          "confidence": 0.7626953125
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "02:48",
-          "frame": 337,
-          "position_ms": 168500,
-          "confidence": 0.620849609375
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "02:51",
-          "frame": 343,
-          "position_ms": 171500,
-          "confidence": 0.6995849609375
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "02:54",
-          "frame": 349,
-          "position_ms": 174500,
-          "confidence": 0.965087890625
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "02:59",
-          "frame": 359,
-          "position_ms": 179500,
-          "confidence": 0.76025390625
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "03:02",
-          "frame": 364,
-          "position_ms": 182000,
-          "confidence": 0.532958984375
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "03:03",
-          "frame": 367,
-          "position_ms": 183500,
-          "confidence": 0.4307861328125
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "03:13",
-          "frame": 386,
-          "position_ms": 193000,
-          "confidence": 0.914794921875
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "03:14",
-          "frame": 389,
-          "position_ms": 194500,
+          "frame": 259,
+          "position_ms": 103600,
           "confidence": 0.866943359375
         },
         {
           "head": "action",
-          "label": "HIGH PASS",
-          "gameTime": "03:16",
-          "frame": 392,
-          "position_ms": 196000,
-          "confidence": 0.46197509765625
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "03:18",
-          "frame": 397,
-          "position_ms": 198500,
-          "confidence": 0.653564453125
-        },
-        {
-          "head": "action",
           "label": "PASS",
-          "gameTime": "03:19",
-          "frame": 399,
-          "position_ms": 199500,
-          "confidence": 0.522705078125
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "03:21",
-          "frame": 403,
-          "position_ms": 201500,
-          "confidence": 0.5069580078125
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "03:26",
-          "frame": 413,
-          "position_ms": 206500,
-          "confidence": 0.66064453125
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "03:27",
-          "frame": 415,
-          "position_ms": 207500,
-          "confidence": 0.88330078125
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "03:31",
-          "frame": 423,
-          "position_ms": 211500,
-          "confidence": 0.823974609375
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "03:32",
-          "frame": 424,
-          "position_ms": 212000,
-          "confidence": 0.534423828125
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "03:33",
-          "frame": 427,
-          "position_ms": 213500,
-          "confidence": 0.7666015625
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "03:34",
-          "frame": 428,
-          "position_ms": 214000,
-          "confidence": 0.55615234375
-        },
-        {
-          "head": "action",
-          "label": "HIGH PASS",
-          "gameTime": "03:41",
-          "frame": 443,
-          "position_ms": 221500,
-          "confidence": 0.5163116455078125
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "03:51",
-          "frame": 463,
-          "position_ms": 231500,
-          "confidence": 0.533447265625
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "03:59",
-          "frame": 479,
-          "position_ms": 239500,
-          "confidence": 0.9833984375
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "04:00",
-          "frame": 480,
-          "position_ms": 240000,
+          "gameTime": "01:44",
+          "frame": 260,
+          "position_ms": 104000,
           "confidence": 0.635009765625
         },
         {
           "head": "action",
           "label": "DRIVE",
-          "gameTime": "04:00",
-          "frame": 481,
-          "position_ms": 240500,
-          "confidence": 0.966796875
+          "gameTime": "01:44",
+          "frame": 261,
+          "position_ms": 104400,
+          "confidence": 0.789306640625
         },
         {
           "head": "action",
           "label": "PASS",
-          "gameTime": "04:01",
+          "gameTime": "01:45",
+          "frame": 264,
+          "position_ms": 105600,
+          "confidence": 0.79150390625
+        },
+        {
+          "head": "action",
+          "label": "SHOT",
+          "gameTime": "01:46",
+          "frame": 266,
+          "position_ms": 106400,
+          "confidence": 0.4600830078125
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "02:07",
+          "frame": 318,
+          "position_ms": 127200,
+          "confidence": 0.9677734375
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "02:08",
+          "frame": 321,
+          "position_ms": 128400,
+          "confidence": 0.747314453125
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "02:12",
+          "frame": 330,
+          "position_ms": 132000,
+          "confidence": 0.818115234375
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "02:12",
+          "frame": 332,
+          "position_ms": 132800,
+          "confidence": 0.835693359375
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "02:13",
+          "frame": 334,
+          "position_ms": 133600,
+          "confidence": 0.732421875
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "02:14",
+          "frame": 335,
+          "position_ms": 134000,
+          "confidence": 0.954345703125
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "02:14",
+          "frame": 337,
+          "position_ms": 134800,
+          "confidence": 0.93359375
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "02:16",
+          "frame": 341,
+          "position_ms": 136400,
+          "confidence": 0.6572265625
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "02:16",
+          "frame": 342,
+          "position_ms": 136800,
+          "confidence": 0.625732421875
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "02:18",
+          "frame": 345,
+          "position_ms": 138000,
+          "confidence": 0.620849609375
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "02:18",
+          "frame": 346,
+          "position_ms": 138400,
+          "confidence": 0.64208984375
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "02:18",
+          "frame": 347,
+          "position_ms": 138800,
+          "confidence": 0.864501953125
+        },
+        {
+          "head": "action",
+          "label": "OUT",
+          "gameTime": "02:20",
+          "frame": 350,
+          "position_ms": 140000,
+          "confidence": 0.625732421875
+        },
+        {
+          "head": "action",
+          "label": "HEADER",
+          "gameTime": "02:45",
+          "frame": 414,
+          "position_ms": 165600,
+          "confidence": 0.94189453125
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "02:47",
+          "frame": 418,
+          "position_ms": 167200,
+          "confidence": 0.929931640625
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "02:48",
+          "frame": 420,
+          "position_ms": 168000,
+          "confidence": 0.93310546875
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "02:48",
+          "frame": 421,
+          "position_ms": 168400,
+          "confidence": 0.5228271484375
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "02:48",
+          "frame": 422,
+          "position_ms": 168800,
+          "confidence": 0.630126953125
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "02:52",
+          "frame": 430,
+          "position_ms": 172000,
+          "confidence": 0.934814453125
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "02:54",
+          "frame": 437,
+          "position_ms": 174800,
+          "confidence": 0.98388671875
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "03:02",
+          "frame": 456,
+          "position_ms": 182400,
+          "confidence": 0.923828125
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "03:13",
           "frame": 483,
-          "position_ms": 241500,
-          "confidence": 0.3721923828125
+          "position_ms": 193200,
+          "confidence": 0.5283203125
+        },
+        {
+          "head": "action",
+          "label": "HIGH PASS",
+          "gameTime": "03:16",
+          "frame": 491,
+          "position_ms": 196400,
+          "confidence": 0.879150390625
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "03:19",
+          "frame": 498,
+          "position_ms": 199200,
+          "confidence": 0.613525390625
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "03:26",
+          "frame": 517,
+          "position_ms": 206800,
+          "confidence": 0.676025390625
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "03:28",
+          "frame": 520,
+          "position_ms": 208000,
+          "confidence": 0.874267578125
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "03:29",
+          "frame": 523,
+          "position_ms": 209200,
+          "confidence": 0.9033203125
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "03:30",
+          "frame": 525,
+          "position_ms": 210000,
+          "confidence": 0.741943359375
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "03:30",
+          "frame": 526,
+          "position_ms": 210400,
+          "confidence": 0.728759765625
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "03:32",
+          "frame": 530,
+          "position_ms": 212000,
+          "confidence": 0.498779296875
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "03:34",
+          "frame": 536,
+          "position_ms": 214400,
+          "confidence": 0.782470703125
+        },
+        {
+          "head": "action",
+          "label": "HIGH PASS",
+          "gameTime": "03:42",
+          "frame": 555,
+          "position_ms": 222000,
+          "confidence": 0.695556640625
+        },
+        {
+          "head": "action",
+          "label": "HIGH PASS",
+          "gameTime": "03:42",
+          "frame": 556,
+          "position_ms": 222400,
+          "confidence": 0.75244140625
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "04:00",
+          "frame": 600,
+          "position_ms": 240000,
+          "confidence": 0.54241943359375
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "04:00",
+          "frame": 601,
+          "position_ms": 240400,
+          "confidence": 0.6131591796875
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "04:00",
+          "frame": 602,
+          "position_ms": 240800,
+          "confidence": 0.977783203125
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "04:03",
+          "frame": 608,
+          "position_ms": 243200,
+          "confidence": 0.50390625
         },
         {
           "head": "action",
           "label": "PASS",
           "gameTime": "04:05",
-          "frame": 490,
-          "position_ms": 245000,
-          "confidence": 0.68896484375
+          "frame": 614,
+          "position_ms": 245600,
+          "confidence": 0.49267578125
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "04:06",
+          "frame": 615,
+          "position_ms": 246000,
+          "confidence": 0.868896484375
         },
         {
           "head": "action",
           "label": "DRIVE",
           "gameTime": "04:06",
-          "frame": 492,
-          "position_ms": 246000,
-          "confidence": 0.69775390625
+          "frame": 617,
+          "position_ms": 246800,
+          "confidence": 0.525146484375
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "04:07",
+          "frame": 618,
+          "position_ms": 247200,
+          "confidence": 0.778076171875
         },
         {
           "head": "action",
           "label": "PASS",
           "gameTime": "04:08",
-          "frame": 497,
-          "position_ms": 248500,
-          "confidence": 0.919677734375
+          "frame": 622,
+          "position_ms": 248800,
+          "confidence": 0.98974609375
         },
         {
           "head": "action",
           "label": "DRIVE",
           "gameTime": "04:10",
-          "frame": 500,
-          "position_ms": 250000,
-          "confidence": 0.892333984375
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "04:12",
-          "frame": 505,
-          "position_ms": 252500,
-          "confidence": 0.843017578125
+          "frame": 626,
+          "position_ms": 250400,
+          "confidence": 0.98193359375
         },
         {
           "head": "action",
           "label": "DRIVE",
           "gameTime": "04:14",
-          "frame": 508,
-          "position_ms": 254000,
-          "confidence": 0.802490234375
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "04:17",
-          "frame": 515,
-          "position_ms": 257500,
-          "confidence": 0.869873046875
+          "frame": 636,
+          "position_ms": 254400,
+          "confidence": 0.506103515625
         },
         {
           "head": "action",
           "label": "DRIVE",
-          "gameTime": "04:19",
-          "frame": 519,
-          "position_ms": 259500,
-          "confidence": 0.932373046875
+          "gameTime": "04:16",
+          "frame": 642,
+          "position_ms": 256800,
+          "confidence": 0.80517578125
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "04:18",
+          "frame": 645,
+          "position_ms": 258000,
+          "confidence": 0.89306640625
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "04:20",
+          "frame": 650,
+          "position_ms": 260000,
+          "confidence": 0.663818359375
         },
         {
           "head": "action",
           "label": "PASS",
           "gameTime": "04:21",
-          "frame": 522,
-          "position_ms": 261000,
-          "confidence": 0.967041015625
+          "frame": 653,
+          "position_ms": 261200,
+          "confidence": 0.509033203125
         },
         {
           "head": "action",
           "label": "PASS",
+          "gameTime": "04:21",
+          "frame": 654,
+          "position_ms": 261600,
+          "confidence": 0.729736328125
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
           "gameTime": "04:23",
-          "frame": 526,
-          "position_ms": 263000,
-          "confidence": 0.618896484375
+          "frame": 658,
+          "position_ms": 263200,
+          "confidence": 0.9345703125
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "04:23",
+          "frame": 659,
+          "position_ms": 263600,
+          "confidence": 0.526611328125
         },
         {
           "head": "action",
           "label": "DRIVE",
           "gameTime": "04:24",
-          "frame": 529,
-          "position_ms": 264500,
-          "confidence": 0.688232421875
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "04:27",
-          "frame": 535,
-          "position_ms": 267500,
-          "confidence": 0.5517578125
+          "frame": 662,
+          "position_ms": 264800,
+          "confidence": 0.584716796875
         },
         {
           "head": "action",
           "label": "DRIVE",
           "gameTime": "04:28",
-          "frame": 537,
-          "position_ms": 268500,
-          "confidence": 0.91162109375
+          "frame": 672,
+          "position_ms": 268800,
+          "confidence": 0.70556640625
         },
         {
           "head": "action",
           "label": "PASS",
           "gameTime": "04:30",
-          "frame": 540,
-          "position_ms": 270000,
-          "confidence": 0.975830078125
+          "frame": 677,
+          "position_ms": 270800,
+          "confidence": 0.942138671875
         },
         {
           "head": "action",
           "label": "DRIVE",
           "gameTime": "04:32",
-          "frame": 544,
-          "position_ms": 272000,
-          "confidence": 0.621337890625
+          "frame": 681,
+          "position_ms": 272400,
+          "confidence": 0.903564453125
         },
         {
           "head": "action",
           "label": "PASS",
-          "gameTime": "04:35",
-          "frame": 551,
-          "position_ms": 275500,
-          "confidence": 0.813232421875
+          "gameTime": "04:33",
+          "frame": 683,
+          "position_ms": 273200,
+          "confidence": 0.8359375
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "04:34",
+          "frame": 685,
+          "position_ms": 274000,
+          "confidence": 0.547119140625
         },
         {
           "head": "action",
           "label": "PASS",
-          "gameTime": "04:39",
-          "frame": 559,
-          "position_ms": 279500,
-          "confidence": 0.85498046875
+          "gameTime": "04:36",
+          "frame": 690,
+          "position_ms": 276000,
+          "confidence": 0.949462890625
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "04:36",
+          "frame": 692,
+          "position_ms": 276800,
+          "confidence": 0.71923828125
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "04:44",
+          "frame": 712,
+          "position_ms": 284800,
+          "confidence": 0.5115966796875
+        },
+        {
+          "head": "action",
+          "label": "SHOT",
+          "gameTime": "04:48",
+          "frame": 722,
+          "position_ms": 288800,
+          "confidence": 0.6591796875
         },
         {
           "head": "action",
           "label": "PASS",
           "gameTime": "05:14",
-          "frame": 628,
-          "position_ms": 314000,
-          "confidence": 0.752685546875
+          "frame": 786,
+          "position_ms": 314400,
+          "confidence": 0.8203125
         },
         {
           "head": "action",
           "label": "DRIVE",
           "gameTime": "05:15",
-          "frame": 630,
-          "position_ms": 315000,
-          "confidence": 0.88232421875
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "05:16",
-          "frame": 633,
-          "position_ms": 316500,
-          "confidence": 0.5498046875
+          "frame": 789,
+          "position_ms": 315600,
+          "confidence": 0.833740234375
         },
         {
           "head": "action",
           "label": "DRIVE",
           "gameTime": "05:20",
-          "frame": 640,
-          "position_ms": 320000,
-          "confidence": 0.483642578125
+          "frame": 801,
+          "position_ms": 320400,
+          "confidence": 0.73095703125
         },
         {
           "head": "action",
           "label": "PASS",
-          "gameTime": "05:23",
-          "frame": 647,
-          "position_ms": 323500,
-          "confidence": 0.716796875
+          "gameTime": "05:24",
+          "frame": 810,
+          "position_ms": 324000,
+          "confidence": 0.77587890625
         },
         {
           "head": "action",
-          "label": "THROW IN",
+          "label": "HIGH PASS",
           "gameTime": "06:51",
-          "frame": 822,
-          "position_ms": 411000,
-          "confidence": 0.522705078125
+          "frame": 1028,
+          "position_ms": 411200,
+          "confidence": 0.858154296875
         },
         {
           "head": "action",
           "label": "DRIVE",
           "gameTime": "06:55",
-          "frame": 830,
-          "position_ms": 415000,
-          "confidence": 0.6513671875
+          "frame": 1038,
+          "position_ms": 415200,
+          "confidence": 0.844482421875
         },
         {
           "head": "action",
           "label": "PASS",
           "gameTime": "06:56",
-          "frame": 833,
-          "position_ms": 416500,
-          "confidence": 0.451171875
+          "frame": 1042,
+          "position_ms": 416800,
+          "confidence": 0.927001953125
         },
         {
           "head": "action",
           "label": "DRIVE",
           "gameTime": "06:57",
-          "frame": 835,
-          "position_ms": 417500,
-          "confidence": 0.466552734375
-        },
-        {
-          "head": "action",
-          "label": "OUT",
-          "gameTime": "07:00",
-          "frame": 840,
-          "position_ms": 420000,
-          "confidence": 0.50390625
+          "frame": 1044,
+          "position_ms": 417600,
+          "confidence": 0.824462890625
         },
         {
           "head": "action",
           "label": "THROW IN",
           "gameTime": "07:20",
-          "frame": 880,
-          "position_ms": 440000,
-          "confidence": 0.820068359375
+          "frame": 1102,
+          "position_ms": 440800,
+          "confidence": 0.768310546875
         },
         {
           "head": "action",
-          "label": "THROW IN",
-          "gameTime": "07:20",
-          "frame": 881,
-          "position_ms": 440500,
-          "confidence": 0.530029296875
+          "label": "PASS",
+          "gameTime": "07:23",
+          "frame": 1108,
+          "position_ms": 443200,
+          "confidence": 0.808349609375
         },
         {
           "head": "action",
-          "label": "HEADER",
-          "gameTime": "07:22",
-          "frame": 885,
-          "position_ms": 442500,
-          "confidence": 0.9892578125
+          "label": "PASS",
+          "gameTime": "07:23",
+          "frame": 1109,
+          "position_ms": 443600,
+          "confidence": 0.520263671875
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "07:24",
+          "frame": 1112,
+          "position_ms": 444800,
+          "confidence": 0.842529296875
         },
         {
           "head": "action",
           "label": "PASS",
           "gameTime": "07:37",
-          "frame": 915,
-          "position_ms": 457500,
-          "confidence": 0.86962890625
+          "frame": 1144,
+          "position_ms": 457600,
+          "confidence": 0.842529296875
         },
         {
           "head": "action",
           "label": "DRIVE",
           "gameTime": "07:39",
-          "frame": 918,
-          "position_ms": 459000,
-          "confidence": 0.650634765625
+          "frame": 1148,
+          "position_ms": 459200,
+          "confidence": 0.79052734375
         },
         {
           "head": "action",
           "label": "PASS",
           "gameTime": "07:40",
-          "frame": 920,
-          "position_ms": 460000,
-          "confidence": 0.93798828125
+          "frame": 1151,
+          "position_ms": 460400,
+          "confidence": 0.965087890625
         },
         {
           "head": "action",
           "label": "DRIVE",
           "gameTime": "07:41",
-          "frame": 922,
-          "position_ms": 461000,
-          "confidence": 0.9560546875
+          "frame": 1153,
+          "position_ms": 461200,
+          "confidence": 0.945556640625
         },
         {
           "head": "action",
           "label": "PASS",
           "gameTime": "07:43",
-          "frame": 926,
-          "position_ms": 463000,
-          "confidence": 0.978759765625
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "07:44",
-          "frame": 928,
-          "position_ms": 464000,
-          "confidence": 0.777587890625
+          "frame": 1159,
+          "position_ms": 463600,
+          "confidence": 0.991455078125
         },
         {
           "head": "action",
           "label": "PASS",
           "gameTime": "07:47",
-          "frame": 934,
-          "position_ms": 467000,
-          "confidence": 0.70166015625
-        },
-        {
-          "head": "action",
-          "label": "HEADER",
-          "gameTime": "07:49",
-          "frame": 939,
-          "position_ms": 469500,
-          "confidence": 0.39599609375
-        },
-        {
-          "head": "action",
-          "label": "PASS",
-          "gameTime": "07:52",
-          "frame": 945,
-          "position_ms": 472500,
-          "confidence": 0.722900390625
+          "frame": 1169,
+          "position_ms": 467600,
+          "confidence": 0.912109375
         },
         {
           "head": "action",
           "label": "PASS",
           "gameTime": "07:53",
-          "frame": 946,
-          "position_ms": 473000,
-          "confidence": 0.506591796875
+          "frame": 1183,
+          "position_ms": 473200,
+          "confidence": 0.890869140625
         },
         {
           "head": "action",
           "label": "DRIVE",
-          "gameTime": "07:54",
-          "frame": 949,
-          "position_ms": 474500,
-          "confidence": 0.962158203125
-        },
-        {
-          "head": "action",
-          "label": "PASS",
           "gameTime": "07:55",
-          "frame": 951,
-          "position_ms": 475500,
-          "confidence": 0.6181640625
-        },
-        {
-          "head": "action",
-          "label": "DRIVE",
-          "gameTime": "07:57",
-          "frame": 954,
-          "position_ms": 477000,
-          "confidence": 0.793212890625
+          "frame": 1188,
+          "position_ms": 475200,
+          "confidence": 0.82568359375
         },
         {
           "head": "action",
           "label": "PASS",
           "gameTime": "08:02",
-          "frame": 964,
-          "position_ms": 482000,
-          "confidence": 0.68212890625
+          "frame": 1206,
+          "position_ms": 482400,
+          "confidence": 0.579833984375
+        },
+        {
+          "head": "action",
+          "label": "DRIVE",
+          "gameTime": "08:04",
+          "frame": 1210,
+          "position_ms": 484000,
+          "confidence": 0.68896484375
         },
         {
           "head": "action",
           "label": "CROSS",
           "gameTime": "08:51",
-          "frame": 1063,
-          "position_ms": 531500,
-          "confidence": 0.3724365234375
+          "frame": 1329,
+          "position_ms": 531600,
+          "confidence": 0.5035400390625
         },
         {
           "head": "action",
           "label": "DRIVE",
           "gameTime": "08:59",
-          "frame": 1078,
-          "position_ms": 539000,
-          "confidence": 0.6884765625
+          "frame": 1349,
+          "position_ms": 539600,
+          "confidence": 0.868896484375
         },
         {
           "head": "action",
           "label": "HIGH PASS",
           "gameTime": "09:01",
-          "frame": 1082,
-          "position_ms": 541000,
-          "confidence": 0.896484375
+          "frame": 1354,
+          "position_ms": 541600,
+          "confidence": 0.95947265625
         },
         {
           "head": "action",
-          "label": "HIGH PASS",
-          "gameTime": "09:19",
-          "frame": 1119,
-          "position_ms": 559500,
-          "confidence": 0.73486328125
+          "label": "SHOT",
+          "gameTime": "09:07",
+          "frame": 1369,
+          "position_ms": 547600,
+          "confidence": 0.712890625
+        },
+        {
+          "head": "action",
+          "label": "PASS",
+          "gameTime": "09:52",
+          "frame": 1481,
+          "position_ms": 592400,
+          "confidence": 0.6328125
         }
       ]
     }
