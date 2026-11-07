@@ -1,0 +1,175 @@
+{
+  "version": "2.0",
+  "date": "2026-11-07",
+  "task": "localization",
+  "metadata": {
+    "type": "predictions",
+    "created_by": "model",
+    "split": "infer"
+  },
+  "data": [
+    {
+      "inputs": [
+        {
+          "type": "video",
+          "path": "/home/gc/FootballMatchPursuit/test_data/test.mp4",
+          "fps": 2.0
+        }
+      ],
+      "events": [
+        {
+          "head": "action",
+          "label": "长传",
+          "gameTime": "00:10",
+          "frame": 20,
+          "position_ms": 10000,
+          "confidence": 0.9970703125
+        },
+        {
+          "head": "action",
+          "label": "头球",
+          "gameTime": "00:12",
+          "frame": 25,
+          "position_ms": 12500,
+          "confidence": 0.92138671875
+        },
+        {
+          "head": "action",
+          "label": "头球",
+          "gameTime": "00:13",
+          "frame": 26,
+          "position_ms": 13000,
+          "confidence": 0.92578125
+        },
+        {
+          "head": "action",
+          "label": "传球",
+          "gameTime": "00:23",
+          "frame": 46,
+          "position_ms": 23000,
+          "confidence": 0.9921875
+        },
+        {
+          "head": "action",
+          "label": "传球",
+          "gameTime": "00:27",
+          "frame": 55,
+          "position_ms": 27500,
+          "confidence": 0.94482421875
+        },
+        {
+          "head": "action",
+          "label": "停球(带球)",
+          "gameTime": "00:33",
+          "frame": 67,
+          "position_ms": 33500,
+          "confidence": 0.94384765625
+        },
+        {
+          "head": "action",
+          "label": "传球",
+          "gameTime": "00:39",
+          "frame": 78,
+          "position_ms": 39000,
+          "confidence": 0.979248046875
+        },
+        {
+          "head": "action",
+          "label": "传球",
+          "gameTime": "00:42",
+          "frame": 85,
+          "position_ms": 42500,
+          "confidence": 0.994873046875
+        },
+        {
+          "head": "action",
+          "label": "停球(带球)",
+          "gameTime": "00:43",
+          "frame": 87,
+          "position_ms": 43500,
+          "confidence": 0.970703125
+        },
+        {
+          "head": "action",
+          "label": "传球",
+          "gameTime": "00:45",
+          "frame": 91,
+          "position_ms": 45500,
+          "confidence": 0.9931640625
+        },
+        {
+          "head": "action",
+          "label": "传球",
+          "gameTime": "00:48",
+          "frame": 96,
+          "position_ms": 48000,
+          "confidence": 0.978515625
+        },
+        {
+          "head": "action",
+          "label": "传球",
+          "gameTime": "00:59",
+          "frame": 118,
+          "position_ms": 59000,
+          "confidence": 0.915771484375
+        },
+        {
+          "head": "action",
+          "label": "传球",
+          "gameTime": "01:02",
+          "frame": 125,
+          "position_ms": 62500,
+          "confidence": 0.91845703125
+        },
+        {
+          "head": "action",
+          "label": "停球(带球)",
+          "gameTime": "01:04",
+          "frame": 128,
+          "position_ms": 64000,
+          "confidence": 0.955078125
+        },
+        {
+          "head": "action",
+          "label": "传球",
+          "gameTime": "01:11",
+          "frame": 143,
+          "position_ms": 71500,
+          "confidence": 0.917724609375
+        },
+        {
+          "head": "action",
+          "label": "传球",
+          "gameTime": "01:44",
+          "frame": 208,
+          "position_ms": 104000,
+          "confidence": 0.92333984375
+        },
+        {
+          "head": "action",
+          "label": "传球",
+          "gameTime": "02:07",
+          "frame": 255,
+          "position_ms": 127500,
+          "confidence": 0.93310546875
+        },
+        {
+          "head": "action",
+          "label": "传球",
+          "gameTime": "02:16",
+          "frame": 273,
+          "position_ms": 136500,
+          "confidence": 0.922607421875
+        },
+        {
+          "head": "action",
+          "label": "传球",
+          "gameTime": "02:52",
+          "frame": 344,
+          "position_ms": 172000,
+          "confidence": 0.963623046875
+        }
+      ]
+    }
+  ]
+}
