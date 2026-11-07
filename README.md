@@ -8,14 +8,12 @@
 
 | 步骤 | 模型 | 代码 | 做成了什么 | 做不到什么 |
 |---|---|---|---|---|
-| 动作定位 | [OpenSportsLab/OSL-loc-snbas-2025-e2e](https://huggingface.co/OpenSportsLab/OSL-loc-snbas-2025-e2e) | `main.py` | 从整段视频找出动作发生的毫秒，并给出英文类别。类别包括 PASS、DRIVE、HEADER、HIGH PASS、OUT、CROSS、THROW IN、SHOT、BALL PLAYER BLOCK、PLAYER SUCCESSFUL TACKLE、FREE KICK、GOAL | 不认识人，不写中文事件名，也不给画面坐标。角球、扑救、助攻不在这 12 类里 |
+| 动作定位 | [OpenSportsLab/OSL-loc-snbas-2025-e2e](https://huggingface.co/OpenSportsLab/OSL-loc-snbas-2025-e2e) | `step1_事件监测.py` | 从整段视频找出动作发生的毫秒。模型类别是 PASS、DRIVE、HEADER、HIGH PASS、OUT、CROSS、THROW IN、SHOT、BALL PLAYER BLOCK、PLAYER SUCCESSFUL TACKLE、FREE KICK、GOAL，写入前按对照表改成中文 | 不认识人，也不给画面坐标。角球、扑救、助攻不在这 12 类里 |
 | 片段重判 | [Qwen/Qwen3-VL-2B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct) | `recognize_unknown_events.py` | 为每个定位时间点切出原帧率片段，让模型在说明书动作里选择，并读出球队、球衣号和身体中心坐标 | 跟踪号仍是 `unknown`。2B 模型在这块 6GB 显卡上经常把不同动作收成传球，球衣号大多读不出来 |
 
-定位模型是 RegNetY-008 加 GRU 的端到端权重。它按每秒 2 帧抽帧，每 100 帧一个窗口。`infer()` 返回的是高召回候选；`main.py` 保存的是非极大值抑制之后的 `results_spotting_test.json`。
+定位模型是 RegNetY-008 加 GRU 的端到端权重。它按每秒 2 帧抽帧，每 100 帧一个窗口。`infer()` 返回的是高召回候选；`step1_事件监测.py` 保存的是非极大值抑制之后的 `results_spotting_test.json`。
 
 视觉模型看的是每个事件自己的片段：从与上一个事件的中点切到与下一个事件的中点，两边间隔很长时单侧最多 2 秒。片段文件保持原分辨率，模型再按每秒 2 帧抽帧，并把单次画面像素限制在 6GB 显存放得下的范围。提示词把红队当作 Team A、白队当作 Team B。这是当前转播的颜色约定，换一场比赛要改提示词。
-
-`export_events.py` 是不调用视觉模型的对照脚本。它只把能直接对应的英文类别写成中文动作，人员、球队和坐标保持未知，头球、出界、传中等对不上的类别直接跳过。
 
 ## 现在怎么跑
 
@@ -37,7 +35,7 @@ python main.py --video test_data/test.mp4 --max-seconds 80
 
 | 文件 | 内容 |
 |---|---|
-| `outputs/opensportslib/<视频名>.predictions.json` | 定位结果。`position_ms` 是动作时刻，`frame` 是模型 2 帧/秒下的帧号 |
+| `outputs/opensportslib/<视频名>.step1.json` | step1 定位结果。`position_ms` 是动作时刻，`frame` 是模型 2 帧/秒下的帧号 |
 | `outputs/opensportslib/clips/vl/` | 每个事件的完整片段 |
 | `outputs/opensportslib/test.events.json` | 视觉模型重判后的说明书记录。这里的 `frame` 按源视频帧率计算，`test.mp4` 为 30 帧/秒 |
 

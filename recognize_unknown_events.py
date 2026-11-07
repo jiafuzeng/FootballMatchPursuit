@@ -1,9 +1,11 @@
 """把每个定位事件的完整片段交给视觉语言模型，再写成 test.json 格式。
 
-定位结果只有发生时刻，没有起止。每个事件的片段从与上一个事件的中点
-取到与下一个事件的中点，单侧最多 2 秒，并保留原视频的帧率和分辨率。
-Qwen3-VL-2B 直接看这段视频，在事件说明书的动作里选择，并读出球队、球衣号和画面位置。
-跟踪号在转播画面里看不见，仍写 unknown。
+定位结果只有发生时刻，没有起止。每条事件按自己需要的范围切，不避让相邻片段。
+普通事件在发生时刻前后各留 2 秒。传球、长传、传中、头球从发球前保留到下一次触球，
+让发球和接球都在同一段里，飞行太远时不再把后面的空白算进去。片段保留原视频的帧率和分辨率。
+Qwen3.8-27B 只看这一下的过程：球队、动作，以及球从哪个队员到哪个队员。
+送进模型前按每秒 2 帧抽取，一段最多 12 帧，画面保持接近原分辨率，脚下圆圈里的跟踪号才看得清。
+队员号读脚下彩色圆圈里的跟踪号，不读球衣。不读比赛时钟，也不写画面坐标。
 """
 
 from __future__ import annotations
@@ -13,47 +15,35 @@ import json
 import sys
 from pathlib import Path
 
+from label_map import LABEL_TO_ACTION
+
 PROJECT_ROOT = Path(__file__).resolve().parent
-DEFAULT_PREDICTIONS = PROJECT_ROOT / "outputs" / "opensportslib" / "test.predictions.json"
-DEFAULT_OUTPUT = PROJECT_ROOT / "outputs" / "opensportslib" / "test.events.json"
-MODEL_ID = "Qwen/Qwen3-VL-2B-Instruct"
-WIDTH = 1920
-HEIGHT = 1080
+DEFAULT_PREDICTIONS = PROJECT_ROOT / "outputs" / "opensportslib" / "test_3min.step1.json"
+DEFAULT_OUTPUT = PROJECT_ROOT / "outputs" / "opensportslib" / "test_3min.events.json"
+MODEL_ID = "/root/autodl-tmp/models/Qwen3.8-27B"
 CLIP_PAD = 2.0
-MODEL_FPS = 2
-# 片段文件保持原分辨率。模型按整段时间抽帧，单次画面像素封顶，避免 6GB 显存装不下。
-VIDEO_SHORTEST_EDGE = 4096
-VIDEO_LONGEST_EDGE = 32 * 32 * 768
-ACTIONS = (
-    "传球",
-    "停球（带球）",
-    "长传",
-    "抢断",
-    "射门",
-    "助攻",
-    "界外手抛球",
-    "进球",
-    "扑救",
-    "角球",
-)
-LABEL_HINT = {
-    "HEADER": "头球触球，可能是传球、射门或争顶",
-    "OUT": "球已经或即将出界",
-    "CROSS": "向禁区传中",
-    "FREE KICK": "定位球，只有明确发角球时才选角球",
-    "BALL PLAYER BLOCK": "球员挡住球或抢断",
-}
+# 传球一类收到下一次触球。下一次触球太远时，不再把后面的空白算进这一脚。
+PASS_ACTIONS = frozenset({"传球", "长传", "传中", "头球"})
+RECEPTION_TAIL = 0.5
+MAX_PASS_FLIGHT = 15.0
+# 全帧或抽完仍超过 12 帧时，每帧会被缩到约 700 高，脚下圆圈认不出。12 帧能保持 1088 高。
+SAMPLE_FPS = 2.0
+MAX_MODEL_FRAMES = 12
+MAPPED_ACTIONS = tuple(dict.fromkeys(LABEL_TO_ACTION.values()))
 
 
-def _video_fps(path: Path) -> float:
-    import cv2
+def _video_meta(video: Path) -> tuple[float, float | None]:
+    """一次打开视频，读出帧率和时长。"""
+    import av
 
-    capture = cv2.VideoCapture(str(path))
-    fps = float(capture.get(cv2.CAP_PROP_FPS) or 0.0)
-    capture.release()
+    container = av.open(str(video))
+    stream = container.streams.video[0]
+    fps = float(stream.average_rate) if stream.average_rate else 0.0
+    duration = float(stream.duration * stream.time_base) if stream.duration is not None else None
+    container.close()
     if fps <= 1.0:
-        raise RuntimeError(f"无法读取视频帧率: {path}")
-    return fps
+        raise RuntimeError(f"无法读取视频帧率: {video}")
+    return fps, duration
 
 
 def _prediction_video(payload: dict) -> Path | None:
@@ -64,26 +54,11 @@ def _prediction_video(payload: dict) -> Path | None:
     return None
 
 
-def _screen_time(position_ms: int) -> str:
-    centiseconds = int(round(position_ms / 10.0))
-    minutes, remainder = divmod(centiseconds, 6000)
-    seconds, centi = divmod(remainder, 100)
-    return f"{minutes:02d}:{seconds:02d}.{centi:02d}"
-
-
-def _frame(position_ms: int, fps: float) -> int:
-    return int(round(position_ms / 1000.0 * fps))
-
-
 def _name_cn(action: str, team: str | None) -> str:
-    if action == "角球":
-        return "角球"
     if team is None:
         return action
     if action == "进球":
         return f"Team {team}Goal"
-    if action == "扑救":
-        return f"Team {team}_GKSave"
     return f"Team {team}{action}"
 
 
@@ -104,35 +79,40 @@ def _events(payload: dict) -> list[dict]:
     return events
 
 
+def _bound(start: float, end: float, duration: float | None) -> tuple[float, float]:
+    """把片段收在视频里面。起止挤在一起时至少留半秒。"""
+    start = max(0.0, start)
+    if duration is not None:
+        end = min(end, max(duration - 0.05, 0.0))
+    if end <= start:
+        end = start + 0.5
+        if duration is not None:
+            end = min(end, duration)
+            start = max(0.0, end - 0.5)
+    return start, end
+
+
 def _windows(events: list[dict], duration: float | None) -> list[tuple[float, float]]:
-    """每个事件占到相邻事件的中点；离得远时单侧最多保留 2 秒。"""
+    """按当前事件自己的起止来切，不避让相邻片段。
+
+    普通事件前后各 2 秒，够看清这一下，也不把更远的画面算进去。
+    传球一类从发球前留到下一次触球之后 0.5 秒，飞行最长 15 秒。
+    """
     times = [int(event["position_ms"]) / 1000.0 for event in events]
+    labels = [str(event.get("label", "")) for event in events]
     windows = []
     for index, center in enumerate(times):
-        previous_gap = center - times[index - 1] if index else CLIP_PAD * 2
-        next_gap = times[index + 1] - center if index + 1 < len(times) else CLIP_PAD * 2
-        start = max(0.0, center - min(CLIP_PAD, previous_gap / 2.0))
-        end = center + min(CLIP_PAD, next_gap / 2.0)
-        if duration is not None:
-            end = min(end, max(duration - 0.05, 0.0))
-        if end <= start:
-            end = min(start + 0.5, duration if duration is not None else start + 0.5)
-        windows.append((start, end))
+        start = center - CLIP_PAD
+        if labels[index] in PASS_ACTIONS and index + 1 < len(times):
+            end = min(center + MAX_PASS_FLIGHT, times[index + 1] + RECEPTION_TAIL)
+        else:
+            end = center + CLIP_PAD
+        windows.append(_bound(start, end, duration))
     return windows
 
 
-def _video_duration(video: Path) -> float | None:
-    import av
-
-    container = av.open(str(video))
-    stream = container.streams.video[0]
-    duration = float(stream.duration * stream.time_base) if stream.duration is not None else None
-    container.close()
-    return duration
-
-
 def _clip_file(directory: Path, index: int, event: dict) -> Path:
-    label = str(event.get("label", "event")).replace(" ", "_")
+    label = str(event.get("label", "event"))
     return directory / f"{index:03d}_{label}_{int(event['position_ms'])}ms.mp4"
 
 
@@ -170,7 +150,7 @@ class _ClipWriter:
 
 
 def _write_clips(video: Path, events: list[dict], windows: list[tuple[float, float]], directory: Path) -> list[dict]:
-    """按原帧率、原分辨率写出每个事件的完整片段。"""
+    """按原帧率、原分辨率写出每个事件的完整片段。相邻片段可以重叠。"""
     import av
 
     directory.mkdir(parents=True, exist_ok=True)
@@ -223,8 +203,14 @@ def _write_clips(video: Path, events: list[dict], windows: list[tuple[float, flo
     return specs
 
 
+def _model_frame_count(n_frames: int, fps: float) -> int:
+    """按每秒 SAMPLE_FPS 抽，最多 MAX_MODEL_FRAMES 帧。"""
+    wanted = int(n_frames / fps * SAMPLE_FPS) if fps else n_frames
+    return min(max(wanted, 4), MAX_MODEL_FRAMES, n_frames)
+
+
 def _load_clip(path: Path):
-    """读回完整片段。模型自己按时间抽帧，这里不提前抽稀。"""
+    """读回完整片段。抽帧在送进模型时做，这里保留原帧。"""
     import av
     import numpy as np
 
@@ -239,29 +225,27 @@ def _load_clip(path: Path):
 
 
 def _prompt(label: str, offset: float) -> str:
-    hint = LABEL_HINT.get(label, "以画面为准")
     return (
-        "看这段足球转播视频，它是这一个事件从开始到结束的完整片段。"
+        "看这段足球转播视频，它是这一个事件从开始到结束的过程。"
         "红队是 Team A，白队是 Team B，门将算自己一方。"
         "只输出一个 JSON 对象，不要数组，不要 markdown，不要解释。"
-        "键为 team, action, player_code, receiver_code, x, y。"
-        f"action 只能是：{'、'.join(ACTIONS)}。"
-        "team 只能是 A 或 B。球衣号看不清写 unknown，否则写 1 到 2 位数字且不要前导零。"
-        "没有关联人时 receiver_code 写 unknown。"
-        "x 和 y 是行动人身体中心，相对画面宽高，范围 0 到 1，x 向右，y 向下。"
-        f"事件发生在片段里的第 {offset:.1f} 秒。定位模型把这一刻标成 {label}（{hint}）。"
-        "画面不一致时以画面为准。"
+        "键只有 team, action, player_code, receiver_code, player_id, receiver_id。"
+        f"action 只能是：{'、'.join(MAPPED_ACTIONS)}。"
+        "team 只能是 A 或 B。"
+        "player_id 和 receiver_id 是球员脚下彩色圆圈里的跟踪号，不是球衣上的号码。看不清写 unknown。"
+        "player_code 和 receiver_code 是球衣上的号码。看不清写 unknown。"
     )
 
 
 def _load_model():
     import torch
-    from transformers import AutoProcessor, Qwen3VLForConditionalGeneration
+    from transformers import AutoProcessor, Qwen3_5ForConditionalGeneration
 
-    model = Qwen3VLForConditionalGeneration.from_pretrained(
+    # Qwen3.8-27B 的架构名仍是 Qwen3_5ForConditionalGeneration。
+    model = Qwen3_5ForConditionalGeneration.from_pretrained(
         MODEL_ID,
-        dtype=torch.float16,
-        device_map="cuda",
+        dtype=torch.bfloat16,
+        device_map="auto",
     )
     model.eval()
     processor = AutoProcessor.from_pretrained(MODEL_ID)
@@ -281,7 +265,12 @@ def _ask(model, processor, clip, clip_fps: float, text: str) -> str:
             ],
         }
     ]
-    prompt = processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+    prompt = processor.apply_chat_template(
+        messages,
+        tokenize=False,
+        add_generation_prompt=True,
+        enable_thinking=False,
+    )
     metadata = VideoMetadata(
         total_num_frames=int(clip.shape[0]),
         fps=float(clip_fps),
@@ -294,8 +283,8 @@ def _ask(model, processor, clip, clip_fps: float, text: str) -> str:
         text=[prompt],
         videos=[clip],
         do_sample_frames=True,
-        fps=MODEL_FPS,
-        size={"shortest_edge": VIDEO_SHORTEST_EDGE, "longest_edge": VIDEO_LONGEST_EDGE},
+        fps=None,
+        num_frames=_model_frame_count(int(clip.shape[0]), clip_fps),
         video_metadata=metadata,
         return_tensors="pt",
     )
@@ -344,7 +333,7 @@ def _json_objects(text: str) -> list[dict]:
 
 
 def _parse_answer(text: str) -> dict:
-    objects = [item for item in _json_objects(text) if item.get("action") in ACTIONS]
+    objects = [item for item in _json_objects(text) if item.get("action") in MAPPED_ACTIONS]
     if not objects:
         return {}
     # 三帧里中间一帧最接近事件发生的时刻。
@@ -352,8 +341,17 @@ def _parse_answer(text: str) -> dict:
 
 
 def _jersey(value) -> str:
+    """球衣号只收 1 到 99，并去掉前导零。"""
     text = str(value).strip()
     if text.isdigit() and 1 <= len(text) <= 2 and 0 < int(text) <= 99:
+        return str(int(text))
+    return "unknown"
+
+
+def _track_id(value) -> str:
+    """脚下圆圈里的跟踪号。去掉前导零，认不出就写 unknown。"""
+    text = str(value).strip()
+    if text.isdigit() and 1 <= len(text) <= 4 and int(text) > 0:
         return str(int(text))
     return "unknown"
 
@@ -367,37 +365,29 @@ def _team(value) -> str | None:
     return None
 
 
-def _coordinate(value, limit: int) -> float:
-    try:
-        number = float(value)
-    except (TypeError, ValueError):
-        return 0.0
-    if number > 1.0:
-        number = number / 100.0 if number <= 100.0 else number / limit
-    if not 0.0 <= number <= 1.0:
-        return 0.0
-    return number
-
-
-def _record(event: dict, answer: dict, fps: float) -> dict | None:
+def _record(answer: dict) -> dict | None:
     action = answer.get("action")
-    if action not in ACTIONS:
+    if not action:
         return None
     team = _team(answer.get("team"))
-    x = _coordinate(answer.get("x"), WIDTH)
-    y = _coordinate(answer.get("y"), HEIGHT)
-    screen_xy = [0.0, 0.0] if x == 0.0 and y == 0.0 else [round(x * WIDTH, 2), round(y * HEIGHT, 2)]
-    position_ms = int(event["position_ms"])
     return {
-        "frame": _frame(position_ms, fps),
+        "team": team,
         "player_code": _jersey(answer.get("player_code")),
-        "player_id": "unknown",
+        "player_id": _track_id(answer.get("player_id")),
         "name_cn": _name_cn(action, team),
         "receiver_code": _jersey(answer.get("receiver_code")),
-        "receiver_id": "unknown",
-        "player_screen_xy": screen_xy,
-        "action_screen_time_period": _screen_time(position_ms),
+        "receiver_id": _track_id(answer.get("receiver_id")),
     }
+
+
+def _dedupe(records: list[dict]) -> list[dict]:
+    """相邻两条内容完全相同，只保留先出现的一条。"""
+    kept = []
+    for record in records:
+        if kept and record == kept[-1]:
+            continue
+        kept.append(record)
+    return kept
 
 
 def _write(path: Path, records: list[dict]) -> None:
@@ -416,11 +406,12 @@ def main() -> int:
     if video is None or not video.is_file():
         print("找不到原视频", file=sys.stderr)
         return 1
-    fps = args.fps if args.fps is not None else _video_fps(video)
+    fps, duration = _video_meta(video)
+    if args.fps is not None:
+        fps = args.fps
     events = _events(payload)
     print(f"待判断 {len(events)} 条，帧率 {fps:g}")
     clip_dir = args.output.expanduser().resolve().parent / "clips" / "vl"
-    duration = _video_duration(video)
     specs = _write_clips(video, events, _windows(events, duration), clip_dir)
     print(f"已写出 {len(specs)} 段完整片段: {clip_dir}", flush=True)
     model, processor = _load_model()
@@ -430,21 +421,23 @@ def main() -> int:
         center = int(event["position_ms"]) / 1000.0
         offset = center - spec["start"]
         clip, clip_fps = _load_clip(spec["path"])
+        sent = _model_frame_count(int(clip.shape[0]), clip_fps)
         raw = _ask(model, processor, clip, clip_fps, _prompt(str(event.get("label", "")), offset))
         del clip
         answer = _parse_answer(raw)
-        record = _record(event, answer, fps)
+        record = _record(answer)
         if record is None:
             print(f"{index}/{len(specs)} {event.get('label')} 未能辨认: {raw.strip()}", flush=True)
             continue
         records.append(record)
         print(
-            f"{index}/{len(specs)} {event.get('label')} {record['action_screen_time_period']} "
-            f"[{spec['start']:.2f}-{spec['end']:.2f}s {spec['frames']}帧] -> {record['name_cn']} {raw.strip()}",
+            f"{index}/{len(specs)} {event.get('label')} "
+            f"[{spec['start']:.2f}-{spec['end']:.2f}s 送入 {sent} 帧] "
+            f"-> {record['name_cn']} {record['player_code']}->{record['receiver_code']} {raw.strip()}",
             flush=True,
         )
-    records.sort(key=lambda item: (item["frame"], item["action_screen_time_period"], item["name_cn"]))
     output = args.output.expanduser().resolve()
+    records = _dedupe(records)
     _write(output, records)
     print(f"写入 {len(records)} 条事件: {output}")
     return 0
