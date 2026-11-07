@@ -13,7 +13,7 @@ import json
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent
-DEFAULT_PREDICTIONS = PROJECT_ROOT / "outputs" / "opensportslib" / "test_3min.step1.json"
+DEFAULT_PREDICTIONS = PROJECT_ROOT / "outputs" / "opensportslib" / "test.step0.step1.json"
 DEFAULT_CLIPS = PROJECT_ROOT / "outputs" / "opensportslib" / "clips"
 DEFAULT_RADIUS = 10
 
