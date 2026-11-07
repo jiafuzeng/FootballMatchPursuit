@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import base64
 import json
+import os
 import re
 import sys
 import urllib.error
@@ -18,9 +19,24 @@ import urllib.request
 from pathlib import Path
 
 DEFAULT_MODEL = "qwen3.8-max"
-BASE_URL = "https://api.agicto.cn/v1"
-API_KEY = "sk-G61fbkgJzoYPXjIoHFCmnDFzFzprPfOTNWej6GDP7NT1SGh5"
 PROJECT_ROOT = Path(__file__).resolve().parent
+
+
+def _load_env(path: Path) -> None:
+    """读取项目根目录的 .env。已有环境变量优先，不覆盖。"""
+    if not path.is_file():
+        return
+    for line in path.read_text(encoding="utf-8").splitlines():
+        text = line.strip()
+        if not text or text.startswith("#") or "=" not in text:
+            continue
+        key, value = text.split("=", 1)
+        os.environ.setdefault(key.strip(), value.strip().strip("'\""))
+
+
+_load_env(PROJECT_ROOT / ".env")
+BASE_URL = os.environ.get("BASE_URL", "")
+API_KEY = os.environ.get("API_KEY", "")
 DEFAULT_STEP2 = PROJECT_ROOT / "outputs" / "opensportslib" / "clips" / "test.step0" / "step2.json"
 JERSEY_RE = re.compile(r"^(?:[1-9]|[1-9][0-9])$")
 CLOCK_RE = re.compile(r"^\d{1,2}:\d{2}(?:\.\d{1,2})?$")
@@ -33,8 +49,8 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--output", type=Path, default=None, help="默认 outputs/opensportslib/<视频名>.step3.qwen38-max.json")
     parser.add_argument("--index", type=int, default=None, help="只处理这一个事件序号")
     parser.add_argument("--model", default=DEFAULT_MODEL)
-    parser.add_argument("--base-url", default=BASE_URL, help="OpenAI 兼容接口根地址")
-    parser.add_argument("--api-key", default=API_KEY)
+    parser.add_argument("--base-url", default=BASE_URL, help="OpenAI 兼容接口根地址，默认读 .env 的 BASE_URL")
+    parser.add_argument("--api-key", default=API_KEY, help="接口密钥，默认读 .env 的 API_KEY")
     return parser.parse_args()
 
 
@@ -308,6 +324,8 @@ def _write(output: Path, records: list[dict]) -> None:
 
 def main() -> None:
     args = _parse_args()
+    if not args.base_url or not args.api_key:
+        raise SystemExit("请在 .env 中配置 BASE_URL 和 API_KEY")
     manifest_path, document = _manifest(args.step2.expanduser().resolve())
     events = list(document["events"])
     if args.index is not None:

@@ -9,7 +9,7 @@
 2. 可选地用 --max-seconds 只保留开头若干秒，便于短时验证。
 3. 加载 Hugging Face 上的 OSL-loc-snbas-2023-e2e（RegNetY-008 + GRU）。
 4. 按 --fps 抽帧（默认 2 帧/秒）、每 100 帧一个窗口做定位。
-5. 采用去重后的动作点，写入 outputs/opensportslib/<视频名>.step1.json。
+5. 采用去重后的动作点，写入 outputs/opensportslib/test.step0.step1.json。
 
 运行环境是 conda 环境 osl。这台机器的驱动只报告 CUDA 12.2，官方安装脚本
 要求 CUDA 12.6，因此使用仍能在 Pascal 上执行的 PyTorch 2.5.1+cu121。
@@ -40,7 +40,8 @@ os.environ.setdefault("HF_HUB_OFFLINE", "1")
 #MODEL_ID = "OpenSportsLab/OSL-loc-snbas-2023-e2e"
 MODEL_ID = "OpenSportsLab/OSL-loc-snbas-2025-e2e"
 PROJECT_ROOT = Path(__file__).resolve().parent
-DEFAULT_VIDEO = PROJECT_ROOT / "outputs" / "opensportslib" / "test.step0.mp4"
+DEFAULT_VIDEO = PROJECT_ROOT / "test_data" / "test.mp4"
+DEFAULT_OUTPUT = PROJECT_ROOT / "outputs" / "opensportslib" / "test.step1.json"
 # 官方配置 extract_fps=2、nms_window=2 帧，去重间隔是 1 秒。
 _TRAINED_FPS = 2
 _TRAINED_NMS_WINDOW = 2
@@ -64,13 +65,13 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output",
         type=Path,
-        default=None,
-        help="预测 JSON 输出路径",
+        default=DEFAULT_OUTPUT,
+        help="预测 JSON 输出路径，默认 outputs/opensportslib/test.step0.step1.json",
     )
     parser.add_argument(
         "--min-confidence",
         type=float,
-        default=0.85,
+        default=0.90,
         help="只保留置信度不低于该值的事件，默认 0.8",
     )
     parser.add_argument(
@@ -289,7 +290,7 @@ def main() -> int:
     if nms_files:
         predictions = json.loads(nms_files[-1].read_text(encoding="utf-8"))
 
-    output_path = args.output or (work_dir / f"{source_video.stem}.step1.json")
+    output_path = args.output
     removed, peak = _keep_confident(predictions, args.min_confidence)
     _map_labels(predictions)
     saved = _save_predictions(output_path, predictions)

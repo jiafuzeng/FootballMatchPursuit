@@ -2,6 +2,7 @@
 
 每个事件的 frame 原样沿用 step1 预测里的 frame，不改数值、不改名字。
 片段中心仍按 position_ms 和源视频帧率计算：round(position_ms / 1000 × fps)。
+截取用的视频默认是 outputs/opensportslib/test.step0.mp4。
 每个事件单独一个 mp4，内容是发生帧的前 10 帧、这一帧和后 10 帧，按原帧率保存。
 清单里的序号和文件名与事件一一对应，供后面的检测使用。
 """
@@ -13,7 +14,8 @@ import json
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent
-DEFAULT_PREDICTIONS = PROJECT_ROOT / "outputs" / "opensportslib" / "test.step0.step1.json"
+DEFAULT_PREDICTIONS = PROJECT_ROOT / "outputs" / "opensportslib" / "test.step1.json"
+DEFAULT_VIDEO = PROJECT_ROOT / "outputs" / "opensportslib" / "test.step0.mp4"
 DEFAULT_CLIPS = PROJECT_ROOT / "outputs" / "opensportslib" / "clips"
 DEFAULT_RADIUS = 10
 
@@ -24,8 +26,8 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--video",
         type=Path,
-        default=None,
-        help="源视频。不传时用预测文件里的路径；那条路径不在本机时，改用 test_data 下的同名文件",
+        default=DEFAULT_VIDEO,
+        help="截取用的视频，默认 outputs/opensportslib/test.step0.mp4",
     )
     parser.add_argument(
         "--output",
