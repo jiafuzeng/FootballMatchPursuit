@@ -57,16 +57,31 @@
 
 ### step4 接球识别
 
-`step4_接球识别-qwen38-max.py` 读取 step3 的 JSON，默认 `outputs/opensportslib/test.step0.step3.qwen38-max.json`。视频仍是带脚底追踪号和头顶中心坐标的 `outputs/opensportslib/test.step0.mp4`。模型仍是云端 Qwen3.8-Max，地址和密钥用同一步的 `.env`。
+`step4_接球识别-qwen38-max.py` 读取 step3 的 JSON，默认 `outputs/opensportslib/test.step0.step3.qwen38-max.json`。视频是带脚底追踪号和头顶中心坐标的 `outputs/opensportslib/test.step0.mp4`。模型仍是云端 Qwen3.8-Max，只上传这段视频，不上传静图。地址和密钥读项目根目录的 `.env`。
 
-只处理传球和长传。停球（带球）和头球不截片段，`receiver_code` 和 `receiver_id` 写 `unknown`。片段从出球前 5 帧开始。短传再看 3 秒，长传再看 5 秒。这段画面按每秒 5 帧抽帧，出球那一帧一定保留，再把抽到的帧慢放成成片：短传 3 秒，长传 5 秒。片段放在 `outputs/opensportslib/clips/step4/`，文件名带成片时长，例如 `001_300_5s.mp4`、`004_690_3s.mp4`。结果里已经有的帧不会重截，也不会再请求接口。
+`frame`、`player_code`、`player_id`、`name_cn`、`player_screen_xy`、`action_screen_time_period` 从 step3 原样抄过来。这一步只补接球人，不改 step3，也不从下一条记录抄接球人。
 
-模型只看这段视频，从画面读接球人：
+只有 `name_cn` 去掉队名后是传球或长传时才截片段、才问模型。头球、停球（带球）以及其他动作不截片段，`receiver_code` 和 `receiver_id` 写 `unknown`。
 
-- `receiver_code`：接球人球衣号，看不清写 `unknown`
+片段范围和成片时长写在脚本顶部：
+
+| 常量 | 值 | 作用 |
+|---|---|---|
+| `LEAD_FRAMES` | 5 | 出球前保留的源帧数 |
+| `PASS_DELAY_SECONDS` | 3 | 传球出球后再看的秒数 |
+| `LONG_DELAY_SECONDS` | 5 | 长传出球后再看的秒数 |
+| `SAMPLE_FPS` | 5 | 从源视频抽帧的帧率。30 帧/秒的源片每 6 帧留 1 帧，出球那一帧一定留下 |
+| `PASS_OUTPUT_SECONDS` | 3 | 传球成片时长。抽到的帧铺满这 3 秒，用来慢放 |
+| `LONG_OUTPUT_SECONDS` | 5 | 长传成片时长。抽到的帧铺满这 5 秒，用来慢放 |
+
+片段目录是 `outputs/opensportslib/clips/step4/`。文件名是 `序号_原视频帧号_成片秒数s.mp4`。序号是 step3 记录从 1 开始的顺序，不是传球单独计数，所以第一脚长传是 `001_300_5s.mp4`，后面的传球例如 `004_690_3s.mp4`。输出 JSON 里已经有的 `frame` 会原样保留，不重截，也不再请求接口。
+
+模型从画面读两个字段。球衣号不是 1 到 99 的整数、追踪号不是 1 到 6 位正整数，都写成 `unknown`。读到的追踪号如果和这条记录的 `player_id` 相同，两个接球人字段都改成 `unknown`。
+
+- `receiver_code`：接球人球衣号
 - `receiver_id`：接球人脚底圆环里的追踪号
 
-读到的追踪号如果和传球人的 `player_id` 相同，两个接球人字段都改成 `unknown`。不从下一条记录抄接球人，也不改 step3。默认结果是 `outputs/opensportslib/test.step0.step4.qwen38-max.json`。`frame` 仍是原视频帧号。字段顺序是：
+默认结果是 `outputs/opensportslib/test.step0.step4.qwen38-max.json`，把 step3 文件名里的 `step3` 换成 `step4`。`frame` 仍是原视频帧号。字段顺序是：
 
 ```json
 {
