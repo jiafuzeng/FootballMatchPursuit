@@ -1,6 +1,6 @@
 # FootballMatchPursuit
 
-把一段足球转播视频写成 [事件说明书](事件说明书.md) 规定的事件 JSON。当前流程是四步：先在画面上标出球员追踪号和中心坐标，再定位动作时间，然后从带标注的视频上截出每个事件，最后让视觉模型读画面，补上控球人。
+把一段足球转播视频写成 [事件说明书](事件说明书.md) 规定的事件 JSON。当前流程是五步：先在画面上标出球员追踪号和中心坐标，再定位动作时间，然后从带标注的视频上截出每个事件，让视觉模型读画面补上控球人，最后为传球和长传补上接球人。
 
 字段样例是 [test_data/test.json](test_data/test.json)。更完整的系统边界见 [足球视频事件JSON系统概要设计.md](足球视频事件JSON系统概要设计.md)。
 
@@ -55,6 +55,32 @@
 }
 ```
 
+### step4 接球识别
+
+`step4_接球识别-qwen38-max.py` 读取 step3 的 JSON，默认 `outputs/opensportslib/test.step0.step3.qwen38-max.json`。视频仍是带脚底追踪号和头顶中心坐标的 `outputs/opensportslib/test.step0.mp4`。模型仍是云端 Qwen3.8-Max，地址和密钥用同一步的 `.env`。
+
+只处理传球和长传。停球（带球）和头球不截片段，`receiver_code` 和 `receiver_id` 写 `unknown`。片段从出球前 5 帧开始。短传再看 3 秒，长传再看 5 秒。这段画面按每秒 5 帧抽帧，出球那一帧一定保留，再把抽到的帧慢放成成片：短传 3 秒，长传 5 秒。片段放在 `outputs/opensportslib/clips/step4/`，文件名带成片时长，例如 `001_300_5s.mp4`、`004_690_3s.mp4`。结果里已经有的帧不会重截，也不会再请求接口。
+
+模型只看这段视频，从画面读接球人：
+
+- `receiver_code`：接球人球衣号，看不清写 `unknown`
+- `receiver_id`：接球人脚底圆环里的追踪号
+
+读到的追踪号如果和传球人的 `player_id` 相同，两个接球人字段都改成 `unknown`。不从下一条记录抄接球人，也不改 step3。默认结果是 `outputs/opensportslib/test.step0.step4.qwen38-max.json`。`frame` 仍是原视频帧号。字段顺序是：
+
+```json
+{
+  "frame": 690,
+  "player_code": "unknown",
+  "player_id": "209",
+  "name_cn": "Team A传球",
+  "receiver_code": "unknown",
+  "receiver_id": "242",
+  "player_screen_xy": [506.0, 420.0],
+  "action_screen_time_period": "15:49"
+}
+```
+
 接口地址和密钥放在项目根目录的 `.env`，不写入仓库。复制 `.env.example` 后填入：
 
 ```text
@@ -70,9 +96,10 @@ python step0_轨迹坐标.py
 python step1_事件监测.py
 python step2_事件截帧.py
 python step3_控球识别-qwen38-max.py
+python step4_接球识别-qwen38-max.py
 ```
 
-step0、step1 可以用 `--max-seconds` 只处理开头若干秒。step2 换标注视频时用 `--video`。step3 只跑一个事件时用 `--index`。
+step0、step1 可以用 `--max-seconds` 只处理开头若干秒。step2 换标注视频时用 `--video`。step3、step4 只跑一个事件时用 `--index`。
 
 | 文件 | 内容 |
 |---|---|
@@ -80,14 +107,16 @@ step0、step1 可以用 `--max-seconds` 只处理开头若干秒。step2 换标�
 | `outputs/opensportslib/test.step1.json` | 动作定位。`frame` 是 2 帧/秒采样序号，`position_ms` 是动作时刻 |
 | `outputs/opensportslib/clips/test.step0/` | 每个事件 21 帧的标注片段，以及 `step2.json` |
 | `outputs/opensportslib/test.step0.step3.qwen38-max.json` | 控球记录。`frame` 是原视频帧号 |
+| `outputs/opensportslib/clips/step4/` | 传球 3 秒、长传 5 秒的慢放片段 |
+| `outputs/opensportslib/test.step0.step4.qwen38-max.json` | 在控球记录上补了 `receiver_code`、`receiver_id` |
 
 ## 当前结果还不能直接交付
 
-step3 读到的球衣号、追踪号、坐标和时钟来自模型看画面，还没有人工复核。接球人的 `receiver_code`、`receiver_id` 还没写。说明书要求用同一个追踪号把传球和下一脚停球串起来，抢断、射门、助攻、扑救也有成对关系，这些关系现在都还没有。
+step3、step4 读到的球衣号、追踪号、坐标和时钟来自模型看画面，还没有人工复核。传球和长传写了接球人；停球（带球）和头球的接球人是 `unknown`。说明书要求下一脚触球人的 `player_id` 等于这次传球的 `receiver_id`，抢断、射门、助攻、扑救也有成对关系，这些对应现在都还没有核对。
 
 ## 后期调研：VLX-VR
 
-当前 step3 只看每个事件自己的 21 帧，接球人和跨片段关系还串不起来。下一步调研 [VLX-VR](VLX-VR/)（Video Reasoning），用它做允许等待的整段视频语义分析。需要持续采样、快速反馈或实时告警时，评估同系列的 VLX-Flow。
+step4 只在单段传球视频里读接球人，跨片段的成对关系还没有核对。下一步调研 [VLX-VR](VLX-VR/)（Video Reasoning），用它做允许等待的整段视频语义分析。需要持续采样、快速反馈或实时告警时，评估同系列的 VLX-Flow。
 
 ### VLX-VR 是什么
 
