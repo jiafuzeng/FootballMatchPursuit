@@ -15,7 +15,7 @@ from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent
 DEFAULT_PREDICTIONS = PROJECT_ROOT / "outputs" / "opensportslib" / "test.step1.json"
-DEFAULT_VIDEO = PROJECT_ROOT / "outputs" / "opensportslib" / "test.step0.mp4"
+DEFAULT_VIDEO = PROJECT_ROOT / "outputs" / "opensportslib" / "1-2-6.step0.mp4"
 DEFAULT_CLIPS = PROJECT_ROOT / "outputs" / "opensportslib" / "clips"
 DEFAULT_RADIUS = 10
 

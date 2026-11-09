@@ -40,7 +40,7 @@ os.environ.setdefault("HF_HUB_OFFLINE", "1")
 #MODEL_ID = "OpenSportsLab/OSL-loc-snbas-2023-e2e"
 MODEL_ID = "OpenSportsLab/OSL-loc-snbas-2025-e2e"
 PROJECT_ROOT = Path(__file__).resolve().parent
-DEFAULT_VIDEO = PROJECT_ROOT / "test_data" / "test.mp4"
+DEFAULT_VIDEO = PROJECT_ROOT / "test_data" / "1-2-6.mp4"
 DEFAULT_OUTPUT = PROJECT_ROOT / "outputs" / "opensportslib" / "test.step1.json"
 # 官方配置 extract_fps=2、nms_window=2 帧，去重间隔是 1 秒。
 _TRAINED_FPS = 2

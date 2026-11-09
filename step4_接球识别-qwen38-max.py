@@ -20,10 +20,10 @@ from pathlib import Path
 
 DEFAULT_MODEL = "qwen3.8-max"
 PROJECT_ROOT = Path(__file__).resolve().parent
-DEFAULT_EVENTS = PROJECT_ROOT / "outputs" / "opensportslib" / "test.step0.step3.qwen38-max.json"
-DEFAULT_VIDEO = PROJECT_ROOT / "outputs" / "opensportslib" / "test.step0.mp4"
+DEFAULT_EVENTS = PROJECT_ROOT / "outputs" / "opensportslib" / "1-2-6.step0.step3.qwen38-max.json"
+DEFAULT_VIDEO = PROJECT_ROOT / "outputs" / "opensportslib" / "1-2-6.step0.mp4"
 DEFAULT_CLIPS = PROJECT_ROOT / "outputs" / "opensportslib" / "clips" / "step4"
-LEAD_FRAMES = 5  # 出球前保留的源帧数
+LEAD_FRAMES = 15  # 出球前保留的源帧数
 PASS_DELAY_SECONDS = 3  # 短传：出球后再看的秒数
 LONG_DELAY_SECONDS = 5  # 长传：出球后再看的秒数
 PASS_OUTPUT_SECONDS = 3  # 短传成片时长，单位秒

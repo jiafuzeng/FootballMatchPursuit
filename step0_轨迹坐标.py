@@ -18,7 +18,7 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent
 SPORTS_ROOT = PROJECT_ROOT / "sports"
 SOCCER_DIR = SPORTS_ROOT / "examples" / "soccer"
-DEFAULT_VIDEO = PROJECT_ROOT / "test_data" / "test.mp4"
+DEFAULT_VIDEO = PROJECT_ROOT / "test_data" / "1-2-6.mp4"
 sys.path.insert(0, str(SPORTS_ROOT))
 sys.path.insert(0, str(SOCCER_DIR))
 
@@ -30,7 +30,7 @@ def _parse_args() -> argparse.Namespace:
         "--output",
         type=Path,
         default=None,
-        help="默认 outputs/opensportslib/<视频名>.step0.mp4",
+        help="默认 outputs/opensportslib/<视频名>.step_src.mp4",
     )
     parser.add_argument("--device", default=None, help="cuda 或 cpu，默认有显卡就用 cuda")
     parser.add_argument("--max-seconds", type=float, default=None, help="只处理开头若干秒，便于试跑")

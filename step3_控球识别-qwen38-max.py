@@ -37,7 +37,7 @@ def _load_env(path: Path) -> None:
 _load_env(PROJECT_ROOT / ".env")
 BASE_URL = os.environ.get("BASE_URL", "")
 API_KEY = os.environ.get("API_KEY", "")
-DEFAULT_STEP2 = PROJECT_ROOT / "outputs" / "opensportslib" / "clips" / "test.step0" / "step2.json"
+DEFAULT_STEP2 = PROJECT_ROOT / "outputs" / "opensportslib" / "clips" / "1-2-6.step0" / "step2.json"
 JERSEY_RE = re.compile(r"^(?:[1-9]|[1-9][0-9])$")
 CLOCK_RE = re.compile(r"^\d{1,2}:\d{2}(?:\.\d{1,2})?$")
 NUMBER_RE = re.compile(r"-?\d+(?:\.\d+)?")
