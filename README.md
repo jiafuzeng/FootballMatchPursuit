@@ -1,48 +1,26 @@
 # FootballMatchPursuit
 
-把一段足球转播视频写成 [事件说明书](事件说明书.md) 规定的事件 JSON。当前流程是五步：先在画面上标出球员追踪号和中心坐标，再定位动作时间，然后从带标注的视频上截出每个事件，让视觉模型读画面补上控球人，最后为传球和长传补上接球人。
+把一场足球转播写成 [事件说明书](事件说明书.md) 里的事件 JSON。字段样子见 [test_data/test.json](test_data/test.json)。
 
-字段样例是 [test_data/test.json](test_data/test.json)。更完整的系统边界见 [足球视频事件JSON系统概要设计.md](足球视频事件JSON系统概要设计.md)。
+做法是五步：先标出谁在画面上，再找出动作发生的时刻，接着截出片段，最后让云端模型读画面上已经画好的号码和坐标，并给传球补上接球人。模型不自己算位置。
 
-环境是 conda 环境 `osl`（Python 3.12，PyTorch 2.5.1+cu121）。这台机器是 GTX 1060 6GB，驱动只报告 CUDA 12.2，未安装 DALI。定位模型的 batch size 固定为 1。视频文件用 Git LFS 存放。
+默认这场是 `test_data/1-2-6.mp4`。环境是 conda `osl`。Qwen 的地址和密钥放在项目根目录 `.env`，复制 `.env.example` 后填写，不写入仓库。视频用 Git LFS。
 
-## 实现步骤
+## 五步
 
-按这个顺序跑。后一步读取前一步的默认产物。
+| 步 | 脚本 | 做什么 | 写出 |
+|---|---|---|---|
+| 0 | `step0_轨迹坐标.py` | 在原画面上画脚底圆环、追踪号、头顶中心 `[x,y]`。足球和裁判不跟踪 | `outputs/opensportslib/1-2-6.step0.mp4` |
+| 1 | `step1_事件监测.py` | 用原始视频定位动作时刻。看的是比赛，不看 step0 画的字 | `outputs/opensportslib/test.step1.json` |
+| 2 | `step2_事件截帧.py` | 按定位时刻，从带标注的视频上每个事件截 21 帧 | `outputs/opensportslib/clips/1-2-6.step0/` |
+| 3 | `step3_控球识别-qwen38-max.py` | Qwen3.8-Max 读画面：球衣号、追踪号、坐标、红白队、比分牌时钟 | `outputs/opensportslib/1-2-6.step0.step3.qwen38-max.json` |
+| 4 | `step4_接球识别-qwen38-max.py` | 只给传球和长传补接球人。其他字段从 step3 原样抄来 | `outputs/opensportslib/1-2-6.step0.step4.qwen38-max.json` |
 
-### step0 轨迹坐标
+step1 的 `frame` 是每秒 2 帧的采样序号。从 step3 起，JSON 里的 `frame` 是原视频帧号。`name_cn` 由队名和动作拼成，中间没有空格，例如 `Team A长传`。看不清的号码写 `unknown`。
 
-`step0_轨迹坐标.py` 读取原始比赛视频，默认 `test_data/1-2-6.mp4`。它调用 `sports` 的球员跟踪，在原画面的拷贝上只加三样东西：脚底圆环、圆环里的追踪号、头顶的人物中心点 `[x,y]`。坐标是人物框中心，x 向右、y 向下，取整。足球和裁判不跟踪，也不画圆环。原片像素不改，结果用 H.264、yuv420p 写出，索引放在文件头。
+step4 只问传球和长传。出球前留 15 帧；传球再看 3 秒，长传再看 5 秒。按每秒 5 帧抽帧，再慢放成 3 秒或 5 秒。片段在 `outputs/opensportslib/clips/step4/`。头球、停球（带球）等不截片段，接球人写 `unknown`。模型读到的追踪号若和传球人相同，也写成 `unknown`。
 
-默认输出 `outputs/opensportslib/1-2-6.step0.mp4`。
-
-### step1 事件监测
-
-`step1_事件监测.py` 把原始视频交给 [OpenSportsLab/OSL-loc-snbas-2025-e2e](https://huggingface.co/OpenSportsLab/OSL-loc-snbas-2025-e2e)。默认输入是 `test_data/1-2-6.mp4`，因为定位看的是比赛内容，不看 step0 画上的数字。模型按每秒 2 帧抽帧，每 100 帧一个窗口。保存的是非极大值抑制之后、置信度不低于 `--min-confidence`（默认 0.90）的动作点，类别按 `label_map.py` 写成中文：传球、停球(带球)、头球、长传、出界、传中、界外手抛球、射门、封堵、抢断、任意球、进球。
-
-`frame` 是模型 2 帧/秒的采样序号，原样保留。`position_ms` 是动作时刻。默认输出 `outputs/opensportslib/test.step1.json`。这一步不识别人，也不写画面坐标。角球、扑救、助攻不在这 12 类里。
-
-### step2 事件截帧
-
-`step2_事件截帧.py` 读取 step1 的 JSON，默认 `outputs/opensportslib/test.step1.json`。截取用的视频单独配置，默认是已经画好追踪号和中心坐标的 `outputs/opensportslib/1-2-6.step0.mp4`。
-
-每个事件以 `round(position_ms / 1000 × 帧率)` 为中心，前后各 10 帧，连同中心帧一共 21 帧，按原帧率写成一个 mp4。step1 的 `frame` 原样抄进清单，不换算。原视频帧号写在 `source_frame`，片段范围写在 `start_frame` 和 `end_frame`。
-
-默认片段目录是 `outputs/opensportslib/clips/1-2-6.step0/`，清单是同目录的 `step2.json`。短于 2 秒的片段在 step3 里会放到同级的 `1-2-6.step0_2s/`，只放慢播放，不改画面。
-
-### step3 控球识别
-
-`step3_控球识别-qwen38-max.py` 读取 `outputs/opensportslib/clips/1-2-6.step0/step2.json` 和同目录片段。模型是云端 Qwen3.8-Max。事件帧静图用来读数字，片段用来判断谁在控球。接口不收短于 2 秒的视频，脚本只把原帧放慢到 2 秒以上，不改画面。
-
-模型从画面读取：
-
-- `player_code`：控球人球衣号，看不清写 `unknown`
-- `player_id`：脚底圆环里的追踪号
-- `player_screen_xy`：这个人头顶方括号里的两个数
-- 衣色：红衣 Team A，白衣 Team B
-- `action_screen_time_period`：比分牌下方的比赛时钟，按画面原样保留
-
-`name_cn` 由衣色和 step2 的动作拼成，中间没有空格，例如 `Team A长传`。输出记录里的 `frame` 用 step2 的 `source_frame`，也就是原视频帧号。默认结果是 `outputs/opensportslib/1-2-6.step0.step3.qwen38-max.json`，一条记录六个字段：
+一条控球记录：
 
 ```json
 {
@@ -55,55 +33,9 @@
 }
 ```
 
-### step4 接球识别
+step4 在 `name_cn` 后面加上 `receiver_code` 和 `receiver_id`。
 
-`step4_接球识别-qwen38-max.py` 读取 step3 的 JSON，默认 `outputs/opensportslib/1-2-6.step0.step3.qwen38-max.json`。视频是带脚底追踪号和头顶中心坐标的 `outputs/opensportslib/1-2-6.step0.mp4`。模型仍是云端 Qwen3.8-Max，只上传这段视频，不上传静图。地址和密钥读项目根目录的 `.env`。
-
-`frame`、`player_code`、`player_id`、`name_cn`、`player_screen_xy`、`action_screen_time_period` 从 step3 原样抄过来。这一步只补接球人，不改 step3，也不从下一条记录抄接球人。
-
-只有 `name_cn` 去掉队名后是传球或长传时才截片段、才问模型。头球、停球（带球）以及其他动作不截片段，`receiver_code` 和 `receiver_id` 写 `unknown`。
-
-片段范围和成片时长写在脚本顶部：
-
-| 常量 | 值 | 作用 |
-|---|---|---|
-| `LEAD_FRAMES` | 15 | 出球前保留的源帧数 |
-| `PASS_DELAY_SECONDS` | 3 | 传球出球后再看的秒数 |
-| `LONG_DELAY_SECONDS` | 5 | 长传出球后再看的秒数 |
-| `SAMPLE_FPS` | 5 | 从源视频抽帧的帧率。30 帧/秒的源片每 6 帧留 1 帧，出球那一帧一定留下 |
-| `PASS_OUTPUT_SECONDS` | 3 | 传球成片时长。抽到的帧铺满这 3 秒，用来慢放 |
-| `LONG_OUTPUT_SECONDS` | 5 | 长传成片时长。抽到的帧铺满这 5 秒，用来慢放 |
-
-片段目录是 `outputs/opensportslib/clips/step4/`。文件名是 `序号_原视频帧号_成片秒数s.mp4`。序号是 step3 记录从 1 开始的顺序，不是传球单独计数，所以第一脚长传是 `001_300_5s.mp4`，后面的传球例如 `004_690_3s.mp4`。输出 JSON 里已经有的 `frame` 会原样保留，不重截，也不再请求接口。
-
-模型从画面读两个字段。球衣号不是 1 到 99 的整数、追踪号不是 1 到 6 位正整数，都写成 `unknown`。读到的追踪号如果和这条记录的 `player_id` 相同，两个接球人字段都改成 `unknown`。
-
-- `receiver_code`：接球人球衣号
-- `receiver_id`：接球人脚底圆环里的追踪号
-
-默认结果是 `outputs/opensportslib/1-2-6.step0.step4.qwen38-max.json`，把 step3 文件名里的 `step3` 换成 `step4`。`frame` 仍是原视频帧号。字段顺序是：
-
-```json
-{
-  "frame": 690,
-  "player_code": "unknown",
-  "player_id": "209",
-  "name_cn": "Team A传球",
-  "receiver_code": "unknown",
-  "receiver_id": "242",
-  "player_screen_xy": [506.0, 420.0],
-  "action_screen_time_period": "15:49"
-}
-```
-
-接口地址和密钥放在项目根目录的 `.env`，不写入仓库。复制 `.env.example` 后填入：
-
-```text
-BASE_URL=https://api.agicto.cn/v1
-API_KEY=
-```
-
-## 现在怎么跑
+## 怎么跑
 
 ```bash
 conda activate osl
@@ -114,82 +46,8 @@ python step3_控球识别-qwen38-max.py
 python step4_接球识别-qwen38-max.py
 ```
 
-step0、step1 可以用 `--max-seconds` 只处理开头若干秒。step2 换标注视频时用 `--video`。step3、step4 只跑一个事件时用 `--index`。
+后一步读前一步的默认结果。step0、step1 可用 `--max-seconds` 只跑开头。step3、step4 可用 `--index` 只跑一条。
 
-| 文件 | 内容 |
-|---|---|
-| `outputs/opensportslib/1-2-6.step0.mp4` | 带脚底追踪号和头顶中心坐标的视频 |
-| `outputs/opensportslib/test.step1.json` | 动作定位。`frame` 是 2 帧/秒采样序号，`position_ms` 是动作时刻 |
-| `outputs/opensportslib/clips/1-2-6.step0/` | 每个事件 21 帧的标注片段，以及 `step2.json` |
-| `outputs/opensportslib/1-2-6.step0.step3.qwen38-max.json` | 控球记录。`frame` 是原视频帧号 |
-| `outputs/opensportslib/clips/step4/` | 传球 3 秒、长传 5 秒的慢放片段。出球前留 15 帧 |
-| `outputs/opensportslib/1-2-6.step0.step4.qwen38-max.json` | 在控球记录上补了 `receiver_code`、`receiver_id` |
+球衣号、追踪号、坐标和时钟都是模型看画面读出来的，还没有人工复核。说明书要求下一脚触球人的追踪号等于这次传球的接球人，这条对应关系现在没有核对。
 
-## 当前结果还不能直接交付
-
-step3、step4 读到的球衣号、追踪号、坐标和时钟来自模型看画面，还没有人工复核。传球和长传写了接球人；停球（带球）和头球的接球人是 `unknown`。说明书要求下一脚触球人的 `player_id` 等于这次传球的 `receiver_id`，抢断、射门、助攻、扑救也有成对关系，这些对应现在都还没有核对。
-
-## 后期调研：VLX-VR
-
-step4 只在单段传球视频里读接球人，跨片段的成对关系还没有核对。下一步调研 [VLX-VR](VLX-VR/)（Video Reasoning），用它做允许等待的整段视频语义分析。需要持续采样、快速反馈或实时告警时，评估同系列的 VLX-Flow。
-
-### VLX-VR 是什么
-
-VLX-VR 是面向复杂视频分析的端云协同深度推理模型。它围绕用户的问题定位关键时间段，把画面、时间线、文本和数值线索合在一起，做跨片段、多步推理，并返回可以回看的分析结果。
-
-它适合已经落成文件、可以等一段时间、又需要完整语义的视频。一场约 10 分钟的转播，可以问「按时间顺序列出关键事件和时间段」「哪一方占据优势」「这脚球是怎么发展到射门的」。模型在回答里给出关键时间点或视频依据，方便和定位结果对照。
-
-公开评测来自 MINERVA 复杂视频推理基准的一次对照：总体准确率 78.79%。按原始视频时长分成三档，5 分钟以下 76.70%，5 至 15 分钟 78.73%，15 分钟以上 80.92%。在模型答对的样本里，推理轨迹与人工参考轨迹及证据描述的一致性是 96.20%。这些数字只对应该次评测集、版本和统计口径。96.20% 是答对样本中的轨迹一致性，要在本项目的比赛样本上再验。
-
-### 能做什么，边界在哪里
-
-| 能力 | 对本项目的含义 |
-|---|---|
-| 关键时间段定位 | 按问题找出和结论相关的片段，可与 OpenSportsLib 的 `position_ms` 对照 |
-| 跨片段事件梳理 | 结合前后状态，说明一次进攻如何发生、发展 |
-| 多步视频推理 | 综合画面、时间和情境，写出自然语言结论 |
-| 证据回看 | 回答里带时间点或视频依据，供人工复核 |
-
-效果受视频时长、码率、清晰度、资源配置和问题复杂度影响，以平台当时的校验为准。生产使用仍要保留业务规则、检测或追踪、人工复核和本项目样本上的验收。VLX-VR 的输出是分析结论和时间证据；说明书里的 `player_id`、固定字段顺序和逐条 JSON，仍由本项目的适配和复核来完成。
-
-### 怎么接
-
-页面体验可以上传本地视频或使用平台预设视频，输入自然语言问题做快速验证。正式接入用 API/SDK，由业务侧处理等待、超时、重试和结果复核。
-
-API 不上传文件，也不接受 `file_id`、本地路径或平台文件柜字段。调用方先把视频放到对象存储或文件服务，得到模型服务能直接读取的 URL，再传给 `video_url.url`。地址在请求处理期间保持可访问，使用平台支持的协议和格式，不依赖浏览器 Cookie 或登录态。签名 URL 要控制有效期，令牌放在环境变量里，不写入仓库。
-
-```http
-POST {API_ENDPOINT}/os/v2/vlx/vr/stream
-Authorization: Bearer {OM_API_KEY}
-Content-Type: application/json
-Accept: text/event-stream
-```
-
-`{API_ENDPOINT}` 以开发者平台「鉴权信息」页展示的地址为准。`model` 固定为 `vlx-vr`。`messages` 使用一条 `user` 消息，`content` 里放一段问题文本和一个 `video_url`。一次请求最多一个视频。`stream` 建议为 `true`。`temperature` 范围是 0 到 2，默认 0.7。需要调节推理强度时打开 `thinking`，再设置 `reasoning_effort`：`low`、`medium`、`high`、`max`，默认 `medium`。
-
-返回是 SSE。同一请求的各帧共用首帧里的 `id`。推理过程增量在 `choices[0].delta.reasoning_content`，它只说明分析过程。业务结论取 `choices[0].delta.content` 并拼接。内容输出完成后会出现空的 `choices`，最后是 `data: [DONE]`。用户取消或超时不再需要结果时，用这个 `id` 调用 `POST {API_ENDPOINT}/os/v2/vlx/vr/stop`。
-
-本地试验代码放在 `VLX-VR/`。
-
-### 用 agent 和专用工具提高精度
-
-一个模型同时猜动作、球队、球衣号和坐标，错了也无法单独重做。后期改成一个 agent 按事件调用专用工具：每件工具只回答一个问题，结果对不上就只重跑那一件，最后再按说明书校验。
-
-agent 不直接填写 JSON。它拿到定位时间点后，按下面的顺序要结果，并把每次调用的片段时间和依据留下来。
-
-| 工具 | 输入 | 只负责的结果 | 用来纠什么错 |
-|---|---|---|---|
-| 定位 | 整段视频 | `position_ms`、英文类别、置信度 | 时间点以 OpenSportsLib 为准，视觉模型不改时间 |
-| 切片段 | `position_ms` 和相邻事件 | 原帧率片段 | 让后续工具看同一段画面 |
-| 动作判别 | 片段，外加定位类别 | 说明书里的一个动作名 | 头球、出界、传中被收成传球时，用定位类别和画面分开复核 |
-| 球衣颜色 | 动作帧上的行动人区域 | Team A 或 Team B，或无法判断 | 颜色来自这场比赛的元数据，不再把红白写死 |
-| 球衣号 | 行动人躯干裁切 | `player_code`，看不清则为 `unknown` | 号和动作分开读，避免整段描述里的数字被当成球衣号 |
-| 画面坐标 | 动作发生那一帧 | `player_screen_xy` | 用检测框中心，不用模型随口给的相对坐标 |
-| 追踪关联 | 时间点加已对齐的追踪表 | `player_id`、`receiver_id` | 有追踪表才填跟踪号；没有就保持 `unknown` |
-| 时序核对 | 按时间排好的相邻记录 | 传球人与下一脚触球人是否为同一跟踪号 | 接球、抢断、助攻和扑救的成对关系不一致时打回 |
-| 整段推理 | 有争议的一段时间的视频 URL | VLX-VR 的结论和关键时间点 | 只在单片段工具互相矛盾时调用，用来看事件怎么发展 |
-| 说明书校验 | 候选记录 | 字段顺序、动作名、帧序、`unknown` 规则 | 不通过就不交付，并指明该重跑哪一个工具 |
-
-一轮里动作判别和定位类别冲突、球衣颜色没有结果、或时序核对失败，agent 只重跑对应工具。同一条事件重跑仍不通过，就整段交给 VLX-VR，并带上已有的时间点作为证据。VLX-VR 返回的是可回看的分析，agent 再把它拆回上表里的字段。拆不开的字段保持 `unknown`，记录进入人工复核。
-
-这样精度来自工具分工和互相核对，而不是再换一个更大的提示词。角球、扑救、助攻在定位权重里没有对应类别，动作判别工具对这三类单独收样本，确认稳定之前一律复核。
+跨片段的核对还没做。以后如果要看一整段进攻怎么发展，再评估 [VLX-VR](VLX-VR/)。
