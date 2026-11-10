@@ -12,27 +12,27 @@
 
 ### step0 轨迹坐标
 
-`step0_轨迹坐标.py` 读取原始比赛视频，默认 `test_data/test.mp4`。它调用 `sports` 的球员跟踪，在原画面的拷贝上只加三样东西：脚底圆环、圆环里的追踪号、头顶的人物中心点 `[x,y]`。坐标是人物框中心，x 向右、y 向下，取整。足球和裁判不跟踪，也不画圆环。原片像素不改，结果用 H.264、yuv420p 写出，索引放在文件头。
+`step0_轨迹坐标.py` 读取原始比赛视频，默认 `test_data/1-2-6.mp4`。它调用 `sports` 的球员跟踪，在原画面的拷贝上只加三样东西：脚底圆环、圆环里的追踪号、头顶的人物中心点 `[x,y]`。坐标是人物框中心，x 向右、y 向下，取整。足球和裁判不跟踪，也不画圆环。原片像素不改，结果用 H.264、yuv420p 写出，索引放在文件头。
 
-默认输出 `outputs/opensportslib/test.step0.mp4`。
+默认输出 `outputs/opensportslib/1-2-6.step0.mp4`。
 
 ### step1 事件监测
 
-`step1_事件监测.py` 把原始视频交给 [OpenSportsLab/OSL-loc-snbas-2025-e2e](https://huggingface.co/OpenSportsLab/OSL-loc-snbas-2025-e2e)。默认输入仍是 `test_data/test.mp4`，因为定位看的是比赛内容，不看 step0 画上的数字。模型按每秒 2 帧抽帧，每 100 帧一个窗口。保存的是非极大值抑制之后、置信度不低于 `--min-confidence`（默认 0.90）的动作点，类别按 `label_map.py` 写成中文：传球、停球(带球)、头球、长传、出界、传中、界外手抛球、射门、封堵、抢断、任意球、进球。
+`step1_事件监测.py` 把原始视频交给 [OpenSportsLab/OSL-loc-snbas-2025-e2e](https://huggingface.co/OpenSportsLab/OSL-loc-snbas-2025-e2e)。默认输入是 `test_data/1-2-6.mp4`，因为定位看的是比赛内容，不看 step0 画上的数字。模型按每秒 2 帧抽帧，每 100 帧一个窗口。保存的是非极大值抑制之后、置信度不低于 `--min-confidence`（默认 0.90）的动作点，类别按 `label_map.py` 写成中文：传球、停球(带球)、头球、长传、出界、传中、界外手抛球、射门、封堵、抢断、任意球、进球。
 
 `frame` 是模型 2 帧/秒的采样序号，原样保留。`position_ms` 是动作时刻。默认输出 `outputs/opensportslib/test.step1.json`。这一步不识别人，也不写画面坐标。角球、扑救、助攻不在这 12 类里。
 
 ### step2 事件截帧
 
-`step2_事件截帧.py` 读取 step1 的 JSON，默认 `outputs/opensportslib/test.step1.json`。截取用的视频单独配置，默认是已经画好追踪号和中心坐标的 `outputs/opensportslib/test.step0.mp4`。
+`step2_事件截帧.py` 读取 step1 的 JSON，默认 `outputs/opensportslib/test.step1.json`。截取用的视频单独配置，默认是已经画好追踪号和中心坐标的 `outputs/opensportslib/1-2-6.step0.mp4`。
 
 每个事件以 `round(position_ms / 1000 × 帧率)` 为中心，前后各 10 帧，连同中心帧一共 21 帧，按原帧率写成一个 mp4。step1 的 `frame` 原样抄进清单，不换算。原视频帧号写在 `source_frame`，片段范围写在 `start_frame` 和 `end_frame`。
 
-默认片段目录是 `outputs/opensportslib/clips/test.step0/`，清单是同目录的 `step2.json`。
+默认片段目录是 `outputs/opensportslib/clips/1-2-6.step0/`，清单是同目录的 `step2.json`。短于 2 秒的片段在 step3 里会放到同级的 `1-2-6.step0_2s/`，只放慢播放，不改画面。
 
 ### step3 控球识别
 
-`step3_控球识别-qwen38-max.py` 读取 `outputs/opensportslib/clips/test.step0/step2.json` 和同目录片段。模型是云端 Qwen3.8-Max。事件帧静图用来读数字，片段用来判断谁在控球。接口不收短于 2 秒的视频，脚本只把原帧放慢到 2 秒以上，不改画面。
+`step3_控球识别-qwen38-max.py` 读取 `outputs/opensportslib/clips/1-2-6.step0/step2.json` 和同目录片段。模型是云端 Qwen3.8-Max。事件帧静图用来读数字，片段用来判断谁在控球。接口不收短于 2 秒的视频，脚本只把原帧放慢到 2 秒以上，不改画面。
 
 模型从画面读取：
 
@@ -42,7 +42,7 @@
 - 衣色：红衣 Team A，白衣 Team B
 - `action_screen_time_period`：比分牌下方的比赛时钟，按画面原样保留
 
-`name_cn` 由衣色和 step2 的动作拼成，中间没有空格，例如 `Team A长传`。输出记录里的 `frame` 用 step2 的 `source_frame`，也就是原视频帧号。默认结果是 `outputs/opensportslib/test.step0.step3.qwen38-max.json`，一条记录六个字段：
+`name_cn` 由衣色和 step2 的动作拼成，中间没有空格，例如 `Team A长传`。输出记录里的 `frame` 用 step2 的 `source_frame`，也就是原视频帧号。默认结果是 `outputs/opensportslib/1-2-6.step0.step3.qwen38-max.json`，一条记录六个字段：
 
 ```json
 {
@@ -57,7 +57,7 @@
 
 ### step4 接球识别
 
-`step4_接球识别-qwen38-max.py` 读取 step3 的 JSON，默认 `outputs/opensportslib/test.step0.step3.qwen38-max.json`。视频是带脚底追踪号和头顶中心坐标的 `outputs/opensportslib/test.step0.mp4`。模型仍是云端 Qwen3.8-Max，只上传这段视频，不上传静图。地址和密钥读项目根目录的 `.env`。
+`step4_接球识别-qwen38-max.py` 读取 step3 的 JSON，默认 `outputs/opensportslib/1-2-6.step0.step3.qwen38-max.json`。视频是带脚底追踪号和头顶中心坐标的 `outputs/opensportslib/1-2-6.step0.mp4`。模型仍是云端 Qwen3.8-Max，只上传这段视频，不上传静图。地址和密钥读项目根目录的 `.env`。
 
 `frame`、`player_code`、`player_id`、`name_cn`、`player_screen_xy`、`action_screen_time_period` 从 step3 原样抄过来。这一步只补接球人，不改 step3，也不从下一条记录抄接球人。
 
@@ -67,7 +67,7 @@
 
 | 常量 | 值 | 作用 |
 |---|---|---|
-| `LEAD_FRAMES` | 5 | 出球前保留的源帧数 |
+| `LEAD_FRAMES` | 15 | 出球前保留的源帧数 |
 | `PASS_DELAY_SECONDS` | 3 | 传球出球后再看的秒数 |
 | `LONG_DELAY_SECONDS` | 5 | 长传出球后再看的秒数 |
 | `SAMPLE_FPS` | 5 | 从源视频抽帧的帧率。30 帧/秒的源片每 6 帧留 1 帧，出球那一帧一定留下 |
@@ -81,7 +81,7 @@
 - `receiver_code`：接球人球衣号
 - `receiver_id`：接球人脚底圆环里的追踪号
 
-默认结果是 `outputs/opensportslib/test.step0.step4.qwen38-max.json`，把 step3 文件名里的 `step3` 换成 `step4`。`frame` 仍是原视频帧号。字段顺序是：
+默认结果是 `outputs/opensportslib/1-2-6.step0.step4.qwen38-max.json`，把 step3 文件名里的 `step3` 换成 `step4`。`frame` 仍是原视频帧号。字段顺序是：
 
 ```json
 {
@@ -118,12 +118,12 @@ step0、step1 可以用 `--max-seconds` 只处理开头若干秒。step2 换标�
 
 | 文件 | 内容 |
 |---|---|
-| `outputs/opensportslib/test.step0.mp4` | 带脚底追踪号和头顶中心坐标的视频 |
+| `outputs/opensportslib/1-2-6.step0.mp4` | 带脚底追踪号和头顶中心坐标的视频 |
 | `outputs/opensportslib/test.step1.json` | 动作定位。`frame` 是 2 帧/秒采样序号，`position_ms` 是动作时刻 |
-| `outputs/opensportslib/clips/test.step0/` | 每个事件 21 帧的标注片段，以及 `step2.json` |
-| `outputs/opensportslib/test.step0.step3.qwen38-max.json` | 控球记录。`frame` 是原视频帧号 |
-| `outputs/opensportslib/clips/step4/` | 传球 3 秒、长传 5 秒的慢放片段 |
-| `outputs/opensportslib/test.step0.step4.qwen38-max.json` | 在控球记录上补了 `receiver_code`、`receiver_id` |
+| `outputs/opensportslib/clips/1-2-6.step0/` | 每个事件 21 帧的标注片段，以及 `step2.json` |
+| `outputs/opensportslib/1-2-6.step0.step3.qwen38-max.json` | 控球记录。`frame` 是原视频帧号 |
+| `outputs/opensportslib/clips/step4/` | 传球 3 秒、长传 5 秒的慢放片段。出球前留 15 帧 |
+| `outputs/opensportslib/1-2-6.step0.step4.qwen38-max.json` | 在控球记录上补了 `receiver_code`、`receiver_id` |
 
 ## 当前结果还不能直接交付
 
